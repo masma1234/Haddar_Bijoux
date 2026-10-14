@@ -1,0 +1,74 @@
+[
+  {
+    "route": "/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/ar/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/politique-de-confidentialite/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/cookies/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/conditions-generales/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/retours-et-remboursement/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/404/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  },
+  {
+    "route": "/ar/404/",
+    "external": [],
+    "cookies": 0,
+    "local": [],
+    "session": [],
+    "workers": 0,
+    "pass": true
+  }
+]

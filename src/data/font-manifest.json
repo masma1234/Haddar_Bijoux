@@ -1,0 +1,16 @@
+{
+  "fr": {
+    "css": "/fonts/fr-d877d073f45a.css",
+    "preload": [
+      "/fonts/italiana-latin-400-5079c87a4e86.woff2",
+      "/fonts/jost-latin-400-f94cffda1651.woff2"
+    ]
+  },
+  "ar": {
+    "css": "/fonts/ar-8ccf1c8635f9.css",
+    "preload": [
+      "/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+      "/fonts/tajawal-arabic-400-6c9081fd00db.woff2"
+    ]
+  }
+}

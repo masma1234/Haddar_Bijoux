@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import {business,draft} from '../data/business';
+import Fact from '../components/Fact.astro';
+import {legalDocuments,type LegalDocument} from '../i18n/legal';
+import {fr as t} from '../i18n/fr';
+export function getStaticPaths(){return legalDocuments.map(doc=>({params:{legal:doc.slug},props:{doc}}));}
+interface Props{doc:LegalDocument;}
+const {doc}=Astro.props;
+const schema=[{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:new URL('/',Astro.site).href},{'@type':'ListItem',position:2,name:doc.title,item:new URL('/'+doc.slug+'/',Astro.site).href}]}];
+---
+<Base locale="fr" title={doc.metaTitle} description={doc.description} schema={schema}>
+<main id="main" tabindex="-1" class="legal-main wrap"><nav class="breadcrumbs" aria-label={t.breadcrumbLabel}><a href="/">{t.home}</a><span aria-hidden="true">/</span><span aria-current="page">{doc.title}</span></nav><h1>{doc.title}</h1>{!business.frenchLegalApproved&&<p class="legal-draft">{t.legalDraft} <span lang="fr">[CONFIRMER]</span></p>}{doc.sections.map(section=><section><h2>{section.title}</h2>{section.paragraphs?.map(text=><p><Fact text={text}/></p>)}{section.fields&&<dl>{section.fields.map(([label,value])=><><dt>{label}</dt><dd><Fact text={value}/></dd></>)}</dl>}</section>)}<a class="text-link" href={draft.dm}>{t.write}</a></main>
+</Base>

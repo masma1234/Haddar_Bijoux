@@ -1,0 +1,20 @@
+{
+  "order": 2,
+  "category": "personalized",
+  "title": {
+    "fr": "Bracelets personnalisés",
+    "ar": "أساور على ذوقكم"
+  },
+  "subtitle": {
+    "fr": "Sur demande",
+    "ar": "على الطلب"
+  },
+  "alt": {
+    "fr": "Illustration de présentation : bracelets personnalisés, sans photographie de produit.",
+    "ar": "رسم توضيحي: أساور على ذوقكم، موش تصويرة قطعة."
+  },
+  "credit": "",
+  "rights": "",
+  "isPlaceholder": true,
+  "hero": false
+}

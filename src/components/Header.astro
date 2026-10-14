@@ -1,0 +1,9 @@
+---
+import { dictionary, homePath, type Locale } from '../i18n';
+import { draft } from '../data/business';
+import Icon from './Icon.astro';
+interface Props {locale:Locale; alternate:string;}
+const {locale,alternate}=Astro.props;const t=dictionary(locale);const ids=['collection','sur-mesure','questions','commander'];
+---
+<a class="skip-link" href="#main">{t.skip}</a>
+<header class="site-header wrap"><a class="wordmark" href={homePath(locale)} aria-label={t.brand} lang="fr" dir="ltr"><span>{t.brand.split(' ')[0]}</span>{' '}<small>{t.brand.split(' ')[1]}</small></a><nav class="desktop-nav" aria-label={t.navLabel}>{t.nav.map((label,i)=><a href={homePath(locale)+'#'+ids[i]}>{label}</a>)}</nav><div class="header-actions"><a class="language-link" href={alternate} lang={locale==='fr'?'ar':'fr'} dir={locale==='fr'?'rtl':'ltr'} title={t.languageLabel}>{t.language}</a><a class="instagram-link" href={draft.instagram} aria-label={t.instagramLabel}><Icon kind="instagram"/></a></div><details class="mobile-menu"><summary aria-label={t.menu}><span class="menu-lines" aria-hidden="true"></span></summary><nav aria-label={t.navLabel}>{t.nav.map((label,i)=><a href={homePath(locale)+'#'+ids[i]}>{label}</a>)}</nav></details></header>

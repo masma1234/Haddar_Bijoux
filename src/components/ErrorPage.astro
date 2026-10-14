@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import {dictionary,homePath,type Locale} from '../i18n';
+import {draft} from '../data/business';
+interface Props{locale:Locale;}
+const {locale}=Astro.props;const t=dictionary(locale);
+const schema=[{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:new URL(homePath(locale),Astro.site).href},{'@type':'ListItem',position:2,name:t.errorEyebrow,item:new URL(Astro.url.pathname,Astro.site).href}]}];
+---
+<Base locale={locale} title={t.errorMeta} description={t.errorDescription} noindex schema={schema} alternate={locale==='fr'?'/ar/404/':'/404/'}><main id="main" tabindex="-1" class="error-main wrap"><nav class="breadcrumbs" aria-label={t.breadcrumbLabel}><a href={homePath(locale)}>{t.home}</a><span aria-hidden="true">/</span><span aria-current="page">404</span></nav><p class="eyebrow">{t.errorEyebrow}</p><h1 class="line-title">{t.errorTitle}</h1><p>{t.errorText}</p><div class="error-actions"><a class="button primary" href={homePath(locale)}>{t.back}</a><a class="button secondary" href={homePath(locale)+'#collection'}>{t.browse}</a><a class="text-link" href={draft.dm}>{t.write}</a></div></main></Base>

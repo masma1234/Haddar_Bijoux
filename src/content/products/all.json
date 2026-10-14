@@ -1,0 +1,20 @@
+{
+  "order": 6,
+  "category": "all",
+  "title": {
+    "fr": "Toutes les pièces",
+    "ar": "القطع الكل"
+  },
+  "subtitle": {
+    "fr": "Sur Instagram",
+    "ar": "على إنستغرام"
+  },
+  "alt": {
+    "fr": "Illustration de présentation : toutes les pièces, sans photographie de produit.",
+    "ar": "رسم توضيحي: القطع الكل، موش تصويرة قطعة."
+  },
+  "credit": "",
+  "rights": "",
+  "isPlaceholder": true,
+  "hero": false
+}

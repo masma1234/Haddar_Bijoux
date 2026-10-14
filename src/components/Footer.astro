@@ -1,0 +1,7 @@
+---
+import {dictionary,homePath,legalPaths,type Locale} from '../i18n';
+import {business,draft,confirmed} from '../data/business';
+interface Props {locale:Locale;}
+const {locale}=Astro.props;const t=dictionary(locale);
+---
+<footer class="site-footer wrap"><div class="footer-top"><div><a href={homePath(locale)} class="footer-brand" lang="fr" dir="ltr">{t.brand}</a><p>{t.footerNote}</p><a href={draft.instagram} class="handle" dir="ltr">{draft.handle}</a></div><nav aria-label={t.legalHeading}>{legalPaths.map((path,i)=><a href={path} hreflang="fr">{t.legalLabels[i]}</a>)}{t.legalLanguageNote && <p class="legal-language">{t.legalLanguageNote}</p>}</nav></div><div class="footer-bottom"><p>&copy; {new Date().getUTCFullYear()} <bdi>{confirmed(business.legalName)?business.legalName:draft.tradeName}</bdi>{!confirmed(business.legalName)&&<span class="pending-identity">{t.copyrightPending} <span lang="fr" dir="ltr">[CONFIRMER]</span></span>}</p>{!business.frenchLegalApproved && <p class="draft-note">{t.draftNotice}</p>}</div></footer>

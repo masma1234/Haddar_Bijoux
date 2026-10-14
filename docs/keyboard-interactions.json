@@ -1,0 +1,16 @@
+[
+  {
+    "locale": "fr",
+    "skipLink": true,
+    "menuByTabAndEnter": true,
+    "visibleOutline": "solid",
+    "escapeClosesMenu": true
+  },
+  {
+    "locale": "ar",
+    "skipLink": true,
+    "menuByTabAndEnter": true,
+    "visibleOutline": "solid",
+    "escapeClosesMenu": true
+  }
+]

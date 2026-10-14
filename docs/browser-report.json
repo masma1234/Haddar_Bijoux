@@ -1,0 +1,3673 @@
+{
+  "responsive": [
+    {
+      "route": "/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/ar/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/ar/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/ar/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/ar/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/ar/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/ar/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/ar/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/ar/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/ar/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/ar/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/ar/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/ar/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/ar/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/ar/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/ar/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/ar/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/ar/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/ar/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/ar/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/ar/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/ar/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/ar/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/ar/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/cookies/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/cookies/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/cookies/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/cookies/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/cookies/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/cookies/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/cookies/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/cookies/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/cookies/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/cookies/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/cookies/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/cookies/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/cookies/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/cookies/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/cookies/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/cookies/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/cookies/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/cookies/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/cookies/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/cookies/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/cookies/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/cookies/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/cookies/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/cookies/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/cookies/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/cookies/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/conditions-generales/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/404/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/404/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/404/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/404/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/404/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/404/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/404/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/404/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/404/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/404/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/404/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/404/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/404/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/404/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/404/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/404/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/404/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/404/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/404/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/404/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/404/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/404/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/404/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/404/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/404/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/404/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    },
+    {
+      "route": "/ar/404/",
+      "width": 320,
+      "height": 512,
+      "scroll": 320
+    },
+    {
+      "route": "/ar/404/",
+      "width": 360,
+      "height": 576,
+      "scroll": 360
+    },
+    {
+      "route": "/ar/404/",
+      "width": 375,
+      "height": 600,
+      "scroll": 375
+    },
+    {
+      "route": "/ar/404/",
+      "width": 390,
+      "height": 624,
+      "scroll": 390
+    },
+    {
+      "route": "/ar/404/",
+      "width": 412,
+      "height": 659,
+      "scroll": 412
+    },
+    {
+      "route": "/ar/404/",
+      "width": 768,
+      "height": 1229,
+      "scroll": 768
+    },
+    {
+      "route": "/ar/404/",
+      "width": 820,
+      "height": 1312,
+      "scroll": 820
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1024,
+      "height": 1638,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1280,
+      "height": 2048,
+      "scroll": 1280
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1440,
+      "height": 2304,
+      "scroll": 1440
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1920,
+      "height": 3072,
+      "scroll": 1920
+    },
+    {
+      "route": "/ar/404/",
+      "width": 320,
+      "height": 180,
+      "scroll": 320
+    },
+    {
+      "route": "/ar/404/",
+      "width": 360,
+      "height": 202,
+      "scroll": 360
+    },
+    {
+      "route": "/ar/404/",
+      "width": 375,
+      "height": 210,
+      "scroll": 375
+    },
+    {
+      "route": "/ar/404/",
+      "width": 390,
+      "height": 218,
+      "scroll": 390
+    },
+    {
+      "route": "/ar/404/",
+      "width": 412,
+      "height": 231,
+      "scroll": 412
+    },
+    {
+      "route": "/ar/404/",
+      "width": 768,
+      "height": 430,
+      "scroll": 768
+    },
+    {
+      "route": "/ar/404/",
+      "width": 820,
+      "height": 459,
+      "scroll": 820
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1024,
+      "height": 573,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1280,
+      "height": 717,
+      "scroll": 1280
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1440,
+      "height": 806,
+      "scroll": 1440
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1920,
+      "height": 1075,
+      "scroll": 1920
+    },
+    {
+      "route": "/ar/404/",
+      "width": 667,
+      "height": 375,
+      "scroll": 667
+    },
+    {
+      "route": "/ar/404/",
+      "width": 844,
+      "height": 390,
+      "scroll": 844
+    },
+    {
+      "route": "/ar/404/",
+      "width": 1024,
+      "height": 768,
+      "scroll": 1024
+    },
+    {
+      "route": "/ar/404/",
+      "width": 640,
+      "height": 450,
+      "scroll": 640
+    }
+  ],
+  "axe": [
+    {
+      "route": "/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/ar/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/ar/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/cookies/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/cookies/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/conditions-generales/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/conditions-generales/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/404/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/404/",
+      "colorScheme": "dark",
+      "violations": []
+    },
+    {
+      "route": "/ar/404/",
+      "colorScheme": "light",
+      "violations": []
+    },
+    {
+      "route": "/ar/404/",
+      "colorScheme": "dark",
+      "violations": []
+    }
+  ],
+  "palette": [
+    {
+      "route": "/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/cookies/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/cookies/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/conditions-generales/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/conditions-generales/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/404/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/404/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/ar/404/",
+      "colorScheme": "light",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    },
+    {
+      "route": "/ar/404/",
+      "colorScheme": "dark",
+      "tokens": {
+        "--bg": "#F7F5F1",
+        "--panel": "#FFFFFF",
+        "--gold": "#B68A4E",
+        "--gold-deep": "#8F6B39",
+        "--gold-pale": "#EAE0CB",
+        "--ink": "#2A241E",
+        "--ink-soft": "#6E6459",
+        "--line": "#E4DCCB"
+      },
+      "pass": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/",
+      "mainCharacters": 2235,
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "mainCharacters": 1613,
+      "pass": true
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "mainCharacters": 1115,
+      "pass": true
+    },
+    {
+      "route": "/cookies/",
+      "mainCharacters": 793,
+      "pass": true
+    },
+    {
+      "route": "/conditions-generales/",
+      "mainCharacters": 1067,
+      "pass": true
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "mainCharacters": 849,
+      "pass": true
+    },
+    {
+      "route": "/404/",
+      "mainCharacters": 203,
+      "pass": true
+    },
+    {
+      "route": "/ar/404/",
+      "mainCharacters": 182,
+      "pass": true
+    }
+  ],
+  "network": [
+    {
+      "route": "/",
+      "profile": "Slow 3G",
+      "loadMs": 9876,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "profile": "Fast 3G",
+      "loadMs": 2658,
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "profile": "Slow 3G",
+      "loadMs": 11580,
+      "pass": true
+    },
+    {
+      "route": "/ar/",
+      "profile": "Fast 3G",
+      "loadMs": 3064,
+      "pass": true
+    }
+  ],
+  "keyboard": [
+    {
+      "route": "/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Commander sur Instagram",
+          "top": 403.875,
+          "bottom": 451.875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir la collection↓",
+          "top": 439.875,
+          "bottom": 486.71875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets. 01 Illustration de présentation",
+          "top": 167.8125,
+          "bottom": 443.640625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets",
+          "top": 442.640625,
+          "bottom": 486.640625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets personnalisés. 02 Illustration de présentation",
+          "top": 211.234375,
+          "bottom": 487.0625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets personnalisés",
+          "top": 443.0625,
+          "bottom": 487.0625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets assortis. 03 Illustration de présentation",
+          "top": 211.65625,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets assortis",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Boucles d’oreilles. 04 Illustration de présentation",
+          "top": 211.078125,
+          "bottom": 486.90625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Boucles d’oreilles",
+          "top": 442.90625,
+          "bottom": 486.90625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Colliers. 05 Illustration de présentation",
+          "top": 211.5,
+          "bottom": 487.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Colliers",
+          "top": 443.328125,
+          "bottom": 487.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Toutes les pièces. 06 Illustration de présentation",
+          "top": 210.921875,
+          "bottom": 486.75,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Toutes les pièces",
+          "top": 442.75,
+          "bottom": 486.75,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir toutes les pièces",
+          "top": 443.34375,
+          "bottom": 487.34375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Parcourir les pièces",
+          "top": 283.03125,
+          "bottom": 327.03125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Envoyer votre demande",
+          "top": 443.03125,
+          "bottom": 487.03125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Discuter des détails",
+          "top": 283.03125,
+          "bottom": 327.03125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Poser une question sur l’or",
+          "top": 283.53125,
+          "bottom": 327.53125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "Comment passer commande ?",
+          "top": 267.4375,
+          "bottom": 343.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "Puis-je personnaliser un bracelet ?",
+          "top": 344.4375,
+          "bottom": 420.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "Quels sont les délais et les modes de livraison ?",
+          "top": 391.4375,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "Puis-je retourner ou échanger un bijou ?",
+          "top": 410.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "Comment vérifier que l’or est de l’or 18 carats ?",
+          "top": 391.625,
+          "bottom": 486.8125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 279.25,
+          "bottom": 331.25,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 421.4375,
+          "bottom": 465.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.4375,
+          "bottom": 486.828125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Commander sur Instagram",
+          "top": 403.875,
+          "bottom": 451.875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir la collection↓",
+          "top": 439.875,
+          "bottom": 486.71875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets. 01 Illustration de présentation",
+          "top": 167.8125,
+          "bottom": 443.640625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets",
+          "top": 442.640625,
+          "bottom": 486.640625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets personnalisés. 02 Illustration de présentation",
+          "top": 211.234375,
+          "bottom": 487.0625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets personnalisés",
+          "top": 443.0625,
+          "bottom": 487.0625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Bracelets assortis. 03 Illustration de présentation",
+          "top": 211.65625,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Bracelets assortis",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Boucles d’oreilles. 04 Illustration de présentation",
+          "top": 211.078125,
+          "bottom": 486.90625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Boucles d’oreilles",
+          "top": 442.90625,
+          "bottom": 486.90625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Colliers. 05 Illustration de présentation",
+          "top": 211.5,
+          "bottom": 487.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Colliers",
+          "top": 443.328125,
+          "bottom": 487.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir sur Instagram : Toutes les pièces. 06 Illustration de présentation",
+          "top": 210.921875,
+          "bottom": 486.75,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/ar/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "اطلبوا على إنستغرام",
+          "top": 394.515625,
+          "bottom": 442.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا المجموعة↓",
+          "top": 440.515625,
+          "bottom": 487.359375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور. 01 رسم توضيحي",
+          "top": 167.625,
+          "bottom": 443.453125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور",
+          "top": 443.453125,
+          "bottom": 487.453125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور على ذوقكم. 02 رسم توضيحي",
+          "top": 210.796875,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور على ذوقكم",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور متناسقة. 03 رسم توضيحي",
+          "top": 210.96875,
+          "bottom": 486.796875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور متناسقة",
+          "top": 442.796875,
+          "bottom": 486.796875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : خراص. 04 رسم توضيحي",
+          "top": 211.140625,
+          "bottom": 486.96875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "خراص",
+          "top": 442.96875,
+          "bottom": 486.96875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : سلاسل. 05 رسم توضيحي",
+          "top": 211.3125,
+          "bottom": 487.140625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "سلاسل",
+          "top": 443.140625,
+          "bottom": 487.140625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : القطع الكل. 06 رسم توضيحي",
+          "top": 211.484375,
+          "bottom": 487.3125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "القطع الكل",
+          "top": 443.3125,
+          "bottom": 487.3125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا القطع الكل",
+          "top": 442.65625,
+          "bottom": 486.65625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا القطع",
+          "top": 283.359375,
+          "bottom": 327.359375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ابعثولنا طلبكم",
+          "top": 443.109375,
+          "bottom": 487.109375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "احكيولنا على التفاصيل",
+          "top": 283.859375,
+          "bottom": 327.859375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "اسألونا على الدهب",
+          "top": 283.21875,
+          "bottom": 327.21875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "كيفاش نطلب؟",
+          "top": 267.390625,
+          "bottom": 343.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "نجم نعمل سوار على ذوقي؟",
+          "top": 344.390625,
+          "bottom": 420.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "قداش يعدّي وقت التوصيل وكيفاش يتعمل؟",
+          "top": 411.390625,
+          "bottom": 487.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "نجم نرجّع ولا نبدّل القطعة؟",
+          "top": 411.390625,
+          "bottom": 487.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "كيفاش نتأكد إنو الدهب عيار 18؟",
+          "top": 411.390625,
+          "bottom": 487.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ابعثوا ميساج على إنستغرام",
+          "top": 279.375,
+          "bottom": 331.375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 429.5625,
+          "bottom": 473.5625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 280.5625,
+          "bottom": 330.953125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 382,
+          "bottom": 426,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الخصوصية",
+          "top": 443,
+          "bottom": 487,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الكوكيز",
+          "top": 443,
+          "bottom": 487,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الشروط العامة",
+          "top": 443,
+          "bottom": 487,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الترجيع واسترجاع الفلوس",
+          "top": 443,
+          "bottom": 487,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "امشيو للمحتوى",
+          "top": 12,
+          "bottom": 67.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Français",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "اطلبوا على إنستغرام",
+          "top": 394.515625,
+          "bottom": 442.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا المجموعة↓",
+          "top": 440.515625,
+          "bottom": 487.359375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور. 01 رسم توضيحي",
+          "top": 167.625,
+          "bottom": 443.453125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور",
+          "top": 443.453125,
+          "bottom": 487.453125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور على ذوقكم. 02 رسم توضيحي",
+          "top": 210.796875,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور على ذوقكم",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : أساور متناسقة. 03 رسم توضيحي",
+          "top": 210.96875,
+          "bottom": 486.796875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "أساور متناسقة",
+          "top": 442.796875,
+          "bottom": 486.796875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : خراص. 04 رسم توضيحي",
+          "top": 211.140625,
+          "bottom": 486.96875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "خراص",
+          "top": 442.96875,
+          "bottom": 486.96875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : سلاسل. 05 رسم توضيحي",
+          "top": 211.3125,
+          "bottom": 487.140625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "سلاسل",
+          "top": 443.140625,
+          "bottom": 487.140625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا على إنستغرام : القطع الكل. 06 رسم توضيحي",
+          "top": 211.484375,
+          "bottom": 487.3125,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.4375,
+          "bottom": 327.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.4375,
+          "bottom": 486.828125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.625,
+          "bottom": 513.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 469.625,
+          "bottom": 513.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.4375,
+          "bottom": 327.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.4375,
+          "bottom": 486.828125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.625,
+          "bottom": 486.625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.625,
+          "bottom": 513.625,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/cookies/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.859375,
+          "bottom": 327.859375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.859375,
+          "bottom": 487.25,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 470.046875,
+          "bottom": 514.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 470.046875,
+          "bottom": 514.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.859375,
+          "bottom": 327.859375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.859375,
+          "bottom": 487.25,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 470.046875,
+          "bottom": 514.046875,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/conditions-generales/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.328125,
+          "bottom": 327.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.328125,
+          "bottom": 486.71875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.515625,
+          "bottom": 513.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 469.515625,
+          "bottom": 513.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.328125,
+          "bottom": 327.328125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.328125,
+          "bottom": 486.71875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.515625,
+          "bottom": 486.515625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.515625,
+          "bottom": 513.515625,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.546875,
+          "bottom": 327.546875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.546875,
+          "bottom": 486.9375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.734375,
+          "bottom": 513.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 469.734375,
+          "bottom": 513.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 122,
+          "bottom": 166,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 283.546875,
+          "bottom": 327.546875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 436.546875,
+          "bottom": 486.9375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 442.734375,
+          "bottom": 486.734375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 469.734375,
+          "bottom": 513.734375,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/404/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 182,
+          "bottom": 226,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Revenir à l’accueil",
+          "top": 435.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir la collection",
+          "top": 435.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 443.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 280.28125,
+          "bottom": 330.671875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 378.46875,
+          "bottom": 422.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 443.46875,
+          "bottom": 487.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 443.46875,
+          "bottom": 487.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 470.46875,
+          "bottom": 514.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 470.46875,
+          "bottom": 514.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 63.1875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 182,
+          "bottom": 226,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Revenir à l’accueil",
+          "top": 435.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Voir la collection",
+          "top": 435.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 443.28125,
+          "bottom": 487.28125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 280.28125,
+          "bottom": 330.671875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 378.46875,
+          "bottom": 422.46875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Confidentialité",
+          "top": 443.46875,
+          "bottom": 487.46875,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "route": "/ar/404/",
+      "steps": [
+        {
+          "tag": "A",
+          "label": "الرئيسية",
+          "top": 182,
+          "bottom": 226,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ارجعوا للرئيسية",
+          "top": 435.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا المجموعة",
+          "top": 435.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ابعثوا ميساج على إنستغرام",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 280.046875,
+          "bottom": 330.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 381.484375,
+          "bottom": 425.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الخصوصية",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الكوكيز",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الشروط العامة",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الترجيع واسترجاع الفلوس",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "امشيو للمحتوى",
+          "top": 12,
+          "bottom": 67.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Français",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "SUMMARY",
+          "label": "",
+          "top": 23.5,
+          "bottom": 67.5,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الرئيسية",
+          "top": 182,
+          "bottom": 226,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ارجعوا للرئيسية",
+          "top": 435.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شوفوا المجموعة",
+          "top": 435.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "ابعثوا ميساج على إنستغرام",
+          "top": 443.046875,
+          "bottom": 487.046875,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": 280.046875,
+          "bottom": 330.4375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "@haddar__bijoux",
+          "top": 381.484375,
+          "bottom": 425.484375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "الخصوصية",
+          "top": 443.484375,
+          "bottom": 487.484375,
+          "covered": false,
+          "outline": "solid"
+        }
+      ]
+    }
+  ],
+  "hero": [
+    {
+      "route": "/",
+      "width": 375,
+      "height": 667,
+      "rects": [
+        {
+          "top": 403.875,
+          "bottom": 451.875,
+          "left": 22,
+          "right": 353
+        },
+        {
+          "top": 461.875,
+          "bottom": 508.71875,
+          "left": 22,
+          "right": 353
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "rects": [
+        {
+          "top": 654.515625,
+          "bottom": 706.515625,
+          "left": 64.796875,
+          "right": 315.359375
+        },
+        {
+          "top": 654.515625,
+          "bottom": 706.515625,
+          "left": 327.359375,
+          "right": 505.578125
+        }
+      ]
+    },
+    {
+      "route": "/ar/",
+      "width": 375,
+      "height": 667,
+      "rects": [
+        {
+          "top": 394.515625,
+          "bottom": 442.515625,
+          "left": 22,
+          "right": 353
+        },
+        {
+          "top": 452.515625,
+          "bottom": 499.359375,
+          "left": 22,
+          "right": 353
+        }
+      ]
+    },
+    {
+      "route": "/ar/",
+      "width": 1440,
+      "height": 900,
+      "rects": [
+        {
+          "top": 660.625,
+          "bottom": 712.625,
+          "left": 1165.671875,
+          "right": 1375.203125
+        },
+        {
+          "top": 660.625,
+          "bottom": 712.625,
+          "left": 976.828125,
+          "right": 1153.671875
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "route": "/",
+      "count": 45
+    },
+    {
+      "route": "/ar/",
+      "count": 45
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "count": 20
+    },
+    {
+      "route": "/cookies/",
+      "count": 20
+    },
+    {
+      "route": "/conditions-generales/",
+      "count": 20
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "count": 20
+    },
+    {
+      "route": "/404/",
+      "count": 22
+    },
+    {
+      "route": "/ar/404/",
+      "count": 22
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "fr-375.png",
+    "fr-1440.png",
+    "ar-375.png",
+    "ar-1440.png"
+  ],
+  "targets": [
+    {
+      "route": "/",
+      "undersized": []
+    },
+    {
+      "route": "/ar/",
+      "undersized": []
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "undersized": []
+    },
+    {
+      "route": "/cookies/",
+      "undersized": []
+    },
+    {
+      "route": "/conditions-generales/",
+      "undersized": []
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "undersized": []
+    },
+    {
+      "route": "/404/",
+      "undersized": []
+    },
+    {
+      "route": "/ar/404/",
+      "undersized": []
+    }
+  ],
+  "statuses": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/ar/",
+      "status": 200
+    },
+    {
+      "route": "/politique-de-confidentialite/",
+      "status": 200
+    },
+    {
+      "route": "/cookies/",
+      "status": 200
+    },
+    {
+      "route": "/conditions-generales/",
+      "status": 200
+    },
+    {
+      "route": "/retours-et-remboursement/",
+      "status": 200
+    },
+    {
+      "route": "/404/",
+      "status": 404
+    },
+    {
+      "route": "/ar/404/",
+      "status": 404
+    },
+    {
+      "route": "/missing-page/",
+      "status": 404
+    },
+    {
+      "route": "/ar/missing-page/",
+      "status": 404
+    }
+  ]
+}

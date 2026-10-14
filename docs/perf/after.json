@@ -1,0 +1,3258 @@
+[
+  {
+    "route": "/politique-de-confidentialite/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1208.88735,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47331,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "EA9CC42D003A843A3DF27BAA7439DC27": {
+              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
+              "navStartToEndTime": 47,
+              "transferSize": 3676,
+              "isLongest": true,
+              "children": {
+                "24400.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 50,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "24400.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 109,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "24400.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 54,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "24400.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 100,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 109
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2188,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/cookies/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1208.3832,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47153,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "6C6B9A56CF12E7C102AAFE3B044FB3C3": {
+              "url": "http://127.0.0.1:4321/cookies/",
+              "navStartToEndTime": 34,
+              "transferSize": 3498,
+              "isLongest": true,
+              "children": {
+                "27352.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 39,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "27352.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 79,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "27352.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 43,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "27352.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 78,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 79
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2240.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/conditions-generales/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1208.3864999999998,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 54912,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 10 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ],
+          "overallSavingsMs": 5
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "3ABBF6685C0F954404E2F106342D7A28": {
+              "url": "http://127.0.0.1:4321/conditions-generales/",
+              "navStartToEndTime": 55,
+              "transferSize": 3636,
+              "isLongest": true,
+              "children": {
+                "3172.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 59,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "3172.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 104,
+                      "transferSize": 11702,
+                      "children": {}
+                    },
+                    "3172.16": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 105,
+                      "transferSize": 7621,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "3172.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 63,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "3172.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 98,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 105
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2096,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/retours-et-remboursement/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1208.5914,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47173,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "B941AB1FE005AD33C53E563484C5E8D7": {
+              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
+              "navStartToEndTime": 40,
+              "transferSize": 3518,
+              "isLongest": true,
+              "children": {
+                "29108.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 45,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "29108.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 92,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "29108.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 48,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "29108.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 83,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 92
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 303
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 153
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1600,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/404/",
+    "profile": "mobile",
+    "scores": {
+      "performance": null,
+      "accessibility": null,
+      "best-practices": null,
+      "seo": null
+    },
+    "lcp": null,
+    "cls": null,
+    "tbt": null,
+    "weight": null,
+    "jsBytes": 0,
+    "runtimeError": {
+      "code": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    },
+    "warnings": [
+      "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    ],
+    "failed": [],
+    "environment": {
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2192.5,
+      "credits": {}
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/404/",
+    "profile": "mobile",
+    "scores": {
+      "performance": null,
+      "accessibility": null,
+      "best-practices": null,
+      "seo": null
+    },
+    "lcp": null,
+    "cls": null,
+    "tbt": null,
+    "weight": null,
+    "jsBytes": 0,
+    "runtimeError": {
+      "code": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    },
+    "warnings": [
+      "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    ],
+    "failed": [],
+    "environment": {
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1744.5,
+      "credits": {}
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/politique-de-confidentialite/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 290.36845,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47331,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 83
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 89
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-2-MAIN",
+                "path": "1,HTML,1,BODY,2,MAIN",
+                "selector": "body.fr > main#main",
+                "boundingRect": {
+                  "top": 116,
+                  "bottom": 1301,
+                  "left": 178,
+                  "right": 1158,
+                  "width": 980,
+                  "height": 1185
+                },
+                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
+                "nodeLabel": "Accueil\n/\nPolitique de confidentialité\nPolitique de confidentialité\n\nDocument à…"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 9
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-3-SMALL",
+                "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,1,DL,3,DD,0,SPAN,0,SMALL",
+                "selector": "dl > dd > span.fact > small.confirmation",
+                "boundingRect": {
+                  "top": 799,
+                  "bottom": 815,
+                  "left": 544,
+                  "right": 611,
+                  "width": 67,
+                  "height": 16
+                },
+                "snippet": "<small class=\"confirmation\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "[CONFIRMER]"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 7
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 89,
+            "maxChildren": 9,
+            "maxDepth": 7
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "3B8F49B1FB756D21A319ABD8B3A7572C": {
+              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
+              "navStartToEndTime": 23,
+              "transferSize": 3676,
+              "isLongest": true,
+              "children": {
+                "33028.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "33028.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 120,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "33028.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 25,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "33028.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 94,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 120
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 83
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2293,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/cookies/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 309.22585000000004,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47153,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 90
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 50
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 67
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-2-MAIN",
+                "path": "1,HTML,1,BODY,2,MAIN",
+                "selector": "body.fr > main#main",
+                "boundingRect": {
+                  "top": 116,
+                  "bottom": 1022,
+                  "left": 178,
+                  "right": 1158,
+                  "width": 980,
+                  "height": 906
+                },
+                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
+                "nodeLabel": "Accueil\n/\nCookies et stockage\nCookies et stockage\n\nDocument à compléter et à fa…"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 8
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-3-rect",
+                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,1,A,0,svg,0,rect",
+                "selector": "div.header-actions > a.instagram-link > svg.icon > rect",
+                "boundingRect": {
+                  "top": 50,
+                  "bottom": 65,
+                  "left": 1245,
+                  "right": 1259,
+                  "width": 14,
+                  "height": 14
+                },
+                "snippet": "<rect x=\"3.5\" y=\"3.5\" width=\"17\" height=\"17\" rx=\"4\">",
+                "nodeLabel": "div.header-actions > a.instagram-link > svg.icon > rect"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 6
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 67,
+            "maxChildren": 8,
+            "maxDepth": 6
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "22EF5B896B557214C281314DD838B716": {
+              "url": "http://127.0.0.1:4321/cookies/",
+              "navStartToEndTime": 29,
+              "transferSize": 3498,
+              "isLongest": true,
+              "children": {
+                "31972.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 36,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "31972.13": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 139,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "31972.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 46,
+                  "transferSize": 5209,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 139
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 90
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 50
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2178,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/conditions-generales/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 330.52729999999997,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 54912,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 10 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 84
+            }
+          ],
+          "overallSavingsMs": 8
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 110
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-2-DL",
+                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DL",
+                "selector": "body.fr > main#main > section > dl",
+                "boundingRect": {
+                  "top": 431,
+                  "bottom": 599,
+                  "left": 238,
+                  "right": 1097,
+                  "width": 859,
+                  "height": 168
+                },
+                "snippet": "<dl>",
+                "nodeLabel": "Nom légal\nHaddar_Bijoux\nForme juridique\n[CONFIRMER]\nRNE\n[CONFIRMER]\nIdentifiant…"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 10
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-3-SMALL",
+                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DL,3,DD,0,SPAN,0,SMALL",
+                "selector": "dl > dd > span.fact > small.confirmation",
+                "boundingRect": {
+                  "top": 472,
+                  "bottom": 488,
+                  "left": 544,
+                  "right": 611,
+                  "width": 67,
+                  "height": 16
+                },
+                "snippet": "<small class=\"confirmation\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "[CONFIRMER]"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 7
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 110,
+            "maxChildren": 10,
+            "maxDepth": 7
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "A0310B30AE9615F88020856A17868EEE": {
+              "url": "http://127.0.0.1:4321/conditions-generales/",
+              "navStartToEndTime": 18,
+              "transferSize": 3636,
+              "isLongest": true,
+              "children": {
+                "28308.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "28308.13": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 102,
+                      "transferSize": 11702,
+                      "children": {}
+                    },
+                    "28308.15": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 102,
+                      "transferSize": 7621,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "28308.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 21,
+                  "transferSize": 5209,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 102
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 84
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2440.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/retours-et-remboursement/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 287.64894999999996,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 47173,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 83
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "214DCD2DDD0934A852736F95D76FA9CA": {
+              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
+              "navStartToEndTime": 19,
+              "transferSize": 3518,
+              "isLongest": true,
+              "children": {
+                "21988.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 1817,
+                  "children": {
+                    "21988.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 57,
+                      "transferSize": 11702,
+                      "children": {}
+                    }
+                  }
+                },
+                "21988.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+                  "navStartToEndTime": 25,
+                  "transferSize": 5209,
+                  "children": {}
+                },
+                "21988.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 58,
+                  "transferSize": 1494,
+                  "isLongest": true,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 58
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.BOR4oTCO.css",
+              "totalBytes": 5209,
+              "wastedMs": 83
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3440.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/404/",
+    "profile": "desktop",
+    "scores": {
+      "performance": null,
+      "accessibility": null,
+      "best-practices": null,
+      "seo": null
+    },
+    "lcp": null,
+    "cls": null,
+    "tbt": null,
+    "weight": null,
+    "jsBytes": 0,
+    "runtimeError": {
+      "code": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    },
+    "warnings": [
+      "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    ],
+    "failed": [],
+    "environment": {
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3002.5,
+      "credits": {}
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/404/",
+    "profile": "desktop",
+    "scores": {
+      "performance": null,
+      "accessibility": null,
+      "best-practices": null,
+      "seo": null
+    },
+    "lcp": null,
+    "cls": null,
+    "tbt": null,
+    "weight": null,
+    "jsBytes": 0,
+    "runtimeError": {
+      "code": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    },
+    "warnings": [
+      "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+    ],
+    "failed": [],
+    "environment": {
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3263,
+      "credits": {}
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1223.36925,
+    "cls": 0.00001042586616674374,
+    "tbt": 0,
+    "weight": 50248,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 308
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 158
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "4E91DA9A93BE21B50BB4BCAD26840988": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 86,
+              "transferSize": 6546,
+              "isLongest": true,
+              "children": {
+                "24820.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 97,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "24820.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 148,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "24820.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+                  "navStartToEndTime": 99,
+                  "transferSize": 5256,
+                  "children": {}
+                },
+                "24820.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 99,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 148
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 308
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817,
+              "wastedMs": 158
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3348,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1820.0004,
+    "cls": 0.001013762123631047,
+    "tbt": 0,
+    "weight": 146944,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.98,
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.8 s"
+      },
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1836,
+              "wastedMs": 160
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 310
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 359
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-4-g",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
+                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
+                "boundingRect": {
+                  "top": 516,
+                  "bottom": 829,
+                  "left": 72,
+                  "right": 395,
+                  "width": 323,
+                  "height": 313
+                },
+                "snippet": "<g transform=\"rotate(-32 200 200)\">",
+                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 19
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-5-ellipse",
+                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,2,svg,0,g,0,ellipse",
+                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
+                "boundingRect": {
+                  "top": 1299,
+                  "bottom": 1328,
+                  "left": 262,
+                  "right": 287,
+                  "width": 25,
+                  "height": 30
+                },
+                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
+                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 9
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 359,
+            "maxChildren": 19,
+            "maxDepth": 9
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "3FE07DE308DBAFAE8E8046C444A35BED": {
+              "url": "http://127.0.0.1:4321/ar/",
+              "navStartToEndTime": 14,
+              "transferSize": 6771,
+              "isLongest": true,
+              "children": {
+                "33720.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 1836,
+                  "isLongest": true,
+                  "children": {
+                    "33720.13": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 117,
+                      "transferSize": 10165,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "33720.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 5256,
+                  "children": {}
+                },
+                "33720.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 55,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 117
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1836,
+              "wastedMs": 160
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 310
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3235.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 291.35695,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 50248,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 84
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "56CF4F0ECB6756FEF7F1756B79AFD7AC": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 35,
+              "transferSize": 6546,
+              "isLongest": true,
+              "children": {
+                "31680.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 39,
+                  "transferSize": 1817,
+                  "isLongest": true,
+                  "children": {
+                    "31680.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 56,
+                      "transferSize": 11702,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "31680.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+                  "navStartToEndTime": 39,
+                  "transferSize": 5256,
+                  "children": {}
+                },
+                "31680.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 52,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 56
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1817
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 84
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3413,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 446.46,
+    "cls": 0.0002152317969738401,
+    "tbt": 0,
+    "weight": 146944,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 83
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 359
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-4-g",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
+                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
+                "boundingRect": {
+                  "top": 208,
+                  "bottom": 778,
+                  "left": 95,
+                  "right": 683,
+                  "width": 588,
+                  "height": 570
+                },
+                "snippet": "<g transform=\"rotate(-32 200 200)\">",
+                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 19
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-5-ellipse",
+                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,2,svg,0,g,0,ellipse",
+                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
+                "boundingRect": {
+                  "top": 1353,
+                  "bottom": 1409,
+                  "left": 1036,
+                  "right": 1083,
+                  "width": 47,
+                  "height": 55
+                },
+                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
+                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 9
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 359,
+            "maxChildren": 19,
+            "maxDepth": 9
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "C3C179D8D32554203546D93A15000771": {
+              "url": "http://127.0.0.1:4321/ar/",
+              "navStartToEndTime": 33,
+              "transferSize": 6771,
+              "isLongest": true,
+              "children": {
+                "24740.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+                  "navStartToEndTime": 37,
+                  "transferSize": 1836,
+                  "isLongest": true,
+                  "children": {
+                    "24740.13": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 123,
+                      "transferSize": 10165,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "24740.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+                  "navStartToEndTime": 35,
+                  "transferSize": 5256,
+                  "children": {}
+                },
+                "24740.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 59,
+                  "transferSize": 1494,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 123
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1836
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.6W-eD26K.css",
+              "totalBytes": 5256,
+              "wastedMs": 83
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3049,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  }
+]

@@ -1,0 +1,11 @@
+import {createServer} from 'node:http';import {readFile,stat} from 'node:fs/promises';import path from 'node:path';import {gzipSync} from 'node:zlib';
+const root=path.resolve('dist');const port=Number(process.env.PORT||4321);
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.webmanifest':'application/manifest+json','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.woff2':'font/woff2','.xml':'application/xml','.txt':'text/plain; charset=utf-8','.avif':'image/avif','.webp':'image/webp','.jpg':'image/jpeg'};
+const definitions=(await readFile(path.join(root,'_headers'),'utf8')).split('\n');const headers={};let global=false;for(const line of definitions){if(!line.startsWith(' ')){global=line.trim()==='/*';continue;}if(global){const i=line.indexOf(':');if(i>0)headers[line.slice(0,i).trim()]=line.slice(i+1).trim();}}
+createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');let target=path.resolve(root,'.'+decodeURIComponent(url.pathname));if(!target.startsWith(root+path.sep)&&target!==root){res.writeHead(403);res.end();return;}let status=200;const explicit=/\/(?:ar\/)?404\/?$/.test(url.pathname);
+try{if((await stat(target)).isDirectory())target=path.join(target,'index.html');await stat(target);}catch{status=404;target=path.join(root,url.pathname.startsWith('/ar/')?'ar/404/index.html':'404.html');}
+if(explicit)status=404;const bytes=await readFile(target);const ext=path.extname(target);const responseHeaders={...headers,'Content-Type':mime[ext]||'application/octet-stream'};if(status===404)responseHeaders['X-Robots-Tag']='noindex';
+if(target.includes(path.sep+'_astro'+path.sep)||target.includes(path.sep+'fonts'+path.sep))responseHeaders['Cache-Control']='public, max-age=31536000, immutable';
+let body=bytes;if(/html|css|javascript|json|svg|xml/.test(responseHeaders['Content-Type'])&&req.headers['accept-encoding']?.includes('gzip')){body=gzipSync(bytes);responseHeaders['Content-Encoding']='gzip';responseHeaders.Vary='Accept-Encoding';}
+responseHeaders['Content-Length']=body.length;res.writeHead(status,responseHeaders);res.end(req.method==='HEAD'?undefined:body);
+}catch{res.writeHead(500);res.end('Preview server error');}}).listen(port,'127.0.0.1',()=>console.log('Local preview: http://127.0.0.1:'+port));

@@ -1,0 +1,5 @@
+---
+interface Props { text: string; }
+const {text}=Astro.props;
+---
+<span class="fact">{text.replace('[CONFIRMER]','').trim()} {text.includes('[CONFIRMER]') && <small class="confirmation" lang="fr" dir="ltr">[CONFIRMER]</small>}</span>
