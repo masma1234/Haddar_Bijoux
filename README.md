@@ -1,6 +1,6 @@
 # Haddar Bijoux
 
-A static Astro showcase in French and Tunisian derja. Contact, orders, payment and delivery discussion go through @haddar__bijoux. No checkout, account, analytics, cookie banner or form.
+A static Astro showcase in French and Tunisian derja. Contact, orders, payment and delivery discussion go through @haddar__bijoux. The studio is at Rue laadoul, Sfax 3000. No checkout, account, analytics, cookie banner or form.
 
 ## Local use
 

@@ -1,6 +1,7 @@
 import { business as b } from '../data/business';
 export interface LegalSection {title:string; paragraphs?:string[]; fields?:[string,string][];}
 export interface LegalDocument {slug:string; title:string; metaTitle:string; description:string; sections:LegalSection[];}
+const field=(label:string,value:string|null):[string,string][]=>value ? [[label,value]] : [];
 export const legalDocuments:LegalDocument[]=[
 {slug:'politique-de-confidentialite',title:'Politique de confidentialité',metaTitle:'Confidentialité | Haddar Bijoux',description:'Consultez les informations sur la confidentialité du site Haddar Bijoux, les liens vers Instagram et les éléments à confirmer avant publication.',sections:[
 {title:'Le fonctionnement du site',paragraphs:['Ce site présente des catégories de bijoux. Il ne propose ni compte, ni panier, ni formulaire de contact.','Le site ne dépose aucun cookie et n’utilise ni stockage local, ni stockage de session, ni outil de mesure d’audience.']},
@@ -25,7 +26,7 @@ export const legalDocuments:LegalDocument[]=[
 {slug:'retours-et-remboursement',title:'Retours et remboursement',metaTitle:'Retours et remboursement | Haddar Bijoux',description:'Consultez le délai de retour Haddar Bijoux, calculé depuis la date du paiement, et les modalités de remboursement restant à confirmer.',sections:[
 {title:'Délai de retour',paragraphs:[b.facts.returns.fr],fields:[['Point de départ et délai',b.returnWindow]]},
 {title:'Demander un retour',fields:[['Contact',b.returnContact]]},
-{title:'Conditions et frais',fields:[['État et conditions de retour',b.returnConditions],['Pièces personnalisées',b.personalizedExclusions],['Pièces assorties',b.matchingExclusions],['Frais de retour',b.returnShipping]]},
+{title:'Conditions et frais',fields:[['État et conditions de retour',b.returnConditions],...field('Pièces personnalisées',b.personalizedExclusions),...field('Pièces assorties',b.matchingExclusions),['Frais de retour',b.returnShipping]]},
 {title:'Remboursement et échange',fields:[['Méthode de remboursement',b.refundMethod],['Délai de remboursement',b.refundTiming],['Échange',b.exchangeTerms]]},
 {title:'Validation juridique',paragraphs:[b.returnLegalReview]}
 ]}

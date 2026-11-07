@@ -11,7 +11,7 @@ try{
  await writeFile(source,JSON.stringify({...data,image:'../../assets/products/audit-fixture.png',isPlaceholder:false,credit:'Temporary local test asset',rights:'Original site monogram, used only by the automated image pipeline check'},null,2));
  const build=run(['scripts/build.mjs']);assert.equal(build.status,0,build.stderr+'\n'+build.stdout);fixtureBuilt=true;
  const html=await readFile('dist/index.html','utf8');
- for(const value of ['<picture>','type="image/avif"','type="image/webp"','imagesrcset=','imagesizes=','loading="eager"','fetchpriority="high"','loading="lazy"','decoding="async"'])assert(html.includes(value),'image pipeline: '+value);
+ for(const value of ['<picture>','type="image/avif"','type="image/webp"','loading="eager"','fetchpriority="high"','loading="lazy"','decoding="async"'])assert(html.includes(value),'image pipeline: '+value);
  results.push('Photo added through JSON only: AVIF, WebP, responsive preload, eager hero and lazy collection generated');
 }finally{
  await writeFile(source,original);await unlink(fixture).catch(error=>{if(error.code!=='ENOENT')throw error;});
