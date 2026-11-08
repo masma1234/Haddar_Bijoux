@@ -6,7 +6,7 @@ assert(title&&title.length<60,route+': title length '+title.length);assert(!titl
 if(!route.includes('404'))assert(description.length>=120&&description.length<=155,route+': description length '+description.length);assert(!descriptions.has(description),'duplicate description');descriptions.add(description);
 assert.equal((html.match(/<h1\b/g)||[]).length,1,route+': exactly one H1');
 assert(html.includes('lang="'+(ar?'ar':'fr')+'"'));assert(html.includes('dir="'+(ar?'rtl':'ltr')+'"'));
-for(const required of ['<nav','<main','<footer','rel="canonical"','hreflang="fr"','hreflang="x-default"','og:image','twitter:card','href="https://ig.me/m/haddar__bijoux"'])assert(html.includes(required),route+': '+required);
+for(const required of ['<nav','<main','<footer','rel="canonical"','hreflang="fr"','hreflang="x-default"','og:image','twitter:card','href="https://ig.me/m/haddar_bijoux"'])assert(html.includes(required),route+': '+required);
 assert(!html.includes('\u2014'),route+': forbidden punctuation');
 const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));assert(schemas.length,route+': schema');
 if(home){const heading=decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();assert.equal(heading,'Haddar Bijoux');assert(!/\?{3,}/.test(html),'Text encoding corruption');assert.equal((html.match(/class="collection-card"/g)||[]).length,4);for(const id of ['collection','sur-mesure','commander'])assert(html.includes('id="'+id+'"'));}else assert(schemas.some(s=>s['@type']==='BreadcrumbList'));

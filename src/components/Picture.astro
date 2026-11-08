@@ -1,0 +1,12 @@
+---
+import type { SiteImage, Locale } from '../data/images';
+interface Props { image: SiteImage; locale: Locale; sizes: string; eager?: boolean; }
+const { image, locale, sizes, eager = false } = Astro.props;
+const srcset = (format: 'avif' | 'webp') => image.widths.map(w => `/incoming/${image.id}-${w}.${format} ${w}w`).join(', ');
+---
+<picture>
+  <source type="image/avif" srcset={srcset('avif')} sizes={sizes} />
+  <source type="image/webp" srcset={srcset('webp')} sizes={sizes} />
+  <img src={`/incoming/${image.id}.jpg`} alt={image.alt[locale]} width={image.width} height={image.height}
+    loading={eager ? 'eager' : 'lazy'} decoding={eager ? 'sync' : 'async'} fetchpriority={eager ? 'high' : undefined} />
+</picture>

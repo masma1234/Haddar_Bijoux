@@ -1,29 +1,38 @@
 # Haddar Bijoux design notes
 
+Rationale and reference review: `DESIGN-DECISIONS.md`. Image placements: `IMAGE-AUDIT.md`.
+
 ## Direction
 
-The redesign uses a restrained editorial layout with ivory and white as the dominant
-surfaces, fine hairlines, and gold only for small details, links, and primary actions.
-The six supplied images are framed as contained 3:4 editorial panels so square artwork
-is not cropped or stretched.
+A quiet, image-led vitrine. Ivory and white surfaces, 1px hairlines, and gold reserved for links, small labels and the primary button. Images keep their own shape. The square illustrations sit in square frames, and the owner photographs share a 4:5 frame. Nothing is letterboxed, stretched or cropped through a piece.
 
 ## Type and scale
 
-French uses self-hosted Italiana for display text and Jost for interface text. Arabic
-uses Amiri for display text and Tajawal for interface text. The hero type scales from
-56px to 107px, section headings from 45px to 85px, and body text remains between 13px
-and 18px. Spacing uses the existing fluid gutter and section scale.
+Italiana sets display text and the Latin brand name on both locales. Jost sets French text. On `/ar/`, Amiri sets Arabic headings (line height 1.35, no negative tracking) and Tajawal sets text. Sizes:
+- H1: 52px to 96px.
+- Section headings: 40px to 72px.
+- Body text: 16px to 17px.
+- Captions: 12px to 14px.
+
+All fonts are self-hosted.
 
 ## Tokens and controls
 
-Only the locked tokens in `AGENTS.md` are used. Buttons have a 1px corner radius,
-visible keyboard focus, and minimum 44px tap targets. There are no gradients, shadows,
-glows, or scroll animations. The mobile action bar disappears while Commander is in
-view and respects reduced motion.
+Only the locked tokens in `AGENTS.md` are used. Buttons have a 1px corner radius, visible 2px focus and at least 44px tap targets. There are no gradients, shadows, glows, eyebrow labels, or scroll or entrance animations. Hover motion is limited to a 1.035 image scale on collection cards and a 4px arrow shift. All transitions are off under `prefers-reduced-motion`.
 
 ## Responsive behavior
 
-The desktop layout uses two hero columns and four equal collection columns. Collection
-cards become a two-column grid on narrow screens. The hero stacks in the required order:
-title, description, both actions, then the image. The Sur mesure section stays a
-two-column layout when space permits and uses the separate matching-bracelets image.
+**Desktop** layout, from top to bottom:
+- Two hero columns.
+- A gallery of real pieces: one feature beside a 2x2 grid.
+- Four collection columns.
+- Two columns each for Sur mesure and Commander.
+
+**Below 1000px**, the gallery and collection use two columns, and the gallery feature becomes square.
+
+**Below 900px:**
+- The header is one 64px row with a menu icon.
+- The hero stacks title, text, both buttons, then the image (capped at 560px).
+- A sticky order bar appears once the hero buttons scroll away and hides over Commander.
+
+**Below 700px**, Sur mesure and Commander stack.

@@ -10,6 +10,7 @@ export const ar: Dictionary = {
   intro:'أساور، خراص وسلاسل. القطع كل على إنستغرام والطلبيات تتعمل في ميساج.',
   order:'اطلبوا على إنستغرام', browse:'شوفوا المجموعة',
   illustrationDisclaimer:'صور للتوضيح. القطع الحقيقية تلقاوها على إنستغرام.',
+  galleryTitle:'أساور بالخيط', galleryIntro:'قطع من Haddar Bijoux في الصور. باش تعرفوا إذا القطعة موجودة وقدّاش الثمن، ابعثولنا ميساج على إنستغرام.', galleryLink:'شوفوا القطع على إنستغرام',
   collectionEyebrow:'المجموعة', collectionTitle:'قطع تستاهل تتشاف', collectionIntro:'تلقاو القطع والجديد على إنستغرام.',
   collectionItems:[
     {title:'أساور',descriptor:'كلاسيك'},
@@ -32,7 +33,7 @@ export const ar: Dictionary = {
   contactText:'القطع والجديد كل على إنستغرام.',
   contactCta:'ابعثوا ميساج على إنستغرام', write:'ابعثوا ميساج على إنستغرام', contactNote:'',
   phone:'اتصلوا بـ Haddar Bijoux', whatsapp:'اكتبولنا على واتساب', directions:'شوفوا الطريق',
-  footerNote:'أساور، خراص وسلاسل.', legalHeading:'معلومات', legalLabels:['معلومات قانونية'],
+  footerNote:'أساور، خراص وسلاسل.', legalHeading:'معلومات', legalLabels:['الخصوصية','الكوكيز','الشروط العامة','الترجيع واسترجاع الفلوس'],
   legalLanguageNote:'الصفحات القانونية توّا بالفرنسية.', copyrightPending:'هوية المؤسسة مازالت باش تتأكد',
   draftNotice:'نسخة للمراجعة: المعلومات التجارية مازالت تستنى التأكيد.',
   breadcrumbLabel:'وينكم في الموقع', legalDraft:'الوثيقة تستنى التكميل والمراجعة قبل النشر.',

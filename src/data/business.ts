@@ -8,7 +8,7 @@ export const business = {
   returnWindow:'7 jours à compter de la date du paiement', returnConditions:'[CONFIRMER]',
   personalizedExclusions:null as string|null, matchingExclusions:null as string|null,
   returnShipping:'[CONFIRMER]', refundMethod:'[CONFIRMER]', refundTiming:'[CONFIRMER]',
-  returnContact:'Contacter @haddar__bijoux sur Instagram', exchangeTerms:'[CONFIRMER]', customizationOptions:'Personnalisation et bracelets assortis confirmés sur Instagram.',
+  returnContact:'Contacter @haddar_bijoux sur Instagram', exchangeTerms:'[CONFIRMER]', customizationOptions:'Personnalisation et bracelets assortis confirmés sur Instagram.',
   hallmarkDetails:null as string|null, material:'Or 18 carats',
   privacyContact:'[CONFIRMER]', hostingRetention:'[CONFIRMER]',
   privacyPolicy:'[CONFIRMER] Finalités, bases applicables, durées de conservation des échanges commerciaux, destinataires, transferts et modalités d’exercice des droits.',
@@ -26,5 +26,5 @@ export const business = {
     hallmark:{fr:'Les bijoux sont accompagnés d’un certificat de garantie.',ar:'القطع الكل معاها شهادة ضمان.'},
   },
 };
-export const draft={tradeName:'Haddar Bijoux',handle:'@haddar__bijoux',instagram:'https://www.instagram.com/haddar__bijoux/',dm:'https://ig.me/m/haddar__bijoux'};
+export const draft={tradeName:'Haddar Bijoux',handle:'@haddar_bijoux',instagram:'https://www.instagram.com/haddar_bijoux/',dm:'https://ig.me/m/haddar_bijoux'};
 export const confirmed=(value:unknown):value is string=>typeof value==='string'&&value.length>0&&!value.includes('[CONFIRMER]');

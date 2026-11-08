@@ -7,9 +7,9 @@
     ]
   },
   "ar": {
-    "css": "/fonts/ar-8ccf1c8635f9.css",
+    "css": "/fonts/ar-31b4680ab8be.css",
     "preload": [
-      "/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+      "/fonts/italiana-latin-400-5079c87a4e86.woff2",
       "/fonts/tajawal-arabic-400-6c9081fd00db.woff2"
     ]
   }

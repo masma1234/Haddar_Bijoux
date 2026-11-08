@@ -1,24 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from './Icon.astro';
+import Picture from './Picture.astro';
 import { dictionary, homePath, type Locale } from '../i18n';
 import { business, draft } from '../data/business';
-import { images, type EditorialImage } from '../data/images';
+import { images, gallery } from '../data/images';
 
 interface Props { locale: Locale; }
 const { locale } = Astro.props;
 const t = dictionary(locale);
 const instagram = draft.instagram;
-const imagePath = (asset: EditorialImage, format = 'jpg', width?: number) =>
-  `/incoming/${asset.id}${width ? `-${width}` : ''}.${format}`;
-const collection = [
-  { image: images.bracelets, title: t.collectionItems[0].title, descriptor: t.collectionItems[0].descriptor },
-  { image: images.personalized, title: t.collectionItems[1].title, descriptor: t.collectionItems[1].descriptor },
-  { image: images.earrings, title: t.collectionItems[2].title, descriptor: t.collectionItems[2].descriptor },
-  { image: images.necklaces, title: t.collectionItems[3].title, descriptor: t.collectionItems[3].descriptor },
-];
-const responsiveSources = (asset: EditorialImage, format: 'avif' | 'webp') =>
-  [480, 800, 1200].map(width => `${imagePath(asset, format, width)} ${width}w`).join(', ');
+const collection = [images.bracelets, images.personalized, images.earrings, images.necklaces]
+  .map((image, i) => ({ image, ...t.collectionItems[i] }));
+const [feature, ...details] = gallery;
 const schema = [{
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -31,41 +25,53 @@ const schema = [{
   <main id="main" tabindex="-1">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">{t.eyebrow}</p>
-        <h1 id="hero-title">{t.heroTitle}</h1>
+        <h1 id="hero-title"><span class="latin" lang="fr" dir="ltr">{t.heroTitle}</span></h1>
         <p class="hero-lead">{t.heroLine}</p>
         <p class="hero-intro">{t.intro}</p>
         <div class="hero-actions">
           <a class="button primary" href={draft.dm}>{t.order}<Icon /></a>
-          <a class="button secondary" href="#collection">{t.browse}<span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#collection">{t.browse}<Icon kind="down" /></a>
         </div>
       </div>
-      <figure class="editorial-frame hero-image">
-        <picture>
-          <source type="image/avif" srcset={responsiveSources(images.hero, 'avif')} sizes="(min-width: 900px) 46vw, 100vw" />
-          <source type="image/webp" srcset={responsiveSources(images.hero, 'webp')} sizes="(min-width: 900px) 46vw, 100vw" />
-          <img src={imagePath(images.hero)} alt={images.hero.alt[locale]} width="1200" height="1200" loading="eager" fetchpriority="high" decoding="sync" />
-        </picture>
+      <figure class="hero-media">
+        <div class="frame"><Picture image={images.hero} locale={locale} sizes="(min-width: 900px) min(44vw, 640px), calc(100vw - 40px)" eager /></div>
         <figcaption>{t.illustrationDisclaimer}</figcaption>
       </figure>
     </section>
 
-    <section id="collection" class="section collection-section wrap" aria-labelledby="collection-title">
-      <div class="section-intro">
-        <p class="eyebrow">{t.collectionEyebrow}</p>
-        <h2 id="collection-title">{t.collectionTitle}</h2>
-        <p>{t.collectionIntro}</p>
+    <section id="pieces" class="section gallery-section wrap" aria-labelledby="gallery-title">
+      <header class="section-head">
+        <div>
+          <h2 id="gallery-title">{t.galleryTitle}</h2>
+        </div>
+        <div class="section-aside">
+          <p>{t.galleryIntro}</p>
+          <a class="text-link" href={instagram}>{t.galleryLink}<Icon /></a>
+        </div>
+      </header>
+      <div class="gallery">
+        <figure class="tile tile-feature">
+          <div class="frame"><Picture image={feature} locale={locale} sizes="(min-width: 1000px) 46vw, calc(100vw - 40px)" /></div>
+          <figcaption>{feature.caption[locale]}</figcaption>
+        </figure>
+        {details.map(image => <figure class="tile">
+          <div class="frame"><Picture image={image} locale={locale} sizes="(min-width: 1000px) 22vw, 46vw" /></div>
+          <figcaption>{image.caption[locale]}</figcaption>
+        </figure>)}
       </div>
+    </section>
+
+    <section id="collection" class="section collection-section wrap" aria-labelledby="collection-title">
+      <header class="section-head">
+        <div>
+          <h2 id="collection-title">{t.collectionTitle}</h2>
+        </div>
+        <p class="section-aside">{t.collectionIntro}</p>
+      </header>
       <div class="collection-grid">
         {collection.map(item => <a class="collection-card" href={instagram}>
-          <span class="editorial-frame collection-image">
-            <picture>
-              <source type="image/avif" srcset={responsiveSources(item.image, 'avif')} sizes="(min-width: 1000px) 23vw, 48vw" />
-              <source type="image/webp" srcset={responsiveSources(item.image, 'webp')} sizes="(min-width: 1000px) 23vw, 48vw" />
-              <img src={imagePath(item.image)} alt={item.image.alt[locale]} width="1200" height="1200" loading="lazy" decoding="async" />
-            </picture>
-          </span>
-          <span class="card-copy"><strong>{item.title}</strong><span>{item.descriptor}</span></span>
+          <span class="frame"><Picture image={item.image} locale={locale} sizes="(min-width: 1000px) 22vw, 46vw" /></span>
+          <span class="card-copy"><strong>{item.title}</strong>{item.descriptor && <span>{item.descriptor}</span>}</span>
         </a>)}
       </div>
       <p class="illustration-disclaimer">{t.illustrationDisclaimer}</p>
@@ -74,7 +80,6 @@ const schema = [{
     <section id="sur-mesure" class="custom-section section" aria-labelledby="custom-title">
       <div class="custom-layout wrap">
         <div class="custom-copy">
-          <p class="eyebrow">{t.customEyebrow}</p>
           <h2 id="custom-title">{t.customTitle}</h2>
           <p>{t.customDescription}</p>
           <ol class="steps">
@@ -82,37 +87,43 @@ const schema = [{
           </ol>
           <a class="button secondary" href={draft.dm}>{t.customCta}<Icon /></a>
         </div>
-        <figure class="editorial-frame custom-image">
-          <picture>
-            <source type="image/avif" srcset={responsiveSources(images.matching, 'avif')} sizes="(min-width: 900px) 42vw, 100vw" />
-            <source type="image/webp" srcset={responsiveSources(images.matching, 'webp')} sizes="(min-width: 900px) 42vw, 100vw" />
-            <img src={imagePath(images.matching)} alt={images.matching.alt[locale]} width="1200" height="1200" loading="lazy" decoding="async" />
-          </picture>
+        <figure class="custom-media">
+          <div class="frame"><Picture image={images.matching} locale={locale} sizes="(min-width: 900px) 42vw, calc(100vw - 40px)" /></div>
+          <figcaption>{t.illustrationDisclaimer}</figcaption>
         </figure>
       </div>
     </section>
 
-    <section id="commander" class="contact-section section wrap" aria-labelledby="contact-title">
-      <p class="eyebrow">{t.contactEyebrow}</p>
-      <h2 id="contact-title">{t.contactTitle}</h2>
-      <p>{t.contactText}</p>
-      <a class="button primary" href={draft.dm}>{t.contactCta}<Icon /></a>
-      <p class="handle" dir="ltr">{draft.handle}</p>
-      <p class="contact-address">{business.address}</p>
+    <section id="commander" class="section contact-section wrap" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <h2 id="contact-title">{t.contactTitle}</h2>
+        <p>{t.contactText}</p>
+        <a class="button primary" href={draft.dm}>{t.contactCta}<Icon /></a>
+        <a class="handle" href={instagram} dir="ltr">{draft.handle}</a>
+        <p class="contact-address">{business.address}</p>
+      </div>
+      <figure class="contact-media">
+        <div class="frame"><Picture image={images.worn} locale={locale} sizes="(min-width: 900px) 38vw, calc(100vw - 40px)" /></div>
+        <figcaption>{images.worn.caption[locale]}</figcaption>
+      </figure>
     </section>
   </main>
   <div class="mobile-cta" hidden>
     <a href={draft.dm}>{t.contactCta}<Icon /></a>
   </div>
   <script>
+    // Mobile order bar: only once the hero buttons have scrolled away, and never over the Commander section.
     const bar = document.querySelector<HTMLElement>('.mobile-cta');
+    const hero = document.querySelector('.hero-actions');
     const contact = document.getElementById('commander');
-    if (bar && contact && 'IntersectionObserver' in window) {
+    if (bar && hero && contact && 'IntersectionObserver' in window) {
       document.body.classList.add('has-mobile-cta');
+      const seen = new Map<Element, boolean>([[hero, true], [contact, false]]);
       const observer = new IntersectionObserver(entries => {
-        bar.hidden = entries.some(entry => entry.isIntersecting);
-        document.body.classList.toggle('cta-visible', !bar.hidden);
-      }, { threshold: 0 });
+        for (const entry of entries) seen.set(entry.target, entry.isIntersecting);
+        bar.hidden = seen.get(hero)! || seen.get(contact)!;
+      });
+      observer.observe(hero);
       observer.observe(contact);
     }
   </script>

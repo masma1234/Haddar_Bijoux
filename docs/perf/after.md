@@ -4,20 +4,20 @@ Values are before to after. P/A/B/S means Performance / Accessibility / Best Pra
 
 | Route | Profile | P/A/B/S before to after | LCP ms | CLS | TBT ms | JS gzip bytes | Page transfer bytes |
 |---|---|---|---:|---:|---:|---:|---:|
-| / | mobile | 100/100/100/100 to 100/100/100/100 | 1214 to 1223 | 0.0000 to 0.0000 | 0 to 0 | 491 to 491 | 41824 to 50248 |
-| /ar/ | mobile | 97/100/100/100 to 100/100/100/100 | 1810 to 1820 | 0.0010 to 0.0010 | 163 to 0 | 491 to 491 | 138522 to 146944 |
-| /politique-de-confidentialite/ | mobile | 100/100/100/100 to 100/100/100/100 | 1208 to 1209 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38966 to 47331 |
-| /cookies/ | mobile | 100/100/100/100 to 100/100/100/100 | 1207 to 1208 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38787 to 47153 |
-| /conditions-generales/ | mobile | 100/100/100/100 to 100/100/100/100 | 1211 to 1208 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 45524 to 54912 |
-| /retours-et-remboursement/ | mobile | 100/100/100/100 to 100/100/100/100 | 1209 to 1209 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38808 to 47173 |
+| / | mobile | 100/100/100/100 to 100/100/100/100 | 1661 to 1663 | 0.0000 to 0.0000 | 0 to 0 | 451 to 451 | 165360 to 159835 |
+| /ar/ | mobile | 99/100/100/100 to 98/100/100/100 | 2262 to 2274 | 0.0000 to 0.0000 | 0 to 0 | 451 to 451 | 262090 to 260448 |
+| /politique-de-confidentialite/ | mobile | 100/100/100/100 to 100/100/100/100 | 1208 to 1209 | 0.0000 to 0.0000 | 0 to 28 | 0 to 0 | 38966 to 46500 |
+| /cookies/ | mobile | 100/100/100/100 to 100/100/100/100 | 1207 to 1214 | 0.0000 to 0.0000 | 0 to 11 | 0 to 0 | 38787 to 46278 |
+| /conditions-generales/ | mobile | 100/100/100/100 to 100/100/100/100 | 1211 to 1218 | 0.0000 to 0.0000 | 0 to 16 | 0 to 0 | 45524 to 46408 |
+| /retours-et-remboursement/ | mobile | 100/100/100/100 to 100/100/100/100 | 1209 to 1219 | 0.0000 to 0.0000 | 0 to 65 | 0 to 0 | 38808 to 46284 |
 | /404/ | mobile | N/A/N/A/N/A/N/A to N/A/N/A/N/A/N/A | N/A to N/A | N/A to N/A | N/A to N/A | 0 to 0 | N/A to N/A |
 | /ar/404/ | mobile | N/A/N/A/N/A/N/A to N/A/N/A/N/A/N/A | N/A to N/A | N/A to N/A | N/A to N/A | 0 to 0 | N/A to N/A |
-| / | desktop | 100/100/100/100 to 100/100/100/100 | 296 to 291 | 0.0000 to 0.0000 | 0 to 0 | 491 to 491 | 41824 to 50248 |
-| /ar/ | desktop | 100/100/100/100 to 100/100/100/100 | 407 to 446 | 0.0002 to 0.0002 | 13 to 0 | 491 to 491 | 138522 to 146944 |
-| /politique-de-confidentialite/ | desktop | 100/100/100/100 to 100/100/100/100 | 293 to 290 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38966 to 47331 |
-| /cookies/ | desktop | 100/100/100/100 to 100/100/100/100 | 291 to 309 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38787 to 47153 |
-| /conditions-generales/ | desktop | 100/100/100/100 to 100/100/100/100 | 292 to 331 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 45524 to 54912 |
-| /retours-et-remboursement/ | desktop | 100/100/100/100 to 100/100/100/100 | 293 to 288 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38808 to 47173 |
+| / | desktop | 100/100/100/100 to 100/100/100/100 | 370 to 378 | 0.0000 to 0.0000 | 0 to 0 | 451 to 451 | 165360 to 217962 |
+| /ar/ | desktop | 100/100/100/100 to 100/100/100/100 | 512 to 547 | 0.0002 to 0.0004 | 0 to 0 | 451 to 451 | 262090 to 318575 |
+| /politique-de-confidentialite/ | desktop | 100/100/100/100 to 100/100/100/100 | 293 to 302 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38966 to 46500 |
+| /cookies/ | desktop | 100/100/100/100 to 100/100/100/100 | 291 to 300 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38787 to 46278 |
+| /conditions-generales/ | desktop | 100/100/100/100 to 100/100/100/100 | 292 to 299 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 45524 to 46408 |
+| /retours-et-remboursement/ | desktop | 100/100/100/100 to 100/100/100/100 | 293 to 298 | 0.0000 to 0.0000 | 0 to 0 | 0 to 0 | 38808 to 46284 |
 | /404/ | desktop | N/A/N/A/N/A/N/A to N/A/N/A/N/A/N/A | N/A to N/A | N/A to N/A | N/A to N/A | 0 to 0 | N/A to N/A |
 | /ar/404/ | desktop | N/A/N/A/N/A/N/A to N/A/N/A/N/A/N/A | N/A to N/A | N/A to N/A | N/A to N/A | 0 to 0 | N/A to N/A |
 
@@ -25,7 +25,7 @@ Values are before to after. P/A/B/S means Performance / Accessibility / Best Pra
 
 - Final numerical target misses on successful documents: 0. All failures, if any: [].
 - HTTP 404 pages intentionally return 404 and noindex. Lighthouse rejects them before scoring. Their N/A entries are not passes. Separate browser, axe, privacy and routing reports cover them.
-- Both homepages contain the same small executable inline script in both phases: 491 gzip bytes. External JavaScript transfer is zero; inline JavaScript travels inside HTML. JSON-LD is data, not executable application code. CSS across all bundles and locale font stylesheets totals 5056 gzip bytes.
+- Both homepages contain the same small executable inline script in both phases: 451 gzip bytes. External JavaScript transfer is zero; inline JavaScript travels inside HTML. JSON-LD is data, not executable application code. CSS across all bundles and locale font stylesheets totals 5148 gzip bytes.
 - Corrections included pale-gold text contrast, accessible labels, minimum touch sizes, Windows-safe security-header parsing, and responsive hero-photo preloads for future real photos. A valid strict CSP adds header transfer overhead, explaining most page-weight growth.
 - Timing changes include measurement noise. The original mobile baseline overlapped the end of the type checker; final Lighthouse measurements ran without other audit jobs. Do not attribute the entire Arabic TBT change to the small source edits.
 - Lighthouse still flags optional opportunities around render-blocking local styles/fonts, dependency chains and layout work. The numerical targets pass; these diagnostics remain in the raw reports.

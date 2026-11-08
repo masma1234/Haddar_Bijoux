@@ -28,5 +28,13 @@ for (const [file] of expected) {
 }
 
 assert.equal((html.match(/class="collection-card"/g) || []).length, 4);
+
+// Owner photographs of real pieces: five gallery tiles plus the worn shot in Commander, on both locales.
+const photos = ['cordons-trio', 'cordon-cadenas', 'cordon-ananas', 'cordon-poisson', 'cordon-khomsa', 'cordon-coeur-porte'];
+for (const id of photos) for (const [name, page] of [['French', html], ['Arabic', arabic]]) {
+  assert(page.includes(`/incoming/${id}-480.avif`), `${name} gallery missing ${id}`);
+  assert(page.includes(`/incoming/${id}.jpg`), `${name} JPG fallback missing ${id}`);
+}
+assert.equal((html.match(/class="tile/g) || []).length, 5, 'gallery tile count');
 assert(html.includes('/incoming/bracelets-assortis.jpg'));
-console.log('Image contract passed: six 1200x1200 sources and both locale mappings verified.');
+console.log('Image contract passed: six 1200x1200 illustrations, six owner photographs, both locales.');

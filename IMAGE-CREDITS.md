@@ -15,3 +15,14 @@ photographs of available inventory.
 
 The original JPG files remain unchanged. Responsive AVIF and WebP derivatives are
 generated locally from these files and retain the same mapping.
+
+## Owner photographs
+
+On 8 November 2026 the owner confirmed that these files are photographs of real Haddar Bijoux pieces, supplied for the site. No photographer credit was given, and none is invented. Details: `IMAGE-AUDIT.md`.
+
+| File | Placement |
+|---|---|
+| `fruit.jpeg` | Gallery feature |
+| `lock.jpeg`, `ananas.jpeg`, `houta_zoom.jpeg`, `khomsa.jpeg` | Gallery |
+| `coeur_yed.jpeg` (top panel) | Commander |
+| `houta.jpeg`, `mais.jpeg`, `fruit2.jpeg` | Not used (duplicates) |

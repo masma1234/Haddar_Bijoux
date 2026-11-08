@@ -1,970 +1,5 @@
 [
   {
-    "route": "/",
-    "profile": "mobile",
-    "scores": {
-      "performance": 100,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 100
-    },
-    "lcp": 1213.91595,
-    "cls": 0.00001042586616674374,
-    "tbt": 0,
-    "weight": 41824,
-    "jsBytes": 0,
-    "runtimeError": null,
-    "warnings": [],
-    "failed": [
-      {
-        "id": "label-content-name-mismatch",
-        "score": 0,
-        "title": "Elements with visible text labels do not have matching accessible names.",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "node",
-              "valueType": "node",
-              "subItemsHeading": {
-                "key": "relatedNode",
-                "valueType": "node"
-              },
-              "label": "Failing Elements"
-            }
-          ],
-          "items": [
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
-                "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 22,
-                  "right": 127,
-                  "width": 105,
-                  "height": 43
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1264,
-                  "bottom": 1571,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets\">",
-                "nodeLabel": "01\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-2-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1662,
-                  "bottom": 1969,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets personnalisés\">",
-                "nodeLabel": "02\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-3-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,2,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2060,
-                  "bottom": 2366,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets assortis\">",
-                "nodeLabel": "03\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-4-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,3,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2457,
-                  "bottom": 2764,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Boucles d’oreilles\">",
-                "nodeLabel": "04\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-5-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,4,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2855,
-                  "bottom": 3162,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Colliers\">",
-                "nodeLabel": "05\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-6-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,5,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 3253,
-                  "bottom": 3559,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Toutes les pièces\">",
-                "nodeLabel": "06\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "impact": "serious",
-            "tags": [
-              "cat.semantics",
-              "wcag21a",
-              "wcag253",
-              "EN-301-549",
-              "EN-9.2.5.3",
-              "RGAAv4",
-              "RGAA-6.1.5"
-            ]
-          }
-        }
-      },
-      {
-        "id": "render-blocking-resources",
-        "score": 0.5,
-        "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
-        "details": {
-          "type": "opportunity",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 155
-            },
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
-            }
-          ],
-          "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 352
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-4-g",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
-                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
-                "boundingRect": {
-                  "top": 588,
-                  "bottom": 901,
-                  "left": 17,
-                  "right": 340,
-                  "width": 323,
-                  "height": 313
-                },
-                "snippet": "<g transform=\"rotate(-32 200 200)\">",
-                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 19
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-5-ellipse",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,1,svg,0,g,0,ellipse",
-                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
-                "boundingRect": {
-                  "top": 1360,
-                  "bottom": 1390,
-                  "left": 262,
-                  "right": 287,
-                  "width": 25,
-                  "height": 30
-                },
-                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
-                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 352,
-            "maxChildren": 19,
-            "maxDepth": 9
-          }
-        }
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "score": 0,
-        "title": "Network dependency tree",
-        "details": {
-          "type": "network-tree",
-          "chains": {
-            "EE9C0C97A50C79F68A7F52A41E9AEFE3": {
-              "url": "http://127.0.0.1:4321/",
-              "navStartToEndTime": 40,
-              "transferSize": 5457,
-              "isLongest": true,
-              "children": {
-                "12940.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 55,
-                  "transferSize": 795,
-                  "isLongest": true,
-                  "children": {
-                    "12940.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 129,
-                      "transferSize": 10680,
-                      "isLongest": true,
-                      "children": {}
-                    }
-                  }
-                },
-                "12940.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 52,
-                  "transferSize": 4155,
-                  "children": {}
-                },
-                "12940.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 75,
-                  "transferSize": 421,
-                  "children": {}
-                }
-              }
-            }
-          },
-          "longestChain": {
-            "duration": 129
-          }
-        }
-      },
-      {
-        "id": "render-blocking-insight",
-        "score": 0,
-        "title": "Render blocking requests",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 155
-            },
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
-            }
-          ]
-        }
-      }
-    ],
-    "environment": {
-      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1923,
-      "credits": {
-        "axe-core": "4.14.0"
-      }
-    },
-    "config": {
-      "output": "json",
-      "maxWaitForFcp": 30000,
-      "maxWaitForLoad": 45000,
-      "pauseAfterFcpMs": 1000,
-      "pauseAfterLoadMs": 1000,
-      "networkQuietThresholdMs": 1000,
-      "cpuQuietThresholdMs": 1000,
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
-      "throttlingMethod": "simulate",
-      "screenEmulation": {
-        "mobile": true,
-        "width": 412,
-        "height": 823,
-        "deviceScaleFactor": 1.75,
-        "disabled": false
-      },
-      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "auditMode": false,
-      "gatherMode": false,
-      "clearStorageTypes": [
-        "file_systems",
-        "shader_cache",
-        "service_workers",
-        "cache_storage"
-      ],
-      "disableStorageReset": false,
-      "debugNavigation": false,
-      "channel": "node",
-      "usePassiveGathering": false,
-      "disableFullPageScreenshot": false,
-      "skipAboutBlank": false,
-      "blankPage": "about:blank",
-      "ignoreStatusCode": false,
-      "locale": "en-US",
-      "blockedUrlPatterns": null,
-      "additionalTraceCategories": null,
-      "extraHeaders": null,
-      "precomputedLanternData": null,
-      "onlyAudits": null,
-      "onlyCategories": [
-        "performance",
-        "accessibility",
-        "best-practices",
-        "seo"
-      ],
-      "skipAudits": null
-    },
-    "lighthouseVersion": "12.6.1"
-  },
-  {
-    "route": "/ar/",
-    "profile": "mobile",
-    "scores": {
-      "performance": 97,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 100
-    },
-    "lcp": 1809.7428,
-    "cls": 0.001013762123631047,
-    "tbt": 163.2572,
-    "weight": 138522,
-    "jsBytes": 0,
-    "runtimeError": null,
-    "warnings": [],
-    "failed": [
-      {
-        "id": "largest-contentful-paint",
-        "score": 0.98,
-        "title": "Largest Contentful Paint",
-        "displayValue": "1.8 s"
-      },
-      {
-        "id": "total-blocking-time",
-        "score": 0.93,
-        "title": "Total Blocking Time",
-        "displayValue": "160 ms"
-      },
-      {
-        "id": "max-potential-fid",
-        "score": 0.51,
-        "title": "Max Potential First Input Delay",
-        "displayValue": "250 ms"
-      },
-      {
-        "id": "label-content-name-mismatch",
-        "score": 0,
-        "title": "Elements with visible text labels do not have matching accessible names.",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "node",
-              "valueType": "node",
-              "subItemsHeading": {
-                "key": "relatedNode",
-                "valueType": "node"
-              },
-              "label": "Failing Elements"
-            }
-          ],
-          "items": [
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.ar > header.site-header > a.wordmark",
-                "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 265,
-                  "right": 390,
-                  "width": 125,
-                  "height": 43
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/ar/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.ar > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 24,
-                  "bottom": 68,
-                  "left": 130,
-                  "right": 184,
-                  "width": 54,
-                  "height": 44
-                },
-                "snippet": "<a class=\"language-link\" href=\"/\" lang=\"fr\" dir=\"ltr\" aria-label=\"شوفوا الموقع بالفرنسية\">",
-                "nodeLabel": "Français",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-2-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1203,
-                  "bottom": 1510,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور\">",
-                "nodeLabel": "01\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-3-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1601,
-                  "bottom": 1907,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور على ذوقكم\">",
-                "nodeLabel": "02\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-4-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,2,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1998,
-                  "bottom": 2305,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور متناسقة\">",
-                "nodeLabel": "03\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-5-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,3,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2396,
-                  "bottom": 2702,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : خراص\">",
-                "nodeLabel": "04\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-6-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,4,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2793,
-                  "bottom": 3100,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : سلاسل\">",
-                "nodeLabel": "05\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-7-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,5,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 3191,
-                  "bottom": 3498,
-                  "left": 22,
-                  "right": 390,
-                  "width": 368,
-                  "height": 307
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : القطع الكل\">",
-                "nodeLabel": "06\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "impact": "serious",
-            "tags": [
-              "cat.semantics",
-              "wcag21a",
-              "wcag253",
-              "EN-301-549",
-              "EN-9.2.5.3",
-              "RGAAv4",
-              "RGAA-6.1.5"
-            ]
-          }
-        }
-      },
-      {
-        "id": "render-blocking-resources",
-        "score": 0.5,
-        "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
-        "details": {
-          "type": "opportunity",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
-            },
-            {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 814,
-              "wastedMs": 155
-            }
-          ],
-          "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 353
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-4-g",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
-                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
-                "boundingRect": {
-                  "top": 516,
-                  "bottom": 829,
-                  "left": 72,
-                  "right": 395,
-                  "width": 323,
-                  "height": 313
-                },
-                "snippet": "<g transform=\"rotate(-32 200 200)\">",
-                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 19
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-5-ellipse",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,1,svg,0,g,0,ellipse",
-                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
-                "boundingRect": {
-                  "top": 1299,
-                  "bottom": 1328,
-                  "left": 262,
-                  "right": 287,
-                  "width": 25,
-                  "height": 30
-                },
-                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
-                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 353,
-            "maxChildren": 19,
-            "maxDepth": 9
-          }
-        }
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "score": 0,
-        "title": "Network dependency tree",
-        "details": {
-          "type": "network-tree",
-          "chains": {
-            "84B18BECB4209796B5734266C8ED4C37": {
-              "url": "http://127.0.0.1:4321/ar/",
-              "navStartToEndTime": 33,
-              "transferSize": 5684,
-              "isLongest": true,
-              "children": {
-                "11416.4": {
-                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-                  "navStartToEndTime": 39,
-                  "transferSize": 814,
-                  "isLongest": true,
-                  "children": {
-                    "11416.13": {
-                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 224,
-                      "transferSize": 9143,
-                      "isLongest": true,
-                      "children": {}
-                    }
-                  }
-                },
-                "11416.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 42,
-                  "transferSize": 4155,
-                  "children": {}
-                },
-                "11416.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 100,
-                  "transferSize": 421,
-                  "children": {}
-                }
-              }
-            }
-          },
-          "longestChain": {
-            "duration": 224
-          }
-        }
-      },
-      {
-        "id": "render-blocking-insight",
-        "score": 0,
-        "title": "Render blocking requests",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
-            },
-            {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 814,
-              "wastedMs": 155
-            }
-          ]
-        }
-      }
-    ],
-    "environment": {
-      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1562,
-      "credits": {
-        "axe-core": "4.14.0"
-      }
-    },
-    "config": {
-      "output": "json",
-      "maxWaitForFcp": 30000,
-      "maxWaitForLoad": 45000,
-      "pauseAfterFcpMs": 1000,
-      "pauseAfterLoadMs": 1000,
-      "networkQuietThresholdMs": 1000,
-      "cpuQuietThresholdMs": 1000,
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
-      "throttlingMethod": "simulate",
-      "screenEmulation": {
-        "mobile": true,
-        "width": 412,
-        "height": 823,
-        "deviceScaleFactor": 1.75,
-        "disabled": false
-      },
-      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "auditMode": false,
-      "gatherMode": false,
-      "clearStorageTypes": [
-        "file_systems",
-        "shader_cache",
-        "service_workers",
-        "cache_storage"
-      ],
-      "disableStorageReset": false,
-      "debugNavigation": false,
-      "channel": "node",
-      "usePassiveGathering": false,
-      "disableFullPageScreenshot": false,
-      "skipAboutBlank": false,
-      "blankPage": "about:blank",
-      "ignoreStatusCode": false,
-      "locale": "en-US",
-      "blockedUrlPatterns": null,
-      "additionalTraceCategories": null,
-      "extraHeaders": null,
-      "precomputedLanternData": null,
-      "onlyAudits": null,
-      "onlyCategories": [
-        "performance",
-        "accessibility",
-        "best-practices",
-        "seo"
-      ],
-      "skipAudits": null
-    },
-    "lighthouseVersion": "12.6.1"
-  },
-  {
     "route": "/politique-de-confidentialite/",
     "profile": "mobile",
     "scores": {
@@ -2362,959 +1397,6 @@
     "lighthouseVersion": "12.6.1"
   },
   {
-    "route": "/",
-    "profile": "desktop",
-    "scores": {
-      "performance": 100,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 100
-    },
-    "lcp": 295.86294999999996,
-    "cls": 0.00003264025245755739,
-    "tbt": 0,
-    "weight": 41824,
-    "jsBytes": 0,
-    "runtimeError": null,
-    "warnings": [],
-    "failed": [
-      {
-        "id": "label-content-name-mismatch",
-        "score": 0,
-        "title": "Elements with visible text labels do not have matching accessible names.",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "node",
-              "valueType": "node",
-              "subItemsHeading": {
-                "key": "relatedNode",
-                "valueType": "node"
-              },
-              "label": "Failing Elements"
-            }
-          ],
-          "items": [
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
-                "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 61,
-                  "right": 192,
-                  "width": 132,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.fr > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 1174,
-                  "right": 1218,
-                  "width": 44,
-                  "height": 44
-                },
-                "snippet": "<a class=\"language-link\" href=\"/ar/\" lang=\"ar\" dir=\"rtl\" aria-label=\"Voir le site en arabe tunisien\">",
-                "nodeLabel": "العربية",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-2-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1180,
-                  "bottom": 1660,
-                  "left": 61,
-                  "right": 743,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets\">",
-                "nodeLabel": "01\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-3-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1280,
-                  "bottom": 1750,
-                  "left": 804,
-                  "right": 1274,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets personnalisés\">",
-                "nodeLabel": "02\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-4-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,2,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1870,
-                  "bottom": 2351,
-                  "left": 61,
-                  "right": 743,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Bracelets assortis\">",
-                "nodeLabel": "03\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-5-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,3,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1970,
-                  "bottom": 2440,
-                  "left": 804,
-                  "right": 1274,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Boucles d’oreilles\">",
-                "nodeLabel": "04\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-6-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,4,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2560,
-                  "bottom": 3041,
-                  "left": 61,
-                  "right": 743,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Colliers\">",
-                "nodeLabel": "05\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-7-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,5,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2660,
-                  "bottom": 3130,
-                  "left": 804,
-                  "right": 1274,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"Voir sur Instagram : Toutes les pièces\">",
-                "nodeLabel": "06\nIllustration de présentation",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "impact": "serious",
-            "tags": [
-              "cat.semantics",
-              "wcag21a",
-              "wcag253",
-              "EN-301-549",
-              "EN-9.2.5.3",
-              "RGAAv4",
-              "RGAA-6.1.5"
-            ]
-          }
-        }
-      },
-      {
-        "id": "render-blocking-resources",
-        "score": 0.5,
-        "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
-        "details": {
-          "type": "opportunity",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 85
-            }
-          ],
-          "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 352
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-5-g",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
-                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
-                "boundingRect": {
-                  "top": 208,
-                  "bottom": 778,
-                  "left": 652,
-                  "right": 1240,
-                  "width": 588,
-                  "height": 570
-                },
-                "snippet": "<g transform=\"rotate(-32 200 200)\">",
-                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 19
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-6-ellipse",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,1,svg,0,g,0,ellipse",
-                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
-                "boundingRect": {
-                  "top": 1313,
-                  "bottom": 1368,
-                  "left": 505,
-                  "right": 552,
-                  "width": 47,
-                  "height": 55
-                },
-                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
-                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 352,
-            "maxChildren": 19,
-            "maxDepth": 9
-          }
-        }
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "score": 0,
-        "title": "Network dependency tree",
-        "details": {
-          "type": "network-tree",
-          "chains": {
-            "ABE3656C78BDAAACEF8CE87A10839035": {
-              "url": "http://127.0.0.1:4321/",
-              "navStartToEndTime": 32,
-              "transferSize": 5457,
-              "isLongest": true,
-              "children": {
-                "24344.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 64,
-                  "transferSize": 795,
-                  "isLongest": true,
-                  "children": {
-                    "24344.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 177,
-                      "transferSize": 10680,
-                      "isLongest": true,
-                      "children": {}
-                    }
-                  }
-                },
-                "24344.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 67,
-                  "transferSize": 4155,
-                  "children": {}
-                },
-                "24344.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 169,
-                  "transferSize": 421,
-                  "children": {}
-                }
-              }
-            }
-          },
-          "longestChain": {
-            "duration": 177
-          }
-        }
-      },
-      {
-        "id": "render-blocking-insight",
-        "score": 0,
-        "title": "Render blocking requests",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 85
-            },
-            {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795
-            }
-          ]
-        }
-      }
-    ],
-    "environment": {
-      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1704,
-      "credits": {
-        "axe-core": "4.14.0"
-      }
-    },
-    "config": {
-      "output": "json",
-      "maxWaitForFcp": 30000,
-      "maxWaitForLoad": 45000,
-      "pauseAfterFcpMs": 1000,
-      "pauseAfterLoadMs": 1000,
-      "networkQuietThresholdMs": 1000,
-      "cpuQuietThresholdMs": 1000,
-      "formFactor": "desktop",
-      "throttling": {
-        "rttMs": 40,
-        "throughputKbps": 10240,
-        "requestLatencyMs": 0,
-        "downloadThroughputKbps": 0,
-        "uploadThroughputKbps": 0,
-        "cpuSlowdownMultiplier": 1
-      },
-      "throttlingMethod": "simulate",
-      "screenEmulation": {
-        "mobile": false,
-        "width": 1350,
-        "height": 940,
-        "deviceScaleFactor": 1,
-        "disabled": false
-      },
-      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "auditMode": false,
-      "gatherMode": false,
-      "clearStorageTypes": [
-        "file_systems",
-        "shader_cache",
-        "service_workers",
-        "cache_storage"
-      ],
-      "disableStorageReset": false,
-      "debugNavigation": false,
-      "channel": "node",
-      "usePassiveGathering": false,
-      "disableFullPageScreenshot": false,
-      "skipAboutBlank": false,
-      "blankPage": "about:blank",
-      "ignoreStatusCode": false,
-      "locale": "en-US",
-      "blockedUrlPatterns": null,
-      "additionalTraceCategories": null,
-      "extraHeaders": null,
-      "precomputedLanternData": null,
-      "onlyAudits": null,
-      "onlyCategories": [
-        "performance",
-        "accessibility",
-        "best-practices",
-        "seo"
-      ],
-      "skipAudits": null
-    },
-    "lighthouseVersion": "12.6.1"
-  },
-  {
-    "route": "/ar/",
-    "profile": "desktop",
-    "scores": {
-      "performance": 100,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 100
-    },
-    "lcp": 406.947,
-    "cls": 0.0002152317969738401,
-    "tbt": 13,
-    "weight": 138522,
-    "jsBytes": 0,
-    "runtimeError": null,
-    "warnings": [],
-    "failed": [
-      {
-        "id": "label-content-name-mismatch",
-        "score": 0,
-        "title": "Elements with visible text labels do not have matching accessible names.",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "node",
-              "valueType": "node",
-              "subItemsHeading": {
-                "key": "relatedNode",
-                "valueType": "node"
-              },
-              "label": "Failing Elements"
-            }
-          ],
-          "items": [
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.ar > header.site-header > a.wordmark",
-                "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 1117,
-                  "right": 1274,
-                  "width": 157,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/ar/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.ar > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 117,
-                  "right": 170,
-                  "width": 54,
-                  "height": 44
-                },
-                "snippet": "<a class=\"language-link\" href=\"/\" lang=\"fr\" dir=\"ltr\" aria-label=\"شوفوا الموقع بالفرنسية\">",
-                "nodeLabel": "Français",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-2-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1220,
-                  "bottom": 1700,
-                  "left": 592,
-                  "right": 1274,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور\">",
-                "nodeLabel": "01\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-3-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1320,
-                  "bottom": 1790,
-                  "left": 61,
-                  "right": 531,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور على ذوقكم\">",
-                "nodeLabel": "02\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-4-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,2,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 1910,
-                  "bottom": 2391,
-                  "left": 592,
-                  "right": 1274,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : أساور متناسقة\">",
-                "nodeLabel": "03\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-5-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,3,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2010,
-                  "bottom": 2480,
-                  "left": 61,
-                  "right": 531,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : خراص\">",
-                "nodeLabel": "04\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-6-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,4,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2600,
-                  "bottom": 3081,
-                  "left": 592,
-                  "right": 1274,
-                  "width": 683,
-                  "height": 481
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : سلاسل\">",
-                "nodeLabel": "05\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-7-A",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,5,ARTICLE,0,A",
-                "selector": "section#collection > div.collection-grid > article.product > a.product-art",
-                "boundingRect": {
-                  "top": 2700,
-                  "bottom": 3170,
-                  "left": 61,
-                  "right": 531,
-                  "width": 470,
-                  "height": 470
-                },
-                "snippet": "<a class=\"product-art\" href=\"https://www.instagram.com/haddar__bijoux/\" aria-label=\"شوفوا على إنستغرام : القطع الكل\">",
-                "nodeLabel": "06\nرسم توضيحي",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "impact": "serious",
-            "tags": [
-              "cat.semantics",
-              "wcag21a",
-              "wcag253",
-              "EN-301-549",
-              "EN-9.2.5.3",
-              "RGAAv4",
-              "RGAA-6.1.5"
-            ]
-          }
-        }
-      },
-      {
-        "id": "render-blocking-resources",
-        "score": 0.5,
-        "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
-        "details": {
-          "type": "opportunity",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 83
-            }
-          ],
-          "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 353
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-4-g",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,1,svg,0,g",
-                "selector": "section.hero > figure.hero-art > svg.jewel-drawing > g",
-                "boundingRect": {
-                  "top": 208,
-                  "bottom": 778,
-                  "left": 95,
-                  "right": 683,
-                  "width": 588,
-                  "height": 570
-                },
-                "snippet": "<g transform=\"rotate(-32 200 200)\">",
-                "nodeLabel": "section.hero > figure.hero-art > svg.jewel-drawing > g"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 19
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-5-ellipse",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,ARTICLE,0,A,1,svg,0,g,0,ellipse",
-                "selector": "a.product-art > svg.jewel-drawing > g > ellipse",
-                "boundingRect": {
-                  "top": 1353,
-                  "bottom": 1409,
-                  "left": 1036,
-                  "right": 1083,
-                  "width": 47,
-                  "height": 55
-                },
-                "snippet": "<ellipse cx=\"325\" cy=\"200\" rx=\"21\" ry=\"10\" transform=\"rotate(90 325 200)\">",
-                "nodeLabel": "a.product-art > svg.jewel-drawing > g > ellipse"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 353,
-            "maxChildren": 19,
-            "maxDepth": 9
-          }
-        }
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "score": 0,
-        "title": "Network dependency tree",
-        "details": {
-          "type": "network-tree",
-          "chains": {
-            "80F22F5D971CE2A3D0A6868AE3918434": {
-              "url": "http://127.0.0.1:4321/ar/",
-              "navStartToEndTime": 79,
-              "transferSize": 5684,
-              "isLongest": true,
-              "children": {
-                "31312.4": {
-                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-                  "navStartToEndTime": 80,
-                  "transferSize": 814,
-                  "children": {
-                    "31312.12": {
-                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 254,
-                      "transferSize": 9143,
-                      "children": {}
-                    }
-                  }
-                },
-                "31312.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 82,
-                  "transferSize": 4155,
-                  "children": {}
-                },
-                "31312.13": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 264,
-                  "transferSize": 421,
-                  "isLongest": true,
-                  "children": {}
-                }
-              }
-            }
-          },
-          "longestChain": {
-            "duration": 264
-          }
-        }
-      },
-      {
-        "id": "render-blocking-insight",
-        "score": 0.5,
-        "title": "Render blocking requests",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size"
-            },
-            {
-              "key": "wastedMs",
-              "valueType": "timespanMs",
-              "label": "Est Savings"
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 83
-            },
-            {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 814
-            }
-          ]
-        }
-      }
-    ],
-    "environment": {
-      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1637,
-      "credits": {
-        "axe-core": "4.14.0"
-      }
-    },
-    "config": {
-      "output": "json",
-      "maxWaitForFcp": 30000,
-      "maxWaitForLoad": 45000,
-      "pauseAfterFcpMs": 1000,
-      "pauseAfterLoadMs": 1000,
-      "networkQuietThresholdMs": 1000,
-      "cpuQuietThresholdMs": 1000,
-      "formFactor": "desktop",
-      "throttling": {
-        "rttMs": 40,
-        "throughputKbps": 10240,
-        "requestLatencyMs": 0,
-        "downloadThroughputKbps": 0,
-        "uploadThroughputKbps": 0,
-        "cpuSlowdownMultiplier": 1
-      },
-      "throttlingMethod": "simulate",
-      "screenEmulation": {
-        "mobile": false,
-        "width": 1350,
-        "height": 940,
-        "deviceScaleFactor": 1,
-        "disabled": false
-      },
-      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "auditMode": false,
-      "gatherMode": false,
-      "clearStorageTypes": [
-        "file_systems",
-        "shader_cache",
-        "service_workers",
-        "cache_storage"
-      ],
-      "disableStorageReset": false,
-      "debugNavigation": false,
-      "channel": "node",
-      "usePassiveGathering": false,
-      "disableFullPageScreenshot": false,
-      "skipAboutBlank": false,
-      "blankPage": "about:blank",
-      "ignoreStatusCode": false,
-      "locale": "en-US",
-      "blockedUrlPatterns": null,
-      "additionalTraceCategories": null,
-      "extraHeaders": null,
-      "precomputedLanternData": null,
-      "onlyAudits": null,
-      "onlyCategories": [
-        "performance",
-        "accessibility",
-        "best-practices",
-        "seo"
-      ],
-      "skipAudits": null
-    },
-    "lighthouseVersion": "12.6.1"
-  },
-  {
     "route": "/politique-de-confidentialite/",
     "profile": "desktop",
     "scores": {
@@ -4604,6 +2686,1450 @@
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
       "benchmarkIndex": 1609.5,
       "credits": {}
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 1660.572,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 165360,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.99,
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.7 s"
+      },
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1709,
+              "wastedMs": 155
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 305
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 60 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 26816,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 26816
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 19861,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 19861
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-480.avif",
+              "totalBytes": 16776,
+              "wastedBytes": 14484,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (177x177). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 14484
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 61161
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "8E523763477978CBDE6FEBED6492BF1C": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 31,
+              "transferSize": 4268,
+              "isLongest": true,
+              "children": {
+                "2392.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 47,
+                  "transferSize": 1709,
+                  "isLongest": true,
+                  "children": {
+                    "2392.21": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 104,
+                      "transferSize": 11594,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "2392.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+                  "navStartToEndTime": 45,
+                  "transferSize": 3699,
+                  "children": {}
+                },
+                "2392.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 48,
+                  "transferSize": 1386,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 104
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1709,
+              "wastedMs": 155
+            },
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 305
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1736.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/",
+    "profile": "mobile",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 2261.8377,
+    "cls": 0,
+    "tbt": 0,
+    "weight": 262090,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.94,
+        "title": "Largest Contentful Paint",
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "title": "Time to Interactive",
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 306
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1728,
+              "wastedMs": 156
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 60 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 26816,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 26816
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 19861,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 19861
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-480.avif",
+              "totalBytes": 16776,
+              "wastedBytes": 14484,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (177x177). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 14484
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 61161
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "3193591E82A3EDFD1A78E9FAE7DA3C71": {
+              "url": "http://127.0.0.1:4321/ar/",
+              "navStartToEndTime": 44,
+              "transferSize": 4527,
+              "isLongest": true,
+              "children": {
+                "33516.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+                  "navStartToEndTime": 47,
+                  "transferSize": 1728,
+                  "isLongest": true,
+                  "children": {
+                    "33516.20": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 128,
+                      "transferSize": 10057,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "33516.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+                  "navStartToEndTime": 51,
+                  "transferSize": 3699,
+                  "children": {}
+                },
+                "33516.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 82,
+                  "transferSize": 1386,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 128
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 306
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1728,
+              "wastedMs": 156
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1672.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 370.14160000000004,
+    "cls": 0.00002061402448469416,
+    "tbt": 0,
+    "weight": 165360,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 85
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "uses-responsive-images",
+        "score": 0,
+        "title": "Properly size images",
+        "displayValue": "Est savings of 25 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-30-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,FIGURE,0,PICTURE,2,IMG",
+                "selector": "div.custom-layout > figure.editorial-frame > picture > img",
+                "boundingRect": {
+                  "top": 2027,
+                  "bottom": 2755,
+                  "left": 722,
+                  "right": 1268,
+                  "width": 546,
+                  "height": 728
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif\" alt=\"Deux bracelets dorés assortis, visuel d’illustration\" width=\"1200\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "Deux bracelets dorés assortis, visuel d’illustration"
+              },
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 12942,
+              "wastedPercent": 37.8925
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-25-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+                "selector": "section.hero > figure.editorial-frame > picture > img",
+                "boundingRect": {
+                  "top": 159,
+                  "bottom": 821,
+                  "left": 771,
+                  "right": 1268,
+                  "width": 496,
+                  "height": 662
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/hero-800.avif\" alt=\"Bracelet à chaîne dorée délicate, visuel généré pour illustration\" width=\"1200\" height=\"1200\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\">",
+                "nodeLabel": "Bracelet à chaîne dorée délicate, visuel généré pour illustration"
+              },
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 12318,
+              "wastedPercent": 48.695
+            }
+          ],
+          "overallSavingsMs": 70,
+          "overallSavingsBytes": 25260,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 70
+            }
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 33 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 18245,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (546x546). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 18245
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 15558,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (496x496). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 15558
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 33803
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "4AC5CAA94C7505AB5BD804BAA6770593": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 29,
+              "transferSize": 4268,
+              "isLongest": true,
+              "children": {
+                "26456.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 32,
+                  "transferSize": 1709,
+                  "children": {
+                    "26456.20": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 104,
+                      "transferSize": 11594,
+                      "children": {}
+                    }
+                  }
+                },
+                "26456.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+                  "navStartToEndTime": 33,
+                  "transferSize": 3699,
+                  "children": {}
+                },
+                "26456.24": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 114,
+                  "transferSize": 1386,
+                  "isLongest": true,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 114
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 85
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1709
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1407.5,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
+    },
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance",
+        "accessibility",
+        "best-practices",
+        "seo"
+      ],
+      "skipAudits": null
+    },
+    "lighthouseVersion": "12.6.1"
+  },
+  {
+    "route": "/ar/",
+    "profile": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 511.84569999999997,
+    "cls": 0.0001915463667069283,
+    "tbt": 0,
+    "weight": 262090,
+    "jsBytes": 0,
+    "runtimeError": null,
+    "warnings": [],
+    "failed": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources",
+        "displayValue": "Est savings of 0 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 86
+            }
+          ],
+          "overallSavingsMs": 0
+        }
+      },
+      {
+        "id": "uses-responsive-images",
+        "score": 0.5,
+        "title": "Properly size images",
+        "displayValue": "Est savings of 25 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-30-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,FIGURE,0,PICTURE,2,IMG",
+                "selector": "div.custom-layout > figure.editorial-frame > picture > img",
+                "boundingRect": {
+                  "top": 1969,
+                  "bottom": 2697,
+                  "left": 68,
+                  "right": 614,
+                  "width": 546,
+                  "height": 728
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif\" alt=\"زوز أساور ذهبية متناسقة، صورة توضيحية\" width=\"1200\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "زوز أساور ذهبية متناسقة، صورة توضيحية"
+              },
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 12942,
+              "wastedPercent": 37.8925
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-25-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+                "selector": "section.hero > figure.editorial-frame > picture > img",
+                "boundingRect": {
+                  "top": 159,
+                  "bottom": 821,
+                  "left": 68,
+                  "right": 564,
+                  "width": 496,
+                  "height": 662
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/hero-800.avif\" alt=\"سوار بسلسلة ذهبية رقيقة، صورة توضيحية مولّدة\" width=\"1200\" height=\"1200\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\">",
+                "nodeLabel": "سوار بسلسلة ذهبية رقيقة، صورة توضيحية مولّدة"
+              },
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 12318,
+              "wastedPercent": 48.695
+            }
+          ],
+          "overallSavingsMs": 10,
+          "overallSavingsBytes": 25260,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 10
+            }
+          }
+        }
+      },
+      {
+        "id": "bf-cache",
+        "score": 0,
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "1 failure reason",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "reason",
+              "valueType": "text",
+              "subItemsHeading": {
+                "key": "frameUrl",
+                "valueType": "url"
+              },
+              "label": "Failure reason"
+            },
+            {
+              "key": "failureType",
+              "valueType": "text",
+              "label": "Failure type"
+            }
+          ],
+          "items": [
+            {
+              "reason": "CacheLimitPrunedOnCriticalMemoryPressure",
+              "failureType": "Not actionable",
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "http://127.0.0.1:4321/ar/"
+                  }
+                ]
+              },
+              "protocolReason": "CacheLimitPrunedOnCriticalMemoryPressure"
+            }
+          ]
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 138
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-5-SECTION",
+                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION",
+                "selector": "body.ar > main#main > section#commander",
+                "boundingRect": {
+                  "top": 2833,
+                  "bottom": 3438,
+                  "left": 0,
+                  "right": 1335,
+                  "width": 1335,
+                  "height": 604
+                },
+                "snippet": "<section id=\"commander\" class=\"contact-section section wrap\" aria-labelledby=\"contact-title\">",
+                "nodeLabel": "اطلبوا\n\nاطلبوا\n\nالقطع والجديد كل على إنستغرام.\n\nابعثوا ميساج على إنستغرام\n\n@had…"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 6
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-6-path",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,4,DIV,0,A,1,svg,0,path",
+                "selector": "div.hero-actions > a.button > svg.icon > path",
+                "boundingRect": {
+                  "top": 693,
+                  "bottom": 704,
+                  "left": 1088,
+                  "right": 1102,
+                  "width": 13,
+                  "height": 12
+                },
+                "snippet": "<path d=\"M4 12h15M13 5l7 7-7 7\">",
+                "nodeLabel": "div.hero-actions > a.button > svg.icon > path"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 8
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 138,
+            "maxChildren": 6,
+            "maxDepth": 8
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 33 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
+              "totalBytes": 34154,
+              "wastedBytes": 18245,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (546x546). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 18245
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "totalBytes": 25296,
+              "wastedBytes": 15558,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (496x496). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 15558
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 33803
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "network-tree",
+          "chains": {
+            "157B24E32FEF9A13960F15F111A71538": {
+              "url": "http://127.0.0.1:4321/ar/",
+              "navStartToEndTime": 48,
+              "transferSize": 4527,
+              "isLongest": true,
+              "children": {
+                "24376.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+                  "navStartToEndTime": 50,
+                  "transferSize": 1728,
+                  "isLongest": true,
+                  "children": {
+                    "24376.20": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 147,
+                      "transferSize": 10057,
+                      "isLongest": true,
+                      "children": {}
+                    }
+                  }
+                },
+                "24376.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+                  "navStartToEndTime": 51,
+                  "transferSize": 3699,
+                  "children": {}
+                },
+                "24376.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 83,
+                  "transferSize": 1386,
+                  "children": {}
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 147
+          }
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
+              "totalBytes": 3699,
+              "wastedMs": 86
+            },
+            {
+              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
+              "totalBytes": 1728
+            }
+          ]
+        }
+      }
+    ],
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 1501,
+      "credits": {
+        "axe-core": "4.14.0"
+      }
     },
     "config": {
       "output": "json",

@@ -12,7 +12,7 @@ export const legalDocuments:LegalDocument[]=[
 ]},
 {slug:'cookies',title:'Cookies et stockage',metaTitle:'Cookies et stockage | Haddar Bijoux',description:'Découvrez ce que le site Haddar Bijoux stocke dans votre navigateur : aucun cookie, aucun stockage local et aucun outil de mesure d’audience.',sections:[
 {title:'Aucun stockage de suivi',paragraphs:['Le site ne dépose aucun cookie. Le stockage local et le stockage de session restent vides. Aucun outil de mesure d’audience n’est chargé.']},
-{title:'Langue et apparence',paragraphs:['La langue dépend de l’adresse de la page. Le thème clair ou sombre suit le réglage de votre appareil. Aucun choix n’est enregistré par le site.']},
+{title:'Langue et apparence',paragraphs:['La langue dépend de l’adresse de la page. Le site utilise un seul thème clair. Aucun choix n’est enregistré par le site.']},
 {title:'Liens externes',paragraphs:['Instagram n’est pas intégré à la page. Il s’ouvre uniquement lorsque vous suivez un lien. Son fonctionnement et ses cookies relèvent de sa propre politique.']},
 {title:'Évolution du site',paragraphs:['Tout ajout de suivi ou de stockage nécessitera une mise à jour de cette page et une vérification des obligations applicables.']}
 ]},

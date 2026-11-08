@@ -7,7 +7,7 @@ Installed Chrome, headless Playwright.
 - Axe scans: 16, under light and dark device preferences on every route. The supplied light palette remains fixed in both preferences.
 - JavaScript-disabled routes: 8.
 - Network emulation: 4 runs across French and Arabic homepages, Slow 3G and Fast 3G.
-- Keyboard interactions use Tab/Enter, skip link, native menu, and FAQ. Focus is checked against the sticky contact bar. This is an automated keyboard pass, not a human screen-reader audit.
+- Keyboard interactions use Tab/Enter, skip link, native menu, and the sticky contact bar. Focus is checked against the sticky contact bar. This is an automated keyboard pass, not a human screen-reader audit.
 - Hero CTAs checked at 375x667 and 1440x900 in both locales.
 - HTTP status and language checked for known and unknown 404 paths.
 - Errors: 0.

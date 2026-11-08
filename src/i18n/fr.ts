@@ -10,6 +10,7 @@ export const fr = {
   intro:'Bracelets, boucles d’oreilles et colliers. Toutes les pièces sont sur Instagram, les commandes se font par message privé.',
   order:'Commander sur Instagram', browse:'Voir la collection',
   illustrationDisclaimer:'Visuels d’illustration. Les pièces réelles sont sur Instagram.',
+  galleryTitle:'Les bracelets cordon', galleryIntro:'Des pièces Haddar Bijoux en photo. Pour la disponibilité et le prix, écrivez-nous sur Instagram.', galleryLink:'Voir les pièces sur Instagram',
   collectionEyebrow:'La collection', collectionTitle:'Les pièces à découvrir', collectionIntro:'Retrouvez les pièces et les nouveautés sur Instagram.',
   collectionItems:[
     {title:'Bracelets',descriptor:'Classiques'},
@@ -32,7 +33,7 @@ export const fr = {
   contactText:'Toutes les pièces et les nouveautés sont sur Instagram.',
   contactCta:'Écrire sur Instagram', write:'Écrire sur Instagram', contactNote:'',
   phone:'Appeler Haddar Bijoux', whatsapp:'Écrire sur WhatsApp', directions:'Voir l’itinéraire',
-  footerNote:'Bracelets, boucles d’oreilles et colliers.', legalHeading:'Informations', legalLabels:['Mentions légales'],
+  footerNote:'Bracelets, boucles d’oreilles et colliers.', legalHeading:'Informations', legalLabels:['Confidentialité','Cookies','Conditions générales','Retours et remboursement'],
   legalLanguageNote:'', copyrightPending:'Identité légale à confirmer',
   draftNotice:'Version de travail : informations commerciales à confirmer.',
   breadcrumbLabel:'Fil d’Ariane', legalDraft:'Document à compléter et à faire valider avant publication.',

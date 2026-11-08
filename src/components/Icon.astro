@@ -1,7 +1,7 @@
 ---
-interface Props { kind?: 'arrow' | 'instagram' | 'plus'; }
+interface Props { kind?: 'arrow' | 'down' | 'instagram' | 'plus'; }
 const {kind='arrow'}=Astro.props;
 ---
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true" class:list={['icon',{'arrow-icon':kind==='arrow'}]}>
-{kind==='arrow' ? <path d="M4 12h15M13 5l7 7-7 7"/> : kind==='plus' ? <path d="M12 5v14M5 12h14"/> : <><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.8" r=".8" fill="currentColor" stroke="none"/></>}
+{kind==='arrow' ? <path d="M4 12h15M13 5l7 7-7 7"/> : kind==='down' ? <path d="M12 4v15M5 13l7 7 7-7"/> : kind==='plus' ? <path d="M12 5v14M5 12h14"/> : <><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.8" r=".8" fill="currentColor" stroke="none"/></>}
 </svg>

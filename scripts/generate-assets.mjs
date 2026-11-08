@@ -1,9 +1,11 @@
 import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import sharp from 'sharp';
+import {stat} from 'node:fs/promises';
+import {images} from '../src/data/images.ts';
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,12);
 await mkdir('public/fonts/licenses',{recursive:true});await mkdir('src/data',{recursive:true});
-const specs={fr:[['italiana','Italiana','latin',400],...['latin','latin-ext'].flatMap(subset=>[300,400,500].map(w=>['jost','Jost',subset,w]))],ar:[['amiri','Amiri','arabic',400],['tajawal','Tajawal','arabic',400],['tajawal','Tajawal','arabic',500]]};
+const specs={fr:[['italiana','Italiana','latin',400],...['latin','latin-ext'].flatMap(subset=>[300,400,500].map(w=>['jost','Jost',subset,w]))],ar:[['italiana','Italiana','latin',400],['amiri','Amiri','arabic',400],['tajawal','Tajawal','arabic',400],['tajawal','Tajawal','arabic',500]]};
 const manifest={};
 for(const [locale,list]of Object.entries(specs)){
  let css='';const preload=[];
@@ -12,7 +14,8 @@ for(const [locale,list]of Object.entries(specs)){
   const dest=slug+'-'+subset+'-'+weight+'-'+hash(bytes)+'.woff2';await writeFile('public/fonts/'+dest,bytes);
   const unicode=JSON.parse(await readFile('node_modules/@fontsource/'+slug+'/unicode.json','utf8'));
   css+='@font-face{font-family:"'+family+'";font-style:normal;font-weight:'+weight+';font-display:swap;src:url("/fonts/'+dest+'") format("woff2");'+(unicode[subset]?'unicode-range:'+unicode[subset]+';':'')+'}\n';
-  if(weight===400&&subset!=='latin-ext')preload.push('/fonts/'+dest);
+  // Amiri only sets below-fold Arabic headings: not worth preloading its 108KB.
+  if(weight===400&&subset!=='latin-ext'&&slug!=='amiri')preload.push('/fonts/'+dest);
   await copyFile('node_modules/@fontsource/'+slug+'/LICENSE','public/fonts/licenses/'+slug+'-LICENSE.txt');
  }
  css+=locale==='fr'?'@font-face{font-family:"Jost Fallback";src:local("Arial");size-adjust:100%;ascent-override:100%;descent-override:25%;line-gap-override:0%}@font-face{font-family:"Italiana Fallback";src:local("Georgia");size-adjust:98%;ascent-override:95%;descent-override:25%;line-gap-override:0%}':'@font-face{font-family:"Tajawal Fallback";src:local("Arial");size-adjust:100%;ascent-override:100%;descent-override:30%;line-gap-override:0%}@font-face{font-family:"Amiri Fallback";src:local("Times New Roman");size-adjust:100%;ascent-override:110%;descent-override:45%;line-gap-override:0%}';
@@ -30,4 +33,15 @@ for(const locale of ['fr','ar']){
  await sharp(Buffer.from(svg)).composite([{input:heroCard,left:760,top:0}]).png().toFile('public/share-'+locale+'.png');
 }
 await writeFile('public/site.webmanifest',JSON.stringify({name:'Haddar Bijoux',short_name:'Haddar',lang:'fr',start_url:'/',display:'browser',background_color:'#F7F5F1',theme_color:'#F7F5F1',icons:[{src:'/icon-192.png',sizes:'192x192',type:'image/png'},{src:'/icon-512.png',sizes:'512x512',type:'image/png'}]},null,2));
+// Responsive derivatives for every manifest image. Originals in incoming/ are read only.
+await mkdir('public/incoming',{recursive:true});
+const fresh=async(src,dest)=>{try{return (await stat(dest)).mtimeMs>=(await stat(src)).mtimeMs;}catch{return false;}};
+for(const img of Object.values(images)){
+ const src='incoming/'+img.file;
+ const base=()=>{let p=sharp(src).rotate();if(img.extract)p=p.extract(img.extract);return p;};
+ const size=w=>({width:w,height:Math.round(w*img.height/img.width),fit:'cover',position:'centre'});
+ const jobs=[['public/incoming/'+img.id+'.jpg',p=>p.resize(size(img.width)).jpeg({quality:82,mozjpeg:true})]];
+ for(const w of img.widths){jobs.push(['public/incoming/'+img.id+'-'+w+'.avif',p=>p.resize(size(w)).avif({quality:52,effort:6})]);jobs.push(['public/incoming/'+img.id+'-'+w+'.webp',p=>p.resize(size(w)).webp({quality:78})]);}
+ for(const [dest,encode] of jobs)if(!(await fresh(src,dest)))await encode(base()).toFile(dest);
+}
 console.log('Generated local font assets, licenses, flat brand cards, and favicon set.');

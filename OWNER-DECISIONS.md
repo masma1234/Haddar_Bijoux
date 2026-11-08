@@ -1,0 +1,7 @@
+# Owner decisions needed
+
+1. **Which Instagram handle is correct?** On 8 November 2026 the answer was `@haddar_bijoux` (one underscore), and every link now uses it. But `docs/launch-report.md` records an earlier client confirmation of `@haddar__bijoux` (two underscores). If the wrong one is live, every order button fails. Please open https://www.instagram.com/haddar_bijoux/ and confirm it is the shop account.
+2. **Should the hero use a real photo?** The hero still shows the AI illustration `hero.jpg`, as the original brief requires. A real photo (for example the three-bracelet shot) would make the first screen show actual pieces. Say if you want this.
+3. **Can you send higher-resolution photos?** The supplied photos are 1280px tall, which looks slightly soft on large high-density screens. Originals straight from the phone camera would be sharper.
+4. **Are the motif names right?** The captions read "Cadenas cœur", "Ananas", "Maïs", "Poisson" and "Khomsa" in French, and "قفل قلب، أناناس، ذرة، حوتة، خمسة" in derja. The gallery title is "Les bracelets cordon" / "أساور بالخيط". Please correct any name you use differently on Instagram.
+5. **Still open from before** (these block the production build): legal form, RNE, tax ID, privacy contact, return conditions and costs, refunds, warranty terms, French legal approval, native derja review, and the production domain (`PUBLIC_SITE_URL`). See `docs/claims-to-confirm.md`.

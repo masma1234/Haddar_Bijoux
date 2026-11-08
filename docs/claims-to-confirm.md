@@ -6,7 +6,7 @@ Source: the supplied build brief and the client's message of 13 October 2026. Cl
 |---|---|---|
 | Public brand: Haddar Bijoux | Confirmed for this preview | Client brief |
 | Legal name: Haddar_Bijoux | Client confirmed | Latest client reply; legal form and registration remain pending |
-| Instagram: @haddar__bijoux | Client confirmed | https://www.instagram.com/haddar__bijoux/ |
+| Instagram: @haddar_bijoux | Owner answer of 8 November 2026 | https://www.instagram.com/haddar_bijoux/. Conflicts with the earlier record of @haddar__bijoux; see OWNER-DECISIONS.md |
 | Orders happen by Instagram message | Client confirmed | Latest reply and brief; all public contact routes use Instagram |
 | Payment and delivery details are provided on Instagram | Client confirmed | Latest reply; no payment method, price, delivery deadline or free delivery promise is invented |
 | Bracelets, earrings and necklaces are the categories shown | Brief supplied | Client should check the six category labels against the current range |
@@ -24,7 +24,7 @@ Source: the supplied build brief and the client's message of 13 October 2026. Cl
 | Delivery areas and customization options | Pending | business.ts |
 | Privacy contact, retention, legal bases and commercial terms | Pending legal review | business.ts policy fields |
 | Phone, WhatsApp, email, opening hours and response-time promise | Omitted | Instagram is the supplied public contact. Null fields do not render links or promises |
-| Client photos and photo rights | Not supplied | Six intentional illustration placeholders; no product photo claims |
+| Photos of real pieces | Owner confirmed, 8 November 2026 | Six owner photographs of cord bracelets (gallery and Commander). Captions name only the visible motif; no price, stock, carat or material is stated per piece. Six AI illustrations remain labelled as illustrations |
 
 Plain prompts such as “choose”, “write to us”, and “view the collection” describe actions, not claims of quality or availability. French and derja dictionary translations of the claims above have the same approval status. The derja copy still requires a native speaker's review.
 
