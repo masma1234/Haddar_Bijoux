@@ -3,29 +3,17 @@ import { dictionary, homePath, type Locale } from '../i18n';
 import { draft } from '../data/business';
 import Icon from './Icon.astro';
 interface Props {locale:Locale; alternate:string;}
-const {locale,alternate}=Astro.props;const t=dictionary(locale);const ids=['collection','sur-mesure','commander'];
+const {locale,alternate}=Astro.props;const t=dictionary(locale);const ids=['pieces','sur-mesure','commander'];
 const links=t.nav.map((label,i)=>({label,href:homePath(locale)+'#'+ids[i]}));
 ---
 <a class="skip-link" href="#main">{t.skip}</a>
 <header class="site-header">
   <div class="header-bar wrap">
-    <a class="wordmark" href={homePath(locale)} aria-label={t.brand} lang="fr" dir="ltr"><span>{t.brand.split(' ')[0]}</span><small>{t.brand.split(' ')[1]}</small></a>
-    <nav class="desktop-nav" aria-label={t.navLabel}>{links.map(l=><a href={l.href}>{l.label}</a>)}</nav>
+    <a class="wordmark" href={homePath(locale)} lang="fr" dir="ltr">{t.brand}</a>
+    <nav class="site-nav" aria-label={t.navLabel}>{links.map(l=><a href={l.href}>{l.label}</a>)}</nav>
     <div class="header-actions">
       <a class="language-link" href={alternate} lang={locale==='fr'?'ar':'fr'} dir={locale==='fr'?'rtl':'ltr'} title={t.languageLabel}>{t.language}</a>
       <a class="instagram-link" href={draft.instagram} aria-label={t.instagramLabel}><Icon kind="instagram"/></a>
-      <details class="mobile-menu">
-        <summary aria-label={t.menu}><span class="menu-icon" aria-hidden="true"></span></summary>
-        <nav aria-label={t.navLabel}>{links.map(l=><a href={l.href}>{l.label}</a>)}</nav>
-      </details>
     </div>
   </div>
 </header>
-<script>
-  // Close the native menu after choosing a section, and on Escape.
-  const menu = document.querySelector<HTMLDetailsElement>('.mobile-menu');
-  menu?.addEventListener('click', e => { if (e.target instanceof Element && e.target.closest('nav a')) menu.open = false; });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && menu?.open) { menu.open = false; menu.querySelector('summary')?.focus(); }
-  });
-</script>

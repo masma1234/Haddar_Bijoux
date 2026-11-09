@@ -1,5 +1,32 @@
 {
-  "failures": [],
+  "failures": [
+    {
+      "route": "/cookies/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 71,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 1216.7788,
+      "cls": 0,
+      "tbt": 2778.2212
+    },
+    {
+      "route": "/conditions-generales/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 83,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 1204.4202,
+      "cls": 0,
+      "tbt": 710.0798
+    }
+  ],
   "successfulMeasurements": 12,
   "expected404Rejections": 4
 }

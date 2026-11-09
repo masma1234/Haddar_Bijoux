@@ -6,7 +6,9 @@
   "exclude": [
     "/_astro/*",
     "/fonts/*",
+    "/incoming/*",
     "/*.png",
+    "/*.jpg",
     "/*.svg",
     "/*.ico",
     "/*.xml",

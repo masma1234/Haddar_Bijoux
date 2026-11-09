@@ -6,7 +6,7 @@ photographs of available inventory.
 
 | File | Placement | Source | Rights |
 |---|---|---|---|
-| `hero.jpg` | Hero | Owner-supplied AI-generated illustration | Owner review required |
+| `hero.jpg` | Not used since 9 November 2026 (hero shows real pieces) | Owner-supplied AI-generated illustration | Owner review required |
 | `bracelets.jpg` | Collection: Bracelets | Owner-supplied AI-generated illustration | Owner review required |
 | `bracelets-personnalises.jpg` | Collection: Bracelets personnalisés | Owner-supplied AI-generated illustration | Owner review required |
 | `boucles-oreilles.jpg` | Collection: Boucles d’oreilles | Owner-supplied AI-generated illustration | Owner review required |
@@ -22,7 +22,8 @@ On 8 November 2026 the owner confirmed that these files are photographs of real 
 
 | File | Placement |
 |---|---|
-| `fruit.jpeg` | Gallery feature |
-| `lock.jpeg`, `ananas.jpeg`, `houta_zoom.jpeg`, `khomsa.jpeg` | Gallery |
-| `coeur_yed.jpeg` (top panel) | Commander |
+| `fruit.jpeg` | Hero and share cards (square crop) |
+| `lock.jpeg`, `ananas.jpeg` | Pieces, pillow pair |
+| `houta_zoom.jpeg`, `khomsa.jpeg` | Pieces, écrin pair |
+| `coeur_yed.jpeg` (both panels, cut apart) | Pieces, wrist pair |
 | `houta.jpeg`, `mais.jpeg`, `fruit2.jpeg` | Not used (duplicates) |

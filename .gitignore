@@ -7,3 +7,5 @@ dist/
 .audit/
 .lighthouseci/
 *.log
+.impeccable/review/
+.impeccable/hook.cache.json

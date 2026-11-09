@@ -1560,12 +1560,12 @@
   "noJavaScript": [
     {
       "route": "/",
-      "mainCharacters": 481,
+      "mainCharacters": 506,
       "pass": true
     },
     {
       "route": "/ar/",
-      "mainCharacters": 383,
+      "mainCharacters": 422,
       "pass": true
     },
     {
@@ -1590,12 +1590,12 @@
     },
     {
       "route": "/404/",
-      "mainCharacters": 184,
+      "mainCharacters": 178,
       "pass": true
     },
     {
       "route": "/ar/404/",
-      "mainCharacters": 162,
+      "mainCharacters": 156,
       "pass": true
     }
   ],
@@ -1603,25 +1603,25 @@
     {
       "route": "/",
       "profile": "Slow 3G",
-      "loadMs": 3537,
+      "loadMs": 3483,
       "pass": true
     },
     {
       "route": "/",
       "profile": "Fast 3G",
-      "loadMs": 1219,
+      "loadMs": 955,
       "pass": true
     },
     {
       "route": "/ar/",
       "profile": "Slow 3G",
-      "loadMs": 5526,
+      "loadMs": 5188,
       "pass": true
     },
     {
       "route": "/ar/",
       "profile": "Fast 3G",
-      "loadMs": 1701,
+      "loadMs": 1487,
       "pass": true
     }
   ],
@@ -1632,128 +1632,128 @@
         {
           "tag": "A",
           "label": "Commander sur Instagram",
-          "top": 338.28125,
-          "bottom": 386.28125,
+          "top": 544.171875,
+          "bottom": 596.171875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Voir la collection",
-          "top": 398.28125,
-          "bottom": 446.28125,
+          "label": "Voir toutes les pièces sur Instagram",
+          "top": 4260.5625,
+          "bottom": 4304.5625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Voir les pièces sur Instagram",
-          "top": 1074.65625,
-          "bottom": 1118.65625,
+          "label": "BraceletsClassiquesVisuel d’illustration",
+          "top": 4717.703125,
+          "bottom": 4996.34375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "BraceletsClassiques",
-          "top": 2373.28125,
-          "bottom": 2626.953125,
+          "label": "Bracelets personnalisésSur demandeVisuel d’illustration",
+          "top": 4717.703125,
+          "bottom": 4996.34375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Bracelets personnalisésSur demande",
-          "top": 2372.28125,
-          "bottom": 2625.953125,
+          "label": "Boucles d’oreillesVisuel d’illustration",
+          "top": 5032.34375,
+          "bottom": 5262.59375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Boucles d’oreilles",
-          "top": 2656.953125,
-          "bottom": 2860.640625,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Colliers",
-          "top": 2655.953125,
-          "bottom": 2859.640625,
+          "label": "ColliersVisuel d’illustration",
+          "top": 5032.34375,
+          "bottom": 5262.59375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 3680.703125,
-          "bottom": 3728.703125,
+          "top": 6363.46875,
+          "bottom": 6415.46875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 4426.671875,
-          "bottom": 4474.671875,
+          "top": 6752.953125,
+          "bottom": 6804.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 4486.671875,
-          "bottom": 4530.671875,
+          "top": 6810.953125,
+          "bottom": 6854.953125,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions de retour",
+          "top": 7334.703125,
+          "bottom": 7378.703125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 5044.59375,
-          "bottom": 5088.59375,
+          "top": 7625.890625,
+          "bottom": 7669.890625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 5121.78125,
-          "bottom": 5165.78125,
+          "top": 7697.328125,
+          "bottom": 7741.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 5195.78125,
-          "bottom": 5239.78125,
+          "top": 7773.328125,
+          "bottom": 7817.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Cookies",
-          "top": 5194.78125,
-          "bottom": 5238.78125,
+          "top": 7773.328125,
+          "bottom": 7817.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Conditions générales",
-          "top": 5187.78125,
-          "bottom": 5231.78125,
+          "top": 7773.328125,
+          "bottom": 7817.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Retours et remboursement",
-          "top": 5223.78125,
-          "bottom": 5267.78125,
+          "top": 7817.328125,
+          "bottom": 7861.328125,
           "covered": false,
           "outline": "solid"
         },
@@ -1761,87 +1761,63 @@
           "tag": "A",
           "label": "Aller au contenu",
           "top": 12,
-          "bottom": 61.59375,
+          "bottom": 62.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
+          "label": "Haddar Bijoux",
+          "top": 4,
+          "bottom": 48,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "العربية",
-          "top": 10,
-          "bottom": 54,
+          "top": 4,
+          "bottom": 48,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
+          "top": 3,
+          "bottom": 47,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Commander sur Instagram",
-          "top": 298.28125,
-          "bottom": 346.28125,
+          "top": 541.171875,
+          "bottom": 593.171875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Voir la collection",
-          "top": 370.28125,
-          "bottom": 418.28125,
+          "label": "Voir toutes les pièces sur Instagram",
+          "top": 4258.5625,
+          "bottom": 4302.5625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Voir les pièces sur Instagram",
-          "top": 1059.65625,
-          "bottom": 1103.65625,
+          "label": "BraceletsClassiquesVisuel d’illustration",
+          "top": 4715.703125,
+          "bottom": 4994.34375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "BraceletsClassiques",
-          "top": 2358.28125,
-          "bottom": 2611.953125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Bracelets personnalisésSur demande",
-          "top": 2357.28125,
-          "bottom": 2610.953125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Boucles d’oreilles",
-          "top": 2641.953125,
-          "bottom": 2845.640625,
+          "label": "Bracelets personnalisésSur demandeVisuel d’illustration",
+          "top": 4717.703125,
+          "bottom": 4996.34375,
           "covered": false,
           "outline": "solid"
         }
@@ -1853,128 +1829,128 @@
         {
           "tag": "A",
           "label": "اطلبوا على إنستغرام",
-          "top": 319.59375,
-          "bottom": 367.59375,
+          "top": 544.171875,
+          "bottom": 596.171875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "شوفوا المجموعة",
-          "top": 379.59375,
-          "bottom": 427.59375,
+          "label": "شوفوا القطع الكل على إنستغرام",
+          "top": 4270.953125,
+          "bottom": 4314.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "شوفوا القطع على إنستغرام",
-          "top": 1080.375,
-          "bottom": 1124.375,
+          "label": "أساوركلاسيكصورة توضيحية",
+          "top": 4676.828125,
+          "bottom": 4939.359375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "أساوركلاسيك",
-          "top": 2329.21875,
-          "bottom": 2563.203125,
+          "label": "أساور على ذوقكعلى الطلبصورة توضيحية",
+          "top": 4676.828125,
+          "bottom": 4939.359375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "أساور على ذوقكعلى الطلب",
-          "top": 2328.21875,
-          "bottom": 2562.203125,
+          "label": "خراصصورة توضيحية",
+          "top": 4975.359375,
+          "bottom": 5211.84375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "خراص",
-          "top": 2593.203125,
-          "bottom": 2801.140625,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "سلاسل",
-          "top": 2590.203125,
-          "bottom": 2798.140625,
+          "label": "سلاسلصورة توضيحية",
+          "top": 4975.359375,
+          "bottom": 5211.84375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "ابعثوا ميساج",
-          "top": 3577.359375,
-          "bottom": 3625.359375,
+          "top": 6259.140625,
+          "bottom": 6311.140625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "ابعثوا ميساج على إنستغرام",
-          "top": 4315.796875,
-          "bottom": 4363.796875,
+          "top": 6638.375,
+          "bottom": 6690.375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 4375.796875,
-          "bottom": 4419.796875,
+          "top": 6696.375,
+          "bottom": 6740.375,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "شروط الترجيع (بالفرنسية)",
+          "top": 7199.0625,
+          "bottom": 7243.0625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 4936.96875,
-          "bottom": 4981.359375,
+          "top": 7495.859375,
+          "bottom": 7543.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 5017.546875,
-          "bottom": 5061.546875,
+          "top": 7574,
+          "bottom": 7618,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الخصوصية",
-          "top": 5091.546875,
-          "bottom": 5135.546875,
+          "top": 7650,
+          "bottom": 7694,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الكوكيز",
-          "top": 5087.546875,
-          "bottom": 5131.546875,
+          "top": 7650,
+          "bottom": 7694,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الشروط العامة",
-          "top": 5078.546875,
-          "bottom": 5122.546875,
+          "top": 7650,
+          "bottom": 7694,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الترجيع واسترجاع الفلوس",
-          "top": 5119.546875,
-          "bottom": 5163.546875,
+          "top": 7693,
+          "bottom": 7737,
           "covered": false,
           "outline": "solid"
         },
@@ -1988,81 +1964,57 @@
         },
         {
           "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
+          "label": "Haddar Bijoux",
+          "top": 3,
+          "bottom": 47,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Français",
-          "top": 10,
-          "bottom": 54,
+          "top": 0,
+          "bottom": 44,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
+          "top": 0,
+          "bottom": 44,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "اطلبوا على إنستغرام",
-          "top": 303.59375,
-          "bottom": 351.59375,
+          "top": 538.171875,
+          "bottom": 590.171875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "شوفوا المجموعة",
-          "top": 368.59375,
-          "bottom": 416.59375,
+          "label": "شوفوا القطع الكل على إنستغرام",
+          "top": 4265.953125,
+          "bottom": 4309.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "شوفوا القطع على إنستغرام",
-          "top": 1075.375,
-          "bottom": 1119.375,
+          "label": "أساوركلاسيكصورة توضيحية",
+          "top": 4671.828125,
+          "bottom": 4934.359375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "أساوركلاسيك",
-          "top": 2324.21875,
-          "bottom": 2558.203125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "أساور على ذوقكعلى الطلب",
-          "top": 2323.21875,
-          "bottom": 2557.203125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "خراص",
-          "top": 2588.203125,
-          "bottom": 2796.140625,
+          "label": "أساور على ذوقكعلى الطلبصورة توضيحية",
+          "top": 4672.828125,
+          "bottom": 4935.359375,
           "covered": false,
           "outline": "solid"
         }
@@ -2074,64 +2026,64 @@
         {
           "tag": "A",
           "label": "Accueil",
-          "top": 97,
-          "bottom": 141,
+          "top": 88,
+          "bottom": 132,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 1513.40625,
-          "bottom": 1557.40625,
+          "top": 1525.390625,
+          "bottom": 1569.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1683.40625,
-          "bottom": 1727.40625,
+          "top": 1688.390625,
+          "bottom": 1732.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 1761.59375,
-          "bottom": 1805.59375,
+          "top": 1759.828125,
+          "bottom": 1803.828125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 1834.59375,
-          "bottom": 1878.59375,
+          "top": 1834.828125,
+          "bottom": 1878.828125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Cookies",
-          "top": 1833.59375,
-          "bottom": 1877.59375,
+          "top": 1834.828125,
+          "bottom": 1878.828125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Conditions générales",
-          "top": 1825.59375,
-          "bottom": 1869.59375,
+          "top": 1833.828125,
+          "bottom": 1877.828125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Retours et remboursement",
-          "top": 1859.59375,
-          "bottom": 1903.59375,
+          "top": 1877.828125,
+          "bottom": 1921.828125,
           "covered": false,
           "outline": "solid"
         },
@@ -2139,79 +2091,47 @@
           "tag": "A",
           "label": "Aller au contenu",
           "top": 12,
-          "bottom": 61.59375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "العربية",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Accueil",
-          "top": 56,
-          "bottom": 100,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Écrire sur Instagram",
-          "top": 1473.40625,
-          "bottom": 1517.40625,
+          "bottom": 62.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1642.40625,
-          "bottom": 1686.40625,
+          "top": -19,
+          "bottom": 25,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "@haddar_bijoux",
-          "top": 1721.59375,
-          "bottom": 1765.59375,
+          "label": "العربية",
+          "top": -19,
+          "bottom": 25,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Confidentialité",
-          "top": 1795.59375,
-          "bottom": 1839.59375,
+          "label": "",
+          "top": -18,
+          "bottom": 26,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 65,
+          "bottom": 109,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 1505.390625,
+          "bottom": 1549.390625,
           "covered": false,
           "outline": "solid"
         }
@@ -2223,64 +2143,64 @@
         {
           "tag": "A",
           "label": "Accueil",
-          "top": 97,
-          "bottom": 141,
+          "top": 88,
+          "bottom": 132,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 997.375,
-          "bottom": 1041.375,
+          "top": 998.421875,
+          "bottom": 1042.421875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1168.375,
-          "bottom": 1212.375,
+          "top": 1161.421875,
+          "bottom": 1205.421875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 1245.5625,
-          "bottom": 1289.5625,
+          "top": 1232.859375,
+          "bottom": 1276.859375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 1319.5625,
-          "bottom": 1363.5625,
+          "top": 1307.859375,
+          "bottom": 1351.859375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Cookies",
-          "top": 1315.5625,
-          "bottom": 1359.5625,
+          "top": 1306.859375,
+          "bottom": 1350.859375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Conditions générales",
-          "top": 1310.5625,
-          "bottom": 1354.5625,
+          "top": 1306.859375,
+          "bottom": 1350.859375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Retours et remboursement",
-          "top": 1342.5625,
-          "bottom": 1386.5625,
+          "top": 1349.859375,
+          "bottom": 1393.859375,
           "covered": false,
           "outline": "solid"
         },
@@ -2288,79 +2208,47 @@
           "tag": "A",
           "label": "Aller au contenu",
           "top": 12,
-          "bottom": 61.59375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "العربية",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Accueil",
-          "top": 78,
-          "bottom": 122,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Écrire sur Instagram",
-          "top": 979.375,
-          "bottom": 1023.375,
+          "bottom": 62.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1148.375,
-          "bottom": 1192.375,
+          "top": -19,
+          "bottom": 25,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "@haddar_bijoux",
-          "top": 1226.5625,
-          "bottom": 1270.5625,
+          "label": "العربية",
+          "top": -19,
+          "bottom": 25,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Confidentialité",
-          "top": 1301.5625,
-          "bottom": 1345.5625,
+          "label": "",
+          "top": -18,
+          "bottom": 26,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 65,
+          "bottom": 109,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 982.421875,
+          "bottom": 1026.421875,
           "covered": false,
           "outline": "solid"
         }
@@ -2372,110 +2260,6 @@
         {
           "tag": "A",
           "label": "Accueil",
-          "top": 97,
-          "bottom": 141,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Écrire sur Instagram",
-          "top": 1674.1875,
-          "bottom": 1718.1875,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Haddar Bijoux",
-          "top": 1844.1875,
-          "bottom": 1888.1875,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "@haddar_bijoux",
-          "top": 1922.375,
-          "bottom": 1966.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Confidentialité",
-          "top": 1997.375,
-          "bottom": 2041.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Cookies",
-          "top": 1996.375,
-          "bottom": 2040.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Conditions générales",
-          "top": 1995.375,
-          "bottom": 2039.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Retours et remboursement",
-          "top": 2040.375,
-          "bottom": 2084.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Aller au contenu",
-          "top": 12,
-          "bottom": 61.59375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "العربية",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Accueil",
           "top": 85,
           "bottom": 129,
           "covered": false,
@@ -2484,32 +2268,104 @@
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 1660.1875,
-          "bottom": 1704.1875,
+          "top": 1730.953125,
+          "bottom": 1774.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1830.1875,
-          "bottom": 1874.1875,
+          "top": 1893.953125,
+          "bottom": 1937.953125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 1908.375,
-          "bottom": 1952.375,
+          "top": 1965.390625,
+          "bottom": 2009.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 1982.375,
-          "bottom": 2026.375,
+          "top": 2041.390625,
+          "bottom": 2085.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Cookies",
+          "top": 2040.390625,
+          "bottom": 2084.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Conditions générales",
+          "top": 2040.390625,
+          "bottom": 2084.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Retours et remboursement",
+          "top": 2083.390625,
+          "bottom": 2127.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Aller au contenu",
+          "top": 12,
+          "bottom": 62.390625,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Haddar Bijoux",
+          "top": -11,
+          "bottom": 33,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": -14,
+          "bottom": 30,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": -14,
+          "bottom": 30,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 69,
+          "bottom": 113,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 1715.953125,
+          "bottom": 1759.953125,
           "covered": false,
           "outline": "solid"
         }
@@ -2521,64 +2377,64 @@
         {
           "tag": "A",
           "label": "Accueil",
-          "top": 97,
-          "bottom": 141,
+          "top": 85,
+          "bottom": 129,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 1368.84375,
-          "bottom": 1412.84375,
+          "top": 1367.046875,
+          "bottom": 1411.046875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1538.84375,
-          "bottom": 1582.84375,
+          "top": 1540.046875,
+          "bottom": 1584.046875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 1616.03125,
-          "bottom": 1660.03125,
+          "top": 1611.484375,
+          "bottom": 1655.484375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 1690.03125,
-          "bottom": 1734.03125,
+          "top": 1686.484375,
+          "bottom": 1730.484375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Cookies",
-          "top": 1689.03125,
-          "bottom": 1733.03125,
+          "top": 1686.484375,
+          "bottom": 1730.484375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Conditions générales",
-          "top": 1686.03125,
-          "bottom": 1730.03125,
+          "top": 1685.484375,
+          "bottom": 1729.484375,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Retours et remboursement",
-          "top": 1723.03125,
-          "bottom": 1767.03125,
+          "top": 1729.484375,
+          "bottom": 1773.484375,
           "covered": false,
           "outline": "solid"
         },
@@ -2586,79 +2442,47 @@
           "tag": "A",
           "label": "Aller au contenu",
           "top": 12,
-          "bottom": 61.59375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "العربية",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Accueil",
-          "top": 26,
-          "bottom": 70,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Écrire sur Instagram",
-          "top": 1317.84375,
-          "bottom": 1361.84375,
+          "bottom": 62.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 1487.84375,
-          "bottom": 1531.84375,
+          "top": -14,
+          "bottom": 30,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "@haddar_bijoux",
-          "top": 1566.03125,
-          "bottom": 1610.03125,
+          "label": "العربية",
+          "top": -19,
+          "bottom": 25,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Confidentialité",
-          "top": 1640.03125,
-          "bottom": 1684.03125,
+          "label": "",
+          "top": -19,
+          "bottom": 25,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 64,
+          "bottom": 108,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Écrire sur Instagram",
+          "top": 1357.046875,
+          "bottom": 1401.046875,
           "covered": false,
           "outline": "solid"
         }
@@ -2670,80 +2494,80 @@
         {
           "tag": "A",
           "label": "Accueil",
-          "top": 97,
-          "bottom": 141,
+          "top": 88,
+          "bottom": 132,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Revenir à l’accueil",
-          "top": 355.375,
-          "bottom": 403.375,
+          "top": 348.78125,
+          "bottom": 400.78125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "Voir la collection",
-          "top": 355.375,
-          "bottom": 403.375,
+          "label": "Voir les pièces",
+          "top": 345.78125,
+          "bottom": 397.78125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Écrire sur Instagram",
-          "top": 415.375,
-          "bottom": 459.375,
+          "top": 399.78125,
+          "bottom": 443.78125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 586.375,
-          "bottom": 630.375,
+          "top": 572.78125,
+          "bottom": 616.78125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 664.5625,
-          "bottom": 708.5625,
+          "top": 633.21875,
+          "bottom": 677.21875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Confidentialité",
-          "top": 736.5625,
-          "bottom": 780.5625,
+          "top": 708.21875,
+          "bottom": 752.21875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Cookies",
-          "top": 735.5625,
-          "bottom": 779.5625,
+          "top": 708.21875,
+          "bottom": 752.21875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Conditions générales",
-          "top": 725.5625,
-          "bottom": 769.5625,
+          "top": 707.21875,
+          "bottom": 751.21875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Retours et remboursement",
-          "top": 748.5625,
-          "bottom": 792.5625,
+          "top": 750.21875,
+          "bottom": 794.21875,
           "covered": false,
           "outline": "solid"
         },
@@ -2751,79 +2575,47 @@
           "tag": "A",
           "label": "Aller au contenu",
           "top": 12,
-          "bottom": 61.59375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "العربية",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Accueil",
-          "top": -31,
-          "bottom": 13,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Revenir à l’accueil",
-          "top": 237.375,
-          "bottom": 285.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Voir la collection",
-          "top": 237.375,
-          "bottom": 285.375,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Écrire sur Instagram",
-          "top": 315.375,
-          "bottom": 359.375,
+          "bottom": 62.390625,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 510.375,
-          "bottom": 554.375,
+          "top": -26,
+          "bottom": 18,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "العربية",
+          "top": -33,
+          "bottom": 11,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "",
+          "top": -33,
+          "bottom": 11,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Accueil",
+          "top": 51,
+          "bottom": 95,
+          "covered": false,
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "label": "Revenir à l’accueil",
+          "top": 311.78125,
+          "bottom": 363.78125,
           "covered": false,
           "outline": "solid"
         }
@@ -2835,80 +2627,80 @@
         {
           "tag": "A",
           "label": "الرئيسية",
-          "top": 97,
-          "bottom": 141,
+          "top": 85,
+          "bottom": 129,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "ارجعوا للرئيسية",
-          "top": 321.78125,
-          "bottom": 369.78125,
+          "top": 310.1875,
+          "bottom": 362.1875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
-          "label": "شوفوا المجموعة",
-          "top": 321.78125,
-          "bottom": 369.78125,
+          "label": "شوفوا القطع",
+          "top": 300.1875,
+          "bottom": 352.1875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "ابعثوا ميساج على إنستغرام",
-          "top": 381.78125,
-          "bottom": 425.78125,
+          "top": 364.1875,
+          "bottom": 408.1875,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Haddar Bijoux",
-          "top": 552.78125,
-          "bottom": 597.171875,
+          "top": 526.1875,
+          "bottom": 574.28125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "@haddar_bijoux",
-          "top": 634.359375,
-          "bottom": 678.359375,
+          "top": 604.328125,
+          "bottom": 648.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الخصوصية",
-          "top": 703.359375,
-          "bottom": 747.359375,
+          "top": 674.328125,
+          "bottom": 718.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الكوكيز",
-          "top": 702.359375,
-          "bottom": 746.359375,
+          "top": 674.328125,
+          "bottom": 718.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الشروط العامة",
-          "top": 692.359375,
-          "bottom": 736.359375,
+          "top": 673.328125,
+          "bottom": 717.328125,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الترجيع واسترجاع الفلوس",
-          "top": 730.359375,
-          "bottom": 774.359375,
+          "top": 715.328125,
+          "bottom": 759.328125,
           "covered": false,
           "outline": "solid"
         },
@@ -2922,73 +2714,41 @@
         },
         {
           "tag": "A",
-          "label": "HaddarBijoux",
-          "top": 10,
-          "bottom": 54,
+          "label": "Haddar Bijoux",
+          "top": -31,
+          "bottom": 13,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "Français",
-          "top": 10,
-          "bottom": 54,
+          "top": -38,
+          "bottom": 6,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "",
-          "top": 10,
-          "bottom": 54,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "SUMMARY",
-          "label": "",
-          "top": 10,
-          "bottom": 54,
+          "top": -38,
+          "bottom": 6,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "الرئيسية",
-          "top": -6,
-          "bottom": 38,
+          "top": 46,
+          "bottom": 90,
           "covered": false,
           "outline": "solid"
         },
         {
           "tag": "A",
           "label": "ارجعوا للرئيسية",
-          "top": 242.78125,
-          "bottom": 290.78125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "شوفوا المجموعة",
-          "top": 275.78125,
-          "bottom": 323.78125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "ابعثوا ميساج على إنستغرام",
-          "top": 345.78125,
-          "bottom": 389.78125,
-          "covered": false,
-          "outline": "solid"
-        },
-        {
-          "tag": "A",
-          "label": "Haddar Bijoux",
-          "top": 523.78125,
-          "bottom": 568.171875,
+          "top": 271.1875,
+          "bottom": 323.1875,
           "covered": false,
           "outline": "solid"
         }
@@ -3002,16 +2762,16 @@
       "height": 667,
       "rects": [
         {
-          "top": 338.28125,
-          "bottom": 386.28125,
-          "left": 20,
-          "right": 355
+          "top": 544.171875,
+          "bottom": 596.171875,
+          "left": 56,
+          "right": 319
         },
         {
-          "top": 398.28125,
-          "bottom": 446.28125,
-          "left": 20,
-          "right": 355
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
         }
       ]
     },
@@ -3021,16 +2781,16 @@
       "height": 900,
       "rects": [
         {
-          "top": 604.96875,
-          "bottom": 652.96875,
-          "left": 72,
-          "right": 314.5625
+          "top": 667.5,
+          "bottom": 719.5,
+          "left": 106.609375,
+          "right": 369.609375
         },
         {
-          "top": 604.96875,
-          "bottom": 652.96875,
-          "left": 326.5625,
-          "right": 509.78125
+          "top": 725.5,
+          "bottom": 769.5,
+          "left": 246.328125,
+          "right": 369.609375
         }
       ]
     },
@@ -3040,16 +2800,16 @@
       "height": 667,
       "rects": [
         {
-          "top": 319.59375,
-          "bottom": 367.59375,
-          "left": 20,
-          "right": 355
+          "top": 544.171875,
+          "bottom": 596.171875,
+          "left": 79.453125,
+          "right": 295.546875
         },
         {
-          "top": 379.59375,
-          "bottom": 427.59375,
-          "left": 20,
-          "right": 355
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
         }
       ]
     },
@@ -3059,16 +2819,16 @@
       "height": 900,
       "rects": [
         {
-          "top": 596.125,
-          "bottom": 644.125,
-          "left": 1166.46875,
-          "right": 1368
+          "top": 667.5,
+          "bottom": 719.5,
+          "left": 1070.390625,
+          "right": 1286.484375
         },
         {
-          "top": 596.125,
-          "bottom": 644.125,
-          "left": 972.625,
-          "right": 1154.46875
+          "top": 725.5,
+          "bottom": 769.5,
+          "left": 1070.390625,
+          "right": 1186.25
         }
       ]
     }
@@ -3076,35 +2836,35 @@
   "links": [
     {
       "route": "/",
-      "count": 27
+      "count": 25
     },
     {
       "route": "/ar/",
-      "count": 27
+      "count": 25
     },
     {
       "route": "/politique-de-confidentialite/",
-      "count": 18
+      "count": 15
     },
     {
       "route": "/cookies/",
-      "count": 18
+      "count": 15
     },
     {
       "route": "/conditions-generales/",
-      "count": 18
+      "count": 15
     },
     {
       "route": "/retours-et-remboursement/",
-      "count": 18
+      "count": 15
     },
     {
       "route": "/404/",
-      "count": 20
+      "count": 17
     },
     {
       "route": "/ar/404/",
-      "count": 20
+      "count": 17
     }
   ],
   "errors": [],

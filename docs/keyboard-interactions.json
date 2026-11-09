@@ -2,15 +2,25 @@
   {
     "locale": "fr",
     "skipLink": true,
-    "menuByTabAndEnter": true,
-    "visibleOutline": "solid",
-    "escapeClosesMenu": true
+    "tabOrderToOrderButton": [
+      "Aller au contenu",
+      "Haddar Bijoux",
+      "العربية",
+      "Voir Haddar Bijoux sur Instagram",
+      "Commander sur Instagram"
+    ],
+    "visibleOutline": "solid"
   },
   {
     "locale": "ar",
     "skipLink": true,
-    "menuByTabAndEnter": true,
-    "visibleOutline": "solid",
-    "escapeClosesMenu": true
+    "tabOrderToOrderButton": [
+      "امشيو للمحتوى",
+      "Haddar Bijoux",
+      "Français",
+      "شوفوا Haddar Bijoux على إنستغرام",
+      "اطلبوا على إنستغرام"
+    ],
+    "visibleOutline": "solid"
   }
 ]

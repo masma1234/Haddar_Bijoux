@@ -23,7 +23,11 @@ pnpm audit:browser
 pnpm audit:budgets
 pnpm audit:lighthouse before
 pnpm audit:lighthouse after
+node scripts/check-image-contract.mjs   (with --experimental-strip-types)
+node scripts/screens.mjs after          (preview server running)
 ```
+
+Lab scores vary between runs on a busy machine. `pnpm audit:lighthouse after --runs=3` keeps the median of three runs per route. Set `AUDIT_URL` when the preview server is not on port 4321.
 
 Audit scripts use locally installed Google Chrome. Set CHROME_PATH for the Lighthouse runner if needed. Playwright uses its chrome channel. Chrome is a development prerequisite, not a shipped dependency. Lighthouse raw reports and screenshots are saved under .audit; concise evidence is under docs.
 

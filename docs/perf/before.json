@@ -8,10 +8,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1208.1076,
+    "lcp": 1209.8553000000002,
     "cls": 0,
     "tbt": 0,
-    "weight": 38966,
+    "weight": 46529,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -38,18 +38,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 22,
-                  "right": 127,
-                  "width": 105,
-                  "height": 43
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 21,
+                  "right": 100,
+                  "width": 79,
+                  "height": 44
                 },
                 "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -95,106 +95,17 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 89
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-2-MAIN",
-                "path": "1,HTML,1,BODY,2,MAIN",
-                "selector": "body.fr > main#main",
-                "boundingRect": {
-                  "top": 92,
-                  "bottom": 1631,
-                  "left": 0,
-                  "right": 412,
-                  "width": 412,
-                  "height": 1539
-                },
-                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
-                "nodeLabel": "Accueil\n/\nPolitique de confidentialité\nPolitique de confidentialité\n\nDocument à…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-3-SMALL",
-                "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,1,DL,3,DD,0,SPAN,0,SMALL",
-                "selector": "dl > dd > span.fact > small.confirmation",
-                "boundingRect": {
-                  "top": 923,
-                  "bottom": 939,
-                  "left": 192,
-                  "right": 259,
-                  "width": 67,
-                  "height": 16
-                },
-                "snippet": "<small class=\"confirmation\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "[CONFIRMER]"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 7
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 89,
-            "maxChildren": 9,
-            "maxDepth": 7
-          }
         }
       },
       {
@@ -204,44 +115,43 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "3A86C187287D7B7FA455CDDEA2E52710": {
-              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
-              "navStartToEndTime": 25,
-              "transferSize": 2599,
+            "69723E2C31308EE06B46DAA695DD6F6F": {
+              "url": "http://127.0.0.1:4322/politique-de-confidentialite/",
+              "navStartToEndTime": 52,
+              "transferSize": 3763,
               "isLongest": true,
               "children": {
-                "12508.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 32,
-                  "transferSize": 795,
-                  "isLongest": true,
+                "15128.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 55,
+                  "transferSize": 1763,
                   "children": {
-                    "12508.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 132,
-                      "transferSize": 10680,
-                      "isLongest": true,
+                    "15128.13": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 90,
+                      "transferSize": 11648,
                       "children": {}
                     }
                   }
                 },
-                "12508.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 32,
-                  "transferSize": 4155,
+                "15128.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 55,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "12508.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 115,
-                  "transferSize": 421,
+                "15128.17": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 94,
+                  "transferSize": 1440,
+                  "isLongest": true,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 132
+            "duration": 94
           }
         }
       },
@@ -270,14 +180,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             }
           ]
         }
@@ -285,8 +195,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1624,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3339.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -353,19 +263,94 @@
     "route": "/cookies/",
     "profile": "mobile",
     "scores": {
-      "performance": 100,
+      "performance": 70,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1207.3905,
+    "lcp": 1206.1331,
     "cls": 0,
-    "tbt": 0,
-    "weight": 38787,
+    "tbt": 4243.866899999999,
+    "weight": 46308,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
+      {
+        "id": "total-blocking-time",
+        "score": 0.01,
+        "title": "Total Blocking Time",
+        "displayValue": "4,240 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0,
+        "title": "Max Potential First Input Delay",
+        "displayValue": "2,790 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.73,
+        "title": "Time to Interactive",
+        "displayValue": "5.3 s"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "score": 0,
+        "title": "Minimize main-thread work",
+        "displayValue": "7.6 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "groupLabel",
+              "valueType": "text",
+              "label": "Category"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "group": "other",
+              "groupLabel": "Other",
+              "duration": 6890.139999999999
+            },
+            {
+              "group": "scriptEvaluation",
+              "groupLabel": "Script Evaluation",
+              "duration": 611.1239999999999
+            },
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 115.82000000000001
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 15.808
+            },
+            {
+              "group": "parseHTML",
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 5.8839999999999995
+            },
+            {
+              "group": "scriptParseCompile",
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 0.788
+            }
+          ],
+          "sortedBy": [
+            "duration"
+          ]
+        }
+      },
       {
         "id": "label-content-name-mismatch",
         "score": 0,
@@ -388,18 +373,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 22,
-                  "right": 127,
-                  "width": 105,
-                  "height": 43
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 21,
+                  "right": 100,
+                  "width": 79,
+                  "height": 44
                 },
                 "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -445,14 +430,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             }
           ],
           "overallSavingsMs": 0
@@ -465,44 +450,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "71369E3AF0C9E454FEC45EDB9E1E2E63": {
-              "url": "http://127.0.0.1:4321/cookies/",
-              "navStartToEndTime": 24,
-              "transferSize": 2420,
+            "2065BC7BEB9180656524218606A9E8B7": {
+              "url": "http://127.0.0.1:4322/cookies/",
+              "navStartToEndTime": 89,
+              "transferSize": 3542,
               "isLongest": true,
               "children": {
-                "10128.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 35,
-                  "transferSize": 795,
+                "27716.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 157,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "10128.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 89,
-                      "transferSize": 10680,
+                    "27716.14": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 189,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "10128.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 36,
-                  "transferSize": 4155,
+                "27716.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 156,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "10128.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 80,
-                  "transferSize": 421,
+                "27716.10": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 155,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 89
+            "duration": 189
           }
         }
       },
@@ -531,14 +516,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             }
           ]
         }
@@ -546,8 +531,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1598.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2963.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -619,10 +604,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1211.4636,
+    "lcp": 1206.3033,
     "cls": 0,
     "tbt": 0,
-    "weight": 45524,
+    "weight": 46438,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -649,18 +634,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 22,
-                  "right": 127,
-                  "width": 105,
-                  "height": 43
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 21,
+                  "right": 100,
+                  "width": 79,
+                  "height": 44
                 },
                 "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -706,14 +691,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 302
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 152
             }
           ],
           "overallSavingsMs": 0
@@ -726,49 +711,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "BB35EAE6826FD4D22FC8DBC280E85FC8": {
-              "url": "http://127.0.0.1:4321/conditions-generales/",
-              "navStartToEndTime": 25,
-              "transferSize": 2558,
+            "BB5C5BA85C68550989AA449DB3AAE1EB": {
+              "url": "http://127.0.0.1:4322/conditions-generales/",
+              "navStartToEndTime": 19,
+              "transferSize": 3672,
               "isLongest": true,
               "children": {
-                "30424.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 31,
-                  "transferSize": 795,
+                "29104.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 20,
+                  "transferSize": 1763,
+                  "isLongest": true,
                   "children": {
-                    "30424.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 98,
-                      "transferSize": 10680,
-                      "children": {}
-                    },
-                    "30424.16": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
-                      "navStartToEndTime": 97,
-                      "transferSize": 6599,
+                    "29104.14": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 66,
+                      "transferSize": 11648,
+                      "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "30424.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 38,
-                  "transferSize": 4155,
+                "29104.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "30424.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 99,
-                  "transferSize": 421,
-                  "isLongest": true,
+                "29104.10": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 34,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 99
+            "duration": 66
           }
         }
       },
@@ -797,14 +777,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 302
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 152
             }
           ]
         }
@@ -812,8 +792,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1486,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3632.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -885,10 +865,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1209.0227,
+    "lcp": 1208.4252000000001,
     "cls": 0,
     "tbt": 0,
-    "weight": 38808,
+    "weight": 46314,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -915,18 +895,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 24,
-                  "bottom": 67,
-                  "left": 22,
-                  "right": 127,
-                  "width": 105,
-                  "height": 43
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 21,
+                  "right": 100,
+                  "width": 79,
+                  "height": 44
                 },
                 "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -972,106 +952,17 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 104
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-2-MAIN",
-                "path": "1,HTML,1,BODY,2,MAIN",
-                "selector": "body.fr > main#main",
-                "boundingRect": {
-                  "top": 92,
-                  "bottom": 1476,
-                  "left": 0,
-                  "right": 412,
-                  "width": 412,
-                  "height": 1384
-                },
-                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
-                "nodeLabel": "Accueil\n/\nRetours et remboursement\nRetours et remboursement\n\nDocument à complét…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-3-SMALL",
-                "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,1,DL,1,DD,0,SPAN,0,SMALL",
-                "selector": "dl > dd > span.fact > small.confirmation",
-                "boundingRect": {
-                  "top": 774,
-                  "bottom": 790,
-                  "left": 192,
-                  "right": 259,
-                  "width": 67,
-                  "height": 16
-                },
-                "snippet": "<small class=\"confirmation\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "[CONFIRMER]"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 7
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 104,
-            "maxChildren": 9,
-            "maxDepth": 7
-          }
         }
       },
       {
@@ -1081,44 +972,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "A314C79686D4C762B1BD8A56F8FEC9F8": {
-              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
-              "navStartToEndTime": 55,
-              "transferSize": 2441,
+            "5F3A07DF355319D52A4E5C38AA57DF65": {
+              "url": "http://127.0.0.1:4322/retours-et-remboursement/",
+              "navStartToEndTime": 45,
+              "transferSize": 3548,
               "isLongest": true,
               "children": {
-                "26052.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 62,
-                  "transferSize": 795,
+                "27812.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 49,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "26052.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 135,
-                      "transferSize": 10680,
+                    "27812.14": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 93,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "26052.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 67,
-                  "transferSize": 4155,
+                "27812.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 55,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "26052.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 134,
-                  "transferSize": 421,
+                "27812.10": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 55,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 135
+            "duration": 93
           }
         }
       },
@@ -1147,14 +1038,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 153
             }
           ]
         }
@@ -1162,8 +1053,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1639.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3727,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1249,8 +1140,8 @@
     ],
     "failed": [],
     "environment": {
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1453,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2982,
       "credits": {}
     },
     "config": {
@@ -1334,8 +1225,8 @@
     ],
     "failed": [],
     "environment": {
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1633,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2283.5,
       "credits": {}
     },
     "config": {
@@ -1405,10 +1296,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 292.80954999999994,
+    "lcp": 328.577,
     "cls": 0,
     "tbt": 0,
-    "weight": 38966,
+    "weight": 46529,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -1435,37 +1326,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 61,
-                  "right": 192,
-                  "width": 132,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.fr > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 1174,
-                  "right": 1218,
-                  "width": 44,
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 68,
+                  "right": 147,
+                  "width": 79,
                   "height": 44
                 },
-                "snippet": "<a class=\"language-link\" href=\"/ar/\" lang=\"ar\" dir=\"rtl\" aria-label=\"Voir le site en arabe tunisien\">",
-                "nodeLabel": "العربية",
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -1511,9 +1383,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ],
           "overallSavingsMs": 0
@@ -1526,44 +1398,38 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "19B60E7C6AB663E174883D2B51016B70": {
-              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
-              "navStartToEndTime": 34,
-              "transferSize": 2599,
+            "120D28EC3608286C1BD6C30013C31983": {
+              "url": "http://127.0.0.1:4322/politique-de-confidentialite/",
+              "navStartToEndTime": 20,
+              "transferSize": 3763,
               "isLongest": true,
               "children": {
-                "30424.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 48,
-                  "transferSize": 795,
+                "32288.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "30424.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 110,
-                      "transferSize": 10680,
+                    "32288.13": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 62,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "30424.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 47,
-                  "transferSize": 4155,
-                  "children": {}
-                },
-                "30424.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 101,
-                  "transferSize": 421,
+                "32288.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 21,
+                  "transferSize": 4644,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 110
+            "duration": 62
           }
         }
       },
@@ -1592,13 +1458,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ]
         }
@@ -1606,8 +1472,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1590,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3459,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1679,10 +1545,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 290.5204,
+    "lcp": 287.79685,
     "cls": 0,
     "tbt": 0,
-    "weight": 38787,
+    "weight": 46308,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -1709,37 +1575,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 61,
-                  "right": 192,
-                  "width": 132,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.fr > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 1174,
-                  "right": 1218,
-                  "width": 44,
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 68,
+                  "right": 147,
+                  "width": 79,
                   "height": 44
                 },
-                "snippet": "<a class=\"language-link\" href=\"/ar/\" lang=\"ar\" dir=\"rtl\" aria-label=\"Voir le site en arabe tunisien\">",
-                "nodeLabel": "العربية",
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -1785,9 +1632,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ],
           "overallSavingsMs": 0
@@ -1800,44 +1647,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "F6B508507412DE274AB8615797918FEF": {
-              "url": "http://127.0.0.1:4321/cookies/",
-              "navStartToEndTime": 32,
-              "transferSize": 2420,
+            "468A6A6D9F1AB88A0887DD287061019E": {
+              "url": "http://127.0.0.1:4322/cookies/",
+              "navStartToEndTime": 43,
+              "transferSize": 3542,
               "isLongest": true,
               "children": {
-                "33612.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 33,
-                  "transferSize": 795,
+                "30920.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 44,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "33612.14": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 94,
-                      "transferSize": 10680,
+                    "30920.14": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 77,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "33612.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 39,
-                  "transferSize": 4155,
+                "30920.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 46,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "33612.10": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 87,
-                  "transferSize": 421,
+                "30920.10": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 71,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 94
+            "duration": 77
           }
         }
       },
@@ -1866,13 +1713,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763
             }
           ]
         }
@@ -1880,8 +1727,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1589,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3807,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1953,10 +1800,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 291.79465,
+    "lcp": 288.33655,
     "cls": 0,
     "tbt": 0,
-    "weight": 45524,
+    "weight": 46438,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -1983,37 +1830,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 61,
-                  "right": 192,
-                  "width": 132,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.fr > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 1174,
-                  "right": 1218,
-                  "width": 44,
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 68,
+                  "right": 147,
+                  "width": 79,
                   "height": 44
                 },
-                "snippet": "<a class=\"language-link\" href=\"/ar/\" lang=\"ar\" dir=\"rtl\" aria-label=\"Voir le site en arabe tunisien\">",
-                "nodeLabel": "العربية",
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -2037,7 +1865,7 @@
         "id": "render-blocking-resources",
         "score": 0.5,
         "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 10 ms",
+        "displayValue": "Est savings of 0 ms",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -2059,12 +1887,12 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ],
-          "overallSavingsMs": 12
+          "overallSavingsMs": 0
         }
       },
       {
@@ -2074,44 +1902,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "FDA3D72FDBF61860ADB3732676553A1B": {
-              "url": "http://127.0.0.1:4321/conditions-generales/",
-              "navStartToEndTime": 27,
-              "transferSize": 2558,
+            "2BC0C0219FE00741EBF25C23B6318E14": {
+              "url": "http://127.0.0.1:4322/conditions-generales/",
+              "navStartToEndTime": 184,
+              "transferSize": 3672,
               "isLongest": true,
               "children": {
-                "32860.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 29,
-                  "transferSize": 795,
+                "20740.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 186,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "32860.13": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 91,
-                      "transferSize": 10680,
-                      "children": {}
-                    },
-                    "32860.15": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
-                      "navStartToEndTime": 91,
-                      "transferSize": 6599,
+                    "20740.13": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 205,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "32860.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 29,
-                  "transferSize": 4155,
+                "20740.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 187,
+                  "transferSize": 4644,
+                  "children": {}
+                },
+                "20740.17": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 203,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 91
+            "duration": 205
           }
         }
       },
@@ -2140,13 +1968,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763
             }
           ]
         }
@@ -2154,8 +1982,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1677.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3273.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -2227,10 +2055,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 292.80174999999997,
+    "lcp": 287.7691,
     "cls": 0,
     "tbt": 0,
-    "weight": 38808,
+    "weight": 46314,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -2257,37 +2085,18 @@
               "node": {
                 "type": "node",
                 "lhId": "1-0-A",
-                "path": "1,HTML,1,BODY,1,HEADER,0,A",
-                "selector": "body.fr > header.site-header > a.wordmark",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
                 "boundingRect": {
-                  "top": 32,
-                  "bottom": 83,
-                  "left": 61,
-                  "right": 192,
-                  "width": 132,
-                  "height": 51
-                },
-                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "HADDAR\nBIJOUX",
-                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-              }
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-1-A",
-                "path": "1,HTML,1,BODY,1,HEADER,2,DIV,0,A",
-                "selector": "body.fr > header.site-header > div.header-actions > a.language-link",
-                "boundingRect": {
-                  "top": 36,
-                  "bottom": 80,
-                  "left": 1174,
-                  "right": 1218,
-                  "width": 44,
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 68,
+                  "right": 147,
+                  "width": 79,
                   "height": 44
                 },
-                "snippet": "<a class=\"language-link\" href=\"/ar/\" lang=\"ar\" dir=\"rtl\" aria-label=\"Voir le site en arabe tunisien\">",
-                "nodeLabel": "العربية",
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
                 "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
               }
             }
@@ -2333,101 +2142,12 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 104
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-2-MAIN",
-                "path": "1,HTML,1,BODY,2,MAIN",
-                "selector": "body.fr > main#main",
-                "boundingRect": {
-                  "top": 116,
-                  "bottom": 1286,
-                  "left": 178,
-                  "right": 1158,
-                  "width": 980,
-                  "height": 1170
-                },
-                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
-                "nodeLabel": "Accueil\n/\nRetours et remboursement\nRetours et remboursement\n\nDocument à complét…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-3-SMALL",
-                "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,1,DL,1,DD,0,SPAN,0,SMALL",
-                "selector": "dl > dd > span.fact > small.confirmation",
-                "boundingRect": {
-                  "top": 710,
-                  "bottom": 726,
-                  "left": 544,
-                  "right": 611,
-                  "width": 67,
-                  "height": 16
-                },
-                "snippet": "<small class=\"confirmation\" lang=\"fr\" dir=\"ltr\">",
-                "nodeLabel": "[CONFIRMER]"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 7
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 104,
-            "maxChildren": 9,
-            "maxDepth": 7
-          }
         }
       },
       {
@@ -2437,38 +2157,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "66BEAD36C8CDF8F41B5BE391E35F80B6": {
-              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
-              "navStartToEndTime": 59,
-              "transferSize": 2441,
+            "62149375AD15ADA91044D6A5B0D6C26A": {
+              "url": "http://127.0.0.1:4322/retours-et-remboursement/",
+              "navStartToEndTime": 49,
+              "transferSize": 3548,
               "isLongest": true,
               "children": {
-                "33000.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 63,
-                  "transferSize": 795,
+                "28596.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 50,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "33000.13": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 137,
-                      "transferSize": 10680,
+                    "28596.13": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 90,
+                      "transferSize": 11648,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "33000.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-                  "navStartToEndTime": 64,
-                  "transferSize": 4155,
+                "28596.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 52,
+                  "transferSize": 4644,
+                  "children": {}
+                },
+                "28596.17": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 90,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 137
+            "duration": 90
           }
         }
       },
@@ -2497,13 +2223,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.C_VEZyw-.css",
-              "totalBytes": 4155,
-              "wastedMs": 84
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 795
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763
             }
           ]
         }
@@ -2511,8 +2237,8 @@
     ],
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1651.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3310.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -2598,8 +2324,8 @@
     ],
     "failed": [],
     "environment": {
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1613.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2215,
       "credits": {}
     },
     "config": {
@@ -2683,8 +2409,8 @@
     ],
     "failed": [],
     "environment": {
-      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1609.5,
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2050,
       "credits": {}
     },
     "config": {
@@ -2749,15 +2475,15 @@
     "route": "/",
     "profile": "mobile",
     "scores": {
-      "performance": 100,
+      "performance": 84,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1660.572,
+    "lcp": 1657.839,
     "cls": 0,
-    "tbt": 0,
-    "weight": 165360,
+    "tbt": 613.1610000000001,
+    "weight": 159835,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -2767,6 +2493,128 @@
         "score": 0.99,
         "title": "Largest Contentful Paint",
         "displayValue": "1.7 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.48,
+        "title": "Total Blocking Time",
+        "displayValue": "610 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.01,
+        "title": "Max Potential First Input Delay",
+        "displayValue": "780 ms"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "score": 0,
+        "title": "Minimize main-thread work",
+        "displayValue": "2.4 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "groupLabel",
+              "valueType": "text",
+              "label": "Category"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "group": "other",
+              "groupLabel": "Other",
+              "duration": 1204.9879999999996
+            },
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 986.0440000000001
+            },
+            {
+              "group": "parseHTML",
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 70.66000000000001
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 51.872
+            },
+            {
+              "group": "scriptEvaluation",
+              "groupLabel": "Script Evaluation",
+              "duration": 51.44399999999998
+            },
+            {
+              "group": "scriptParseCompile",
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 4.855999999999999
+            }
+          ],
+          "sortedBy": [
+            "duration"
+          ]
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 21,
+                  "right": 100,
+                  "width": 79,
+                  "height": 44
+                },
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
       },
       {
         "id": "render-blocking-resources",
@@ -2794,99 +2642,17 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1709,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 304
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 154
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "image-delivery-insight",
-        "score": 0,
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 60 KiB",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL",
-              "subItemsHeading": {
-                "key": "reason",
-                "valueType": "text"
-              }
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Resource Size"
-            },
-            {
-              "key": "wastedBytes",
-              "valueType": "bytes",
-              "label": "Est Savings",
-              "subItemsHeading": {
-                "key": "wastedBytes",
-                "valueType": "bytes"
-              }
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 26816,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 26816
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
-              "totalBytes": 25296,
-              "wastedBytes": 19861,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19861
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-480.avif",
-              "totalBytes": 16776,
-              "wastedBytes": 14484,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (177x177). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 14484
-                  }
-                ]
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "wastedBytes": 61161
-          }
         }
       },
       {
@@ -2896,44 +2662,50 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "8E523763477978CBDE6FEBED6492BF1C": {
-              "url": "http://127.0.0.1:4321/",
-              "navStartToEndTime": 31,
-              "transferSize": 4268,
+            "E09B914EB0C7E3E62DDB1EAB27986387": {
+              "url": "http://127.0.0.1:4322/",
+              "navStartToEndTime": 71,
+              "transferSize": 5212,
               "isLongest": true,
               "children": {
-                "2392.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 47,
-                  "transferSize": 1709,
+                "32048.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 62,
+                  "transferSize": 1763,
                   "isLongest": true,
                   "children": {
-                    "2392.21": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 104,
-                      "transferSize": 11594,
+                    "32048.27": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 162,
+                      "transferSize": 11648,
+                      "children": {}
+                    },
+                    "32048.29": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 178,
+                      "transferSize": 7567,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "2392.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-                  "navStartToEndTime": 45,
-                  "transferSize": 3699,
+                "32048.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 65,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "2392.17": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 48,
-                  "transferSize": 1386,
+                "32048.23": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 164,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 104
+            "duration": 178
           }
         }
       },
@@ -2962,14 +2734,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1709,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 304
             },
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763,
+              "wastedMs": 154
             }
           ]
         }
@@ -2978,7 +2750,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1736.5,
+      "benchmarkIndex": 2466,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -3039,25 +2811,39 @@
       ],
       "skipAudits": null
     },
-    "lighthouseVersion": "12.6.1"
+    "lighthouseVersion": "12.6.1",
+    "runs": 5,
+    "performanceSamples": [
+      78,
+      82,
+      84,
+      95,
+      100
+    ]
   },
   {
     "route": "/ar/",
     "profile": "mobile",
     "scores": {
-      "performance": 99,
+      "performance": 98,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 2261.8377,
+    "lcp": 2257.67925,
     "cls": 0,
     "tbt": 0,
-    "weight": 262090,
+    "weight": 260448,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.93,
+        "title": "First Contentful Paint",
+        "displayValue": "1.7 s"
+      },
       {
         "id": "largest-contentful-paint",
         "score": 0.94,
@@ -3071,10 +2857,63 @@
         "displayValue": "2.3 s"
       },
       {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.ar > header.site-header > div.header-bar > a.wordmark",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 312,
+                  "right": 391,
+                  "width": 79,
+                  "height": 44
+                },
+                "snippet": "<a class=\"wordmark\" href=\"/ar/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
         "id": "render-blocking-resources",
-        "score": 0.5,
+        "score": 0,
         "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
+        "displayValue": "Est savings of 260 ms",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -3096,99 +2935,17 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 306
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 1728,
-              "wastedMs": 156
+              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
+              "totalBytes": 1878,
+              "wastedMs": 153
             }
           ],
-          "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "image-delivery-insight",
-        "score": 0,
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 60 KiB",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL",
-              "subItemsHeading": {
-                "key": "reason",
-                "valueType": "text"
-              }
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Resource Size"
-            },
-            {
-              "key": "wastedBytes",
-              "valueType": "bytes",
-              "label": "Est Savings",
-              "subItemsHeading": {
-                "key": "wastedBytes",
-                "valueType": "bytes"
-              }
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 26816,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 26816
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
-              "totalBytes": 25296,
-              "wastedBytes": 19861,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (371x371). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19861
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-480.avif",
-              "totalBytes": 16776,
-              "wastedBytes": 14484,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (177x177). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 14484
-                  }
-                ]
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "wastedBytes": 61161
-          }
+          "overallSavingsMs": 255
         }
       },
       {
@@ -3198,44 +2955,50 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "3193591E82A3EDFD1A78E9FAE7DA3C71": {
-              "url": "http://127.0.0.1:4321/ar/",
-              "navStartToEndTime": 44,
-              "transferSize": 4527,
+            "E6038A208A20BE38F80C50E6A9CDC5CF": {
+              "url": "http://127.0.0.1:4322/ar/",
+              "navStartToEndTime": 14,
+              "transferSize": 5553,
               "isLongest": true,
               "children": {
-                "33516.4": {
-                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-                  "navStartToEndTime": 47,
-                  "transferSize": 1728,
+                "30788.4": {
+                  "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
+                  "navStartToEndTime": 16,
+                  "transferSize": 1878,
                   "isLongest": true,
                   "children": {
-                    "33516.20": {
-                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 128,
-                      "transferSize": 10057,
+                    "30788.26": {
+                      "url": "http://127.0.0.1:4322/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 49,
+                      "transferSize": 10111,
+                      "children": {}
+                    },
+                    "30788.24": {
+                      "url": "http://127.0.0.1:4322/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+                      "navStartToEndTime": 66,
+                      "transferSize": 109733,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "33516.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-                  "navStartToEndTime": 51,
-                  "transferSize": 3699,
+                "30788.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 18,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "33516.17": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 82,
-                  "transferSize": 1386,
+                "30788.32": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 64,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 128
+            "duration": 66
           }
         }
       },
@@ -3264,14 +3027,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 306
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 1728,
-              "wastedMs": 156
+              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
+              "totalBytes": 1878,
+              "wastedMs": 153
             }
           ]
         }
@@ -3280,7 +3043,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1672.5,
+      "benchmarkIndex": 3422,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -3341,7 +3104,15 @@
       ],
       "skipAudits": null
     },
-    "lighthouseVersion": "12.6.1"
+    "lighthouseVersion": "12.6.1",
+    "runs": 5,
+    "performanceSamples": [
+      55,
+      98,
+      98,
+      98,
+      100
+    ]
   },
   {
     "route": "/",
@@ -3352,14 +3123,73 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 370.14160000000004,
-    "cls": 0.00002061402448469416,
+    "lcp": 326.10880000000003,
+    "cls": 0.00002208645480502945,
     "tbt": 0,
-    "weight": 165360,
+    "weight": 217962,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "title": "Speed Index",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.fr > header.site-header > div.header-bar > a.wordmark",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 68,
+                  "right": 147,
+                  "width": 79,
+                  "height": 44
+                },
+                "snippet": "<a class=\"wordmark\" href=\"/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -3386,9 +3216,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 85
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             }
           ],
           "overallSavingsMs": 0
@@ -3398,7 +3228,7 @@
         "id": "uses-responsive-images",
         "score": 0,
         "title": "Properly size images",
-        "displayValue": "Est savings of 25 KiB",
+        "displayValue": "Est savings of 26 KiB",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -3428,49 +3258,49 @@
               "node": {
                 "type": "node",
                 "lhId": "1-30-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,FIGURE,0,PICTURE,2,IMG",
-                "selector": "div.custom-layout > figure.editorial-frame > picture > img",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.tile > div.frame > picture > img",
                 "boundingRect": {
-                  "top": 2027,
-                  "bottom": 2755,
-                  "left": 722,
-                  "right": 1268,
-                  "width": 546,
-                  "height": 728
+                  "top": 1233,
+                  "bottom": 2015,
+                  "left": 68,
+                  "right": 657,
+                  "width": 589,
+                  "height": 783
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif\" alt=\"Deux bracelets dorés assortis, visuel d’illustration\" width=\"1200\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Deux bracelets dorés assortis, visuel d’illustration"
+                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordons-trio-800.avif\" alt=\"Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et m…\" width=\"1024\" height=\"1280\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et maïs, …"
               },
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 12942,
-              "wastedPercent": 37.8925
+              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
+              "totalBytes": 32553,
+              "wastedBytes": 13787,
+              "wastedPercent": 42.351625000000006
             },
             {
               "node": {
                 "type": "node",
-                "lhId": "1-25-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
-                "selector": "section.hero > figure.editorial-frame > picture > img",
+                "lhId": "1-29-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.hero-media > div.frame > picture > img",
                 "boundingRect": {
-                  "top": 159,
-                  "bottom": 821,
-                  "left": 771,
+                  "top": 208,
+                  "bottom": 768,
+                  "left": 708,
                   "right": 1268,
-                  "width": 496,
-                  "height": 662
+                  "width": 560,
+                  "height": 560
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/hero-800.avif\" alt=\"Bracelet à chaîne dorée délicate, visuel généré pour illustration\" width=\"1200\" height=\"1200\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\">",
+                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/hero-800.avif\" alt=\"Bracelet à chaîne dorée délicate, visuel généré pour illustration\" width=\"1200\" height=\"1200\" loading=\"eager\" decoding=\"sync\" fetchpriority=\"high\">",
                 "nodeLabel": "Bracelet à chaîne dorée délicate, visuel généré pour illustration"
               },
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "url": "http://127.0.0.1:4322/incoming/hero-800.avif",
               "totalBytes": 25296,
-              "wastedBytes": 12318,
-              "wastedPercent": 48.695
+              "wastedBytes": 12901,
+              "wastedPercent": 51
             }
           ],
-          "overallSavingsMs": 70,
-          "overallSavingsBytes": 25260,
+          "overallSavingsMs": 40,
+          "overallSavingsBytes": 26688,
           "sortedBy": [
             "wastedBytes"
           ],
@@ -3478,76 +3308,8 @@
             "type": "debugdata",
             "metricSavings": {
               "FCP": 0,
-              "LCP": 70
+              "LCP": 40
             }
-          }
-        }
-      },
-      {
-        "id": "image-delivery-insight",
-        "score": 0,
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 33 KiB",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL",
-              "subItemsHeading": {
-                "key": "reason",
-                "valueType": "text"
-              }
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Resource Size"
-            },
-            {
-              "key": "wastedBytes",
-              "valueType": "bytes",
-              "label": "Est Savings",
-              "subItemsHeading": {
-                "key": "wastedBytes",
-                "valueType": "bytes"
-              }
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 18245,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (546x546). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 18245
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
-              "totalBytes": 25296,
-              "wastedBytes": 15558,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (496x496). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 15558
-                  }
-                ]
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "wastedBytes": 33803
           }
         }
       },
@@ -3558,43 +3320,50 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "4AC5CAA94C7505AB5BD804BAA6770593": {
-              "url": "http://127.0.0.1:4321/",
-              "navStartToEndTime": 29,
-              "transferSize": 4268,
+            "67F4CB2775F8D77AF8DFCCEDA3DE94A3": {
+              "url": "http://127.0.0.1:4322/",
+              "navStartToEndTime": 40,
+              "transferSize": 5212,
               "isLongest": true,
               "children": {
-                "26456.4": {
-                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 32,
-                  "transferSize": 1709,
+                "33172.4": {
+                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 274,
+                  "transferSize": 1763,
+                  "isLongest": true,
                   "children": {
-                    "26456.20": {
-                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 104,
-                      "transferSize": 11594,
+                    "33172.27": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 5079,
+                      "transferSize": 11648,
+                      "children": {}
+                    },
+                    "33172.29": {
+                      "url": "http://127.0.0.1:4322/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 7922,
+                      "transferSize": 7567,
+                      "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "26456.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-                  "navStartToEndTime": 33,
-                  "transferSize": 3699,
+                "33172.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 1365,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "26456.24": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 114,
-                  "transferSize": 1386,
-                  "isLongest": true,
+                "33172.23": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 1398,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 114
+            "duration": 7922
           }
         }
       },
@@ -3623,13 +3392,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 85
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 83
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1709
+              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1763
             }
           ]
         }
@@ -3638,7 +3407,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1407.5,
+      "benchmarkIndex": 3750.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -3699,7 +3468,15 @@
       ],
       "skipAudits": null
     },
-    "lighthouseVersion": "12.6.1"
+    "lighthouseVersion": "12.6.1",
+    "runs": 5,
+    "performanceSamples": [
+      100,
+      100,
+      100,
+      100,
+      100
+    ]
   },
   {
     "route": "/ar/",
@@ -3710,19 +3487,72 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 511.84569999999997,
-    "cls": 0.0001915463667069283,
+    "lcp": 533.10745,
+    "cls": 0,
     "tbt": 0,
-    "weight": 262090,
+    "weight": 318575,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
       {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.ar > header.site-header > div.header-bar > a.wordmark",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 54,
+                  "left": 1188,
+                  "right": 1268,
+                  "width": 79,
+                  "height": 44
+                },
+                "snippet": "<a class=\"wordmark\" href=\"/ar/\" aria-label=\"Haddar Bijoux\" lang=\"fr\" dir=\"ltr\">",
+                "nodeLabel": "Haddar\nBIJOUX",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
         "id": "render-blocking-resources",
-        "score": 0.5,
+        "score": 0,
         "title": "Eliminate render-blocking resources",
-        "displayValue": "Est savings of 0 ms",
+        "displayValue": "Est savings of 110 ms",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -3744,19 +3574,19 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 86
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 84
             }
           ],
-          "overallSavingsMs": 0
+          "overallSavingsMs": 113
         }
       },
       {
         "id": "uses-responsive-images",
         "score": 0.5,
         "title": "Properly size images",
-        "displayValue": "Est savings of 25 KiB",
+        "displayValue": "Est savings of 26 KiB",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -3786,49 +3616,49 @@
               "node": {
                 "type": "node",
                 "lhId": "1-30-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,FIGURE,0,PICTURE,2,IMG",
-                "selector": "div.custom-layout > figure.editorial-frame > picture > img",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.tile > div.frame > picture > img",
                 "boundingRect": {
-                  "top": 1969,
-                  "bottom": 2697,
-                  "left": 68,
-                  "right": 614,
-                  "width": 546,
-                  "height": 728
+                  "top": 1241,
+                  "bottom": 2023,
+                  "left": 678,
+                  "right": 1268,
+                  "width": 589,
+                  "height": 783
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif\" alt=\"زوز أساور ذهبية متناسقة، صورة توضيحية\" width=\"1200\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "زوز أساور ذهبية متناسقة، صورة توضيحية"
+                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordons-trio-800.avif\" alt=\"ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على م…\" width=\"1024\" height=\"1280\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على مخدّة ب…"
               },
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 12942,
-              "wastedPercent": 37.8925
+              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
+              "totalBytes": 32553,
+              "wastedBytes": 13787,
+              "wastedPercent": 42.351625000000006
             },
             {
               "node": {
                 "type": "node",
-                "lhId": "1-25-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
-                "selector": "section.hero > figure.editorial-frame > picture > img",
+                "lhId": "1-29-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.hero-media > div.frame > picture > img",
                 "boundingRect": {
-                  "top": 159,
-                  "bottom": 821,
+                  "top": 208,
+                  "bottom": 768,
                   "left": 68,
-                  "right": 564,
-                  "width": 496,
-                  "height": 662
+                  "right": 627,
+                  "width": 560,
+                  "height": 560
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/hero-800.avif\" alt=\"سوار بسلسلة ذهبية رقيقة، صورة توضيحية مولّدة\" width=\"1200\" height=\"1200\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\">",
+                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/hero-800.avif\" alt=\"سوار بسلسلة ذهبية رقيقة، صورة توضيحية مولّدة\" width=\"1200\" height=\"1200\" loading=\"eager\" decoding=\"sync\" fetchpriority=\"high\">",
                 "nodeLabel": "سوار بسلسلة ذهبية رقيقة، صورة توضيحية مولّدة"
               },
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
+              "url": "http://127.0.0.1:4322/incoming/hero-800.avif",
               "totalBytes": 25296,
-              "wastedBytes": 12318,
-              "wastedPercent": 48.695
+              "wastedBytes": 12901,
+              "wastedPercent": 51
             }
           ],
           "overallSavingsMs": 10,
-          "overallSavingsBytes": 25260,
+          "overallSavingsBytes": 26688,
           "sortedBy": [
             "wastedBytes"
           ],
@@ -3842,247 +3672,56 @@
         }
       },
       {
-        "id": "bf-cache",
-        "score": 0,
-        "title": "Page prevented back/forward cache restoration",
-        "displayValue": "1 failure reason",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "reason",
-              "valueType": "text",
-              "subItemsHeading": {
-                "key": "frameUrl",
-                "valueType": "url"
-              },
-              "label": "Failure reason"
-            },
-            {
-              "key": "failureType",
-              "valueType": "text",
-              "label": "Failure type"
-            }
-          ],
-          "items": [
-            {
-              "reason": "CacheLimitPrunedOnCriticalMemoryPressure",
-              "failureType": "Not actionable",
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "frameUrl": "http://127.0.0.1:4321/ar/"
-                  }
-                ]
-              },
-              "protocolReason": "CacheLimitPrunedOnCriticalMemoryPressure"
-            }
-          ]
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 138
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-5-SECTION",
-                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION",
-                "selector": "body.ar > main#main > section#commander",
-                "boundingRect": {
-                  "top": 2833,
-                  "bottom": 3438,
-                  "left": 0,
-                  "right": 1335,
-                  "width": 1335,
-                  "height": 604
-                },
-                "snippet": "<section id=\"commander\" class=\"contact-section section wrap\" aria-labelledby=\"contact-title\">",
-                "nodeLabel": "اطلبوا\n\nاطلبوا\n\nالقطع والجديد كل على إنستغرام.\n\nابعثوا ميساج على إنستغرام\n\n@had…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 6
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-6-path",
-                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,4,DIV,0,A,1,svg,0,path",
-                "selector": "div.hero-actions > a.button > svg.icon > path",
-                "boundingRect": {
-                  "top": 693,
-                  "bottom": 704,
-                  "left": 1088,
-                  "right": 1102,
-                  "width": 13,
-                  "height": 12
-                },
-                "snippet": "<path d=\"M4 12h15M13 5l7 7-7 7\">",
-                "nodeLabel": "div.hero-actions > a.button > svg.icon > path"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 8
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 138,
-            "maxChildren": 6,
-            "maxDepth": 8
-          }
-        }
-      },
-      {
-        "id": "image-delivery-insight",
-        "score": 0.5,
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 33 KiB",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL",
-              "subItemsHeading": {
-                "key": "reason",
-                "valueType": "text"
-              }
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Resource Size"
-            },
-            {
-              "key": "wastedBytes",
-              "valueType": "bytes",
-              "label": "Est Savings",
-              "subItemsHeading": {
-                "key": "wastedBytes",
-                "valueType": "bytes"
-              }
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4321/incoming/bracelets-assortis-800.avif",
-              "totalBytes": 34154,
-              "wastedBytes": 18245,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (546x546). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 18245
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4321/incoming/hero-800.avif",
-              "totalBytes": 25296,
-              "wastedBytes": 15558,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (496x496). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 15558
-                  }
-                ]
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "wastedBytes": 33803
-          }
-        }
-      },
-      {
         "id": "network-dependency-tree-insight",
         "score": 0,
         "title": "Network dependency tree",
         "details": {
           "type": "network-tree",
           "chains": {
-            "157B24E32FEF9A13960F15F111A71538": {
-              "url": "http://127.0.0.1:4321/ar/",
-              "navStartToEndTime": 48,
-              "transferSize": 4527,
+            "F3482541299A6ECE330C9C0C56F2C1D9": {
+              "url": "http://127.0.0.1:4322/ar/",
+              "navStartToEndTime": 41,
+              "transferSize": 5553,
               "isLongest": true,
               "children": {
-                "24376.4": {
-                  "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-                  "navStartToEndTime": 50,
-                  "transferSize": 1728,
+                "20668.4": {
+                  "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
+                  "navStartToEndTime": 41,
+                  "transferSize": 1878,
                   "isLongest": true,
                   "children": {
-                    "24376.20": {
-                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 147,
-                      "transferSize": 10057,
+                    "20668.26": {
+                      "url": "http://127.0.0.1:4322/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 10111,
+                      "children": {}
+                    },
+                    "20668.24": {
+                      "url": "http://127.0.0.1:4322/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+                      "navStartToEndTime": 118,
+                      "transferSize": 109733,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "24376.5": {
-                  "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-                  "navStartToEndTime": 51,
-                  "transferSize": 3699,
+                "20668.5": {
+                  "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+                  "navStartToEndTime": 43,
+                  "transferSize": 4644,
                   "children": {}
                 },
-                "24376.17": {
-                  "url": "http://127.0.0.1:4321/site.webmanifest",
-                  "navStartToEndTime": 83,
-                  "transferSize": 1386,
+                "20668.27": {
+                  "url": "http://127.0.0.1:4322/site.webmanifest",
+                  "navStartToEndTime": 62,
+                  "transferSize": 1440,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 147
+            "duration": 118
           }
         }
       },
@@ -4111,13 +3750,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4321/_astro/Base.Cy9dOeW7.css",
-              "totalBytes": 3699,
-              "wastedMs": 86
+              "url": "http://127.0.0.1:4322/_astro/Base.Bc0WH7gu.css",
+              "totalBytes": 4644,
+              "wastedMs": 84
             },
             {
-              "url": "http://127.0.0.1:4321/fonts/ar-8ccf1c8635f9.css",
-              "totalBytes": 1728
+              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
+              "totalBytes": 1878
             }
           ]
         }
@@ -4126,7 +3765,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1501,
+      "benchmarkIndex": 3607,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -4187,6 +3826,14 @@
       ],
       "skipAudits": null
     },
-    "lighthouseVersion": "12.6.1"
+    "lighthouseVersion": "12.6.1",
+    "runs": 5,
+    "performanceSamples": [
+      94,
+      99,
+      100,
+      100,
+      100
+    ]
   }
 ]

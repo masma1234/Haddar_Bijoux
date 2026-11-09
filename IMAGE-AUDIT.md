@@ -1,49 +1,113 @@
 # Image audit
 
-All 15 files in `incoming/` (recursive; no subfolders). Originals are never modified. `scripts/generate-assets.mjs` builds derivatives into `public/incoming/` from the manifest `src/data/images.ts`: AVIF and WebP at each listed width, plus a JPG fallback. `scripts/check-image-contract.mjs` verifies the placements on both locales.
+Inventory of `incoming/` on 9 November 2026: 15 files, no subfolders. No file was added since the 8 November audit. No two files are byte-identical.
 
-**Provenance.**
-- The six `.jpg` files are AI-generated illustrations, documented in `IMAGE-CREDITS.md` and `HADDAR_CODEX_README.md` (checksums in `SHA256SUMS.txt`, all still matching).
-- The nine `.jpeg` files have no EXIF or ICC data, and their long edge is 1280px, consistent with export through a messaging app. Their content reads as phone photographs.
-- The owner confirmed on 8 November 2026 that the nine `.jpeg` files show real Haddar Bijoux pieces. Rights: supplied by the owner for the site.
+Originals are never modified. `scripts/check-image-contract.mjs` checks the SHA-256 of all 15 files on every run:
+- AI files: checked against `SHA256SUMS.txt`.
+- Owner photos: checked against the hashes in the table at the end of this file.
 
-## AI illustrations (1200 x 1200 JPG, square)
+`scripts/generate-assets.mjs` builds the derivatives in `public/incoming/` from the manifest `src/data/images.ts`. For each image it writes AVIF and WebP at each listed width, plus a JPG fallback.
 
-| File | Visible subject | Placement | Frame | Derivatives |
-|---|---|---|---|---|
-| `hero.jpg` | Fine chain bracelet, clasp and tag, on ivory paper | Hero, eager + `fetchpriority=high` | 1:1, no crop | 480/800/1200 |
-| `bracelets.jpg` | Oval-link chain bracelet | Collection card 1 | 1:1 | same |
-| `bracelets-personnalises.jpg` | Chain bracelet with a blank bar | Collection card 2 | 1:1 | same |
-| `boucles-oreilles.jpg` | Pair of small hoops | Collection card 3 | 1:1 | same |
-| `colliers.jpg` | Fine chain with a round pendant | Collection card 4 | 1:1 | same |
-| `bracelets-assortis.jpg` | Two matching chain bracelets | Sur mesure | 1:1 | same |
+Two changes in this round:
+- The crop is now part of the manifest. A derivative is rebuilt when the original or the manifest changes.
+- Derivatives that no manifest entry produces any more are deleted.
 
-Alt text is unchanged from the brief (FR and AR, each says "illustration"). The six placements are preserved on both locales.
+## Provenance
+
+- **The six `.jpg` files** are AI-generated illustrations supplied by the owner. Evidence: `IMAGE-CREDITS.md`, `HADDAR_CODEX_README.md` and `SHA256SUMS.txt`.
+- **The nine `.jpeg` files** have no EXIF or ICC data, and their long edge is 1280px. This is consistent with export through a messaging app.
+- On 8 November 2026 the owner confirmed that the nine `.jpeg` files show real Haddar Bijoux pieces, supplied for the site. No photographer is named, and none is invented.
 
 ## Owner photographs (real pieces)
 
-| File | Size | Visible subject | Placement | Treatment | Caption FR / AR |
+Sharpness is the sharp `stats().sharpness` value. It is relative: higher means more edge detail. Every real photo sits inside the gold liner, and only real photos do.
+
+| File | Size, sharpness | Visible subject | Use | Crop (left, top, w x h) | Widths |
 |---|---|---|---|---|---|
-| `fruit.jpeg` | 1047x1280 | Three cord bracelets on an ivory pillow: heart padlock (pink twisted cord), pineapple (orange), corn-shaped khomsa (yellow) | Gallery feature | 4:5 at 1024x1280. Square crop on tablet and phone keeps all three. | Cadenas cœur, ananas et maïs / قفل قلب، أناناس وذرة |
-| `lock.jpeg` | 924x1280 | Heart padlock charm, pink twisted cord, ivory pillow | Gallery | 4:5, 924x1155 | Cadenas cœur / قفل قلب |
-| `ananas.jpeg` | 961x1280 | Pineapple charm, orange cord, ivory pillow | Gallery | 4:5, 960x1200 | Ananas / أناناس |
-| `houta_zoom.jpeg` | 960x1280 | Openwork fish charm with a blue detail, in an open box, held in a hand | Gallery | 4:5, 960x1200 | Poisson / حوتة |
-| `khomsa.jpeg` | 1061x1280 | Openwork khomsa charm, black cord, in an open box, held in a hand | Gallery | 4:5, 1024x1280 | Khomsa / خمسة |
-| `coeur_yed.jpeg` | 720x1280 | Two-photo collage: heart charm on pink cord (top), then red cord (bottom), worn on a wrist | Commander | Top panel only (0,0 to 720x630), native ratio | Cœur, porté / قلب، ملبوس |
+| `fruit.jpeg` | 1047x1280, 2.07 | Three cord bracelets on an ivory pillow: heart padlock (pink twisted cord), pineapple (orange), corn-textured khomsa (yellow) | **Hero** (eager, `fetchpriority=high`), both share cards | 55, 190, 900x900 square. All three pieces are whole, and the pillow fills the frame. | 480, 800, 900 |
+| `lock.jpeg` | 924x1280, 1.23 | Heart padlock charm, pink twisted cord, ivory pillow | Plate, pillow pair | 42, 115, 840x1050 | 480, 800, 840 |
+| `ananas.jpeg` | 961x1280, 1.42 | Pineapple charm, orange cord, ivory pillow | Plate, pillow pair | 48, 140, 840x1050 | 480, 800, 840 |
+| `houta_zoom.jpeg` | 960x1280, 1.69 | Openwork fish charm with a blue stone, in an open champagne box with a light, held in a hand | Plate, écrin pair (the widest plates, because the charm is small in frame) | 40, 30, 880x1100. Keeps the box light. | 480, 800, 880 |
+| `khomsa.jpeg` | 1061x1280, 1.33 | Openwork khomsa charm, black cord, in an open champagne box, held in a hand | Plate, écrin pair | 100, 20, 880x1100 | 480, 800, 880 |
+| `coeur_yed.jpeg` (top panel) | 720x1280 collage, 0.77 | Heart charm on a pink cord, worn on a wrist | Plate, wrist pair ("Au poignet") | 0, 0, 720x630 | 480, 720 |
+| `coeur_yed.jpeg` (bottom panel) | same file | Same heart charm on a red cord, worn | Plate, wrist pair | 0, 646, 720x630. The seam (y 638 to 641) is excluded. | 480, 720 |
 
-Derivative widths: 480 and 800, plus the cropped width. On a phone, a gallery tile downloads a 480w AVIF (9 to 13 KB). The feature downloads an 800w AVIF (about 33 KB).
+**Captions** give the motif name, then what is visible:
 
-Alt text describes only what is visible: motif, cord color, setting. It makes no claim about carat, material, price or stock. The word "doré" is avoided for the real pieces because it suggests gold plating in French.
+| Piece | French | Derja |
+|---|---|---|
+| Hero | Cadenas cœur, ananas et maïs | قفل قلب، أناناس وذرة |
+| Padlock | Cadenas cœur / Cordon rose torsadé | قفل قلب / خيط وردي مفتول |
+| Pineapple | Ananas / Cordon orange | أناناس / خيط برتقالي |
+| Fish | Poisson / Détail bleu, dans un écrin | حوتة / نقطة زرقاء، في علبة |
+| Khomsa | Khomsa / Cordon noir, dans un écrin | خمسة / خيط أكحل، في علبة |
+| Hearts | Cœur / Cordon rose, porté and Cordon rouge, porté | قلب / خيط وردي، ملبوس and خيط أحمر، ملبوس |
+
+**Alt text** (FR and AR in `src/data/images.ts`) describes only the motif, the cord colour and the setting. It makes no claim about carat, price or stock. "Doré" is avoided for real pieces because it suggests gold plating in French.
+
+**Deep links.** Each plate has a stable id, so a story or a message can link to one piece:
+
+| Piece | Link |
+|---|---|
+| Padlock | `/#cordon-cadenas` |
+| Pineapple | `/#cordon-ananas` |
+| Fish | `/#cordon-poisson` |
+| Khomsa | `/#cordon-khomsa` |
+| Pink cord heart | `/#cordon-coeur-rose` |
+| Red cord heart | `/#cordon-coeur-rouge` |
+
+The same ids work on `/ar/`.
+
+## AI illustrations (1200 x 1200 JPG)
+
+| File | Visible subject | Use |
+|---|---|---|
+| `bracelets.jpg` | Oval-link chain bracelet | Collection card "Bracelets" |
+| `bracelets-personnalises.jpg` | Chain bracelet with a blank bar | Collection card "Bracelets personnalisés" |
+| `boucles-oreilles.jpg` | Pair of small hoops | Collection card "Boucles d’oreilles" |
+| `colliers.jpg` | Fine chain with a round pendant | Collection card "Colliers" |
+| `bracelets-assortis.jpg` | Two matching chain bracelets | Sur mesure, captioned "Visuel d’illustration" |
+| `hero.jpg` | Fine chain bracelet on ivory paper | **Not used** (see Excluded) |
+
+The illustrations sit only in the ivory band. They have no gold liner, and the band's intro says they are illustrations. Each alt text also says "illustration". Derivative widths are 480, 800 and 1200.
 
 ## Excluded
 
 | File | Reason |
 |---|---|
-| `houta.jpeg` | Same piece and box as `houta_zoom.jpeg`, shot from further away. The piece is smaller in frame. |
-| `mais.jpeg` | Corn khomsa on a teal velvet pillow. The piece is already shown in the feature shot. The saturated teal fights the locked ivory palette next to the other tiles. |
+| `hero.jpg` (AI) | The hero now shows real pieces (`fruit.jpeg`), as the brief asks for the strongest imagery there. A second fine chain bracelet would repeat `bracelets.jpg`. The share cards now use the real trio too. The change can be reversed in `src/components/Home.astro`. |
+| `houta.jpeg` | Same piece and box as `houta_zoom.jpeg`, shot from further away (sharpness 1.17). The fish is smaller in frame. |
+| `mais.jpeg` | Corn khomsa on a teal velvet pillow. It is sharp (2.06), but the piece is already in the hero, and the saturated teal fights the white page. |
 | `fruit2.jpeg` | Corn khomsa and pineapple on the same teal pillow. Both pieces are already shown. |
-| Bottom half of `coeur_yed.jpeg` | Same heart charm on a red cord. Using one panel avoids showing the collage seam. |
+
+## Delivery
+
+| Image | Weight |
+|---|---|
+| Hero AVIF | 12.5 KB (480w), 30.0 KB (800w), 36.8 KB (900w) |
+| Plates, 480w AVIF | 8.7 to 10.9 KB |
+| Plates, 800w AVIF | about 25 KB |
+
+Plates and illustrations load lazily. The hero is the only high-priority image, and the image contract checks this. Below 1100px the hero is sized from the viewport height, so the order button stays in the first view on phones.
 
 ## Limitations
-- The photos are 1280px tall at most. The desktop feature is shown at about 640 CSS px wide, so 2x screens upscale it slightly. Higher-resolution originals would fix this.
-- The backgrounds vary: ivory pillow, dark box, grey wall. The gallery groups them by row (pillows on top, boxes below) rather than altering the photos.
+
+- **Resolution.** The photos are at most 1280px tall. On 2x screens:
+  - The desktop hero (600 CSS px) upscales the 900px crop by about 1.33.
+  - The écrin plates (540 CSS px) upscale by about 1.2.
+  - Higher-resolution originals would fix this (`OWNER-DECISIONS.md`).
+- **Backgrounds vary**: showroom pillow, champagne box on white satin, a wrist. The page groups them in pairs by setting. The photos are not edited or recoloured.
+
+## Owner photo checksums (SHA-256)
+
+```
+d6e2dd783ed76e55bd4fdd2005052be4e65cf62cb6b27fdb4baedd9d0cc5c8af  incoming/ananas.jpeg
+8bc4abf2d75d54c19ec3c89ce0be681d8406552d6b28120ea2f71d6d4f1a2dd6  incoming/coeur_yed.jpeg
+bdd7b89fce09c0a262671b7f00df0f6f4a7ab892233f84e13f9d32ffaa5f1487  incoming/fruit.jpeg
+f4c341d1ccc2c4785c29b1c8bbd3fd68a5693ff00bd0fc09bf5184a0ae147e3d  incoming/fruit2.jpeg
+342c5092721d9a05e87ce78d55604b87fba61bc03fadb55a146e6202c570f8ec  incoming/houta.jpeg
+fb70188d2c5103dffe486c6fb42212f4681a3eb1d1715b71363a90ec5109ab44  incoming/houta_zoom.jpeg
+23296d58d744a6154442b12ebf9e8385b69abfc4496d4cb530f654a9ad545325  incoming/khomsa.jpeg
+88571876296e2838fb6e5f82cb2fb8a8c1d7654b315e170863a9c2a7ae631f63  incoming/lock.jpeg
+5f3b1ae6e296a659382bf30acd9c2ce8ca1360eb3e679874db22ce0627fa4d46  incoming/mais.jpeg
+```

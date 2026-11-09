@@ -1,40 +1,56 @@
-# Audit before refinement
+# Audit before redesign (round 2)
 
-Baseline commit `45d2cd28` on branch `design/premium-refinement`, built with `pnpm build` and served by `scripts/serve.mjs`. Screenshots: `docs/screens/before/` (FR and AR at 320, 375, 768, 1024, 1440; first view and full page).
+**Baseline.** Commit `ca193aef` on `design/premium-refinement`. It is the result of round 1, whose own before and after are in git history. The working tree was clean, so the new branch `design/white-gold-redesign` starts from that commit and needed no separate baseline commit.
 
-## Measured (Lighthouse 12.6.1, local preview, one run each)
+**Screenshots.** `docs/screens/before/`: FR and AR at 320, 375, 768, 1024 and 1440, first view and full page.
 
-| Page | Profile | Perf / A11y / BP / SEO | LCP | CLS | TBT | Transfer |
-|---|---|---|---:|---:|---:|---:|
-| `/` | mobile (Slow 4G, 4x CPU) | 100 / 100 / 100 / 100 | 1661 ms | 0 | 0 ms | 165 KB |
-| `/ar/` | mobile | 99 / 100 / 100 / 100 | 2262 ms | 0 | 0 ms | 262 KB |
-| `/` | desktop | 100 / 100 / 100 / 100 | 370 ms | 0.00002 | 0 ms | 165 KB |
-| `/ar/` | desktop | 100 / 100 / 100 / 100 | 512 ms | 0.0002 | 0 ms | 262 KB |
+## Measured (Lighthouse 12.6.1, local preview, home pages)
 
-Lab numbers were already good. The problems were visual, structural and factual.
+The first two full runs today were not usable:
+- The first gave mobile `/` NO_FCP.
+- Both showed a TBT of 3 to 7 seconds on pages that ship 451 bytes of JavaScript.
 
-## Problems found
+That is CPU contention on this machine, not the site. So `scripts/lighthouse.mjs` gained `--runs=N`, which keeps the median by performance score. The home baseline below is the median of 5 runs. The legal pages come from the last single run.
 
-### Visual
-1. **Every image was letterboxed.** The six square illustrations sat in 3:4 frames with `object-fit: contain`, leaving white bands above and below on the ivory page. The hero looked like a broken image with a caption floating in the bottom band.
-2. **The real photos in `incoming/` were not used.** Nine new owner files existed; none appeared on the site.
-3. **Brand name shown three times in the first view:** wordmark, an uppercase "HADDAR BIJOUX" eyebrow, then the H1.
-4. **Generic template chrome:** a tracked uppercase eyebrow above every heading, including "COMMANDER" above the heading "Commander".
-5. **Collection header:** three-column intro left the eyebrow stranded in its own column.
-6. **Arabic page:** the Latin H1 "Haddar Bijoux" and the wordmark fell back to Times because Italiana was not loaded on `/ar/`. Negative letter-spacing was also applied to Arabic headings, which harms letter joining.
-7. **Off-palette glyph:** the "Voir la collection" button used a Unicode `↓` that rendered in a system font, not in the icon set.
-8. **Tablet (768px)** was a stretched phone layout.
+| Page | Profile | P/A/BP/SEO (median) | Performance samples | LCP | CLS | Transfer |
+|---|---|---|---|---:|---:|---:|
+| `/` | mobile | 84/100/100/100 | 78, 82, 84, 95, 100 | 1658 ms | 0 | 160 KB |
+| `/ar/` | mobile | 98/100/100/100 | 55, 98, 98, 98, 100 | 2258 ms | 0 | 260 KB |
+| `/` | desktop | 100/100/100/100 | 100 x5 | 326 ms | 0.00002 | 218 KB |
+| `/ar/` | desktop | 100/100/100/100 | 94, 99, 100, 100, 100 | 533 ms | 0.0004 | 319 KB |
 
-### Functional
-9. **Mobile menu icon was invisible.** `.menu-lines` had no CSS: the menu was an empty 44px bar spanning the width under the header, making the mobile header about 115px tall.
-10. **Mobile menu stayed open** after choosing a section, covering the content.
-11. **Sticky mobile order bar showed on load**, duplicating the hero buttons directly above it.
-12. **Broken footer link:** the footer linked only to `/mentions-legales/`, which is not built (404). The four real legal pages had no inbound link.
-13. **False statement on `/cookies/`:** "Le thème clair ou sombre suit le réglage de votre appareil". The site is light only.
-14. **Instagram handle mismatch:** code used `@haddar__bijoux`; project rules and the share image said `@haddar_bijoux`.
-15. **No script generated the image derivatives** in `public/incoming/`. They could not be rebuilt.
-16. `astro check`: 2 type errors.
-17. Unused `JewelDrawing.astro`, a drawn SVG jewelry component banned by the project rules.
+**Other measures:**
+- JS: 451 B gzip.
+- CSS: 5.1 KB gzip.
+- Lab scores swing 20 points between runs today, so only large differences mean anything.
+
+## Weaknesses found
+
+### Design
+1. **The first image was not jewelry Haddar sells.** The hero showed an AI chain bracelet with a disclaimer under it ("Visuels d’illustration"). The real pieces only started below the fold.
+2. **No jewelry in the phone first view.** At 375x667 the first view held the name, two lines of text and two stacked buttons. The image started below them.
+3. **Ivory everywhere.** The whole page sat on `#F7F5F1`, read as beige, and gold had no field to stand out from. The new brief asks for white to dominate.
+4. **A template rhythm.**
+   - The hero was a split: copy left, image right, two buttons.
+   - Three sections repeated the same heading-left, intro-right row.
+   - Two more sections were image-and-text splits.
+5. **Real photos and illustrations were treated alike.** Same frames and same grid language, with only a small caption to tell them apart.
+6. **Loose crops.** The pillow shots showed the showroom (teal velvet edge, brown wall, display stand), so the charm was small in frame.
+7. **The collage panel's twin was discarded.** The second panel of `coeur_yed.jpeg` (same heart, red cord) was unused, although cut on its own it has no seam.
+8. **A vague title.** "Les pièces à découvrir" said nothing.
+9. **An English address** ("Old Medina of Sfax") on the French page.
+
+### Function and code
+10. **A hamburger menu for three anchors** on a one-page site: JavaScript and a tap for little gain.
+11. **`scripts/generate-assets.mjs` ignored crop changes.** A derivative counted as fresh when it was newer than its original, so editing a crop in the manifest did not rebuild it. It also never removed derivatives no manifest entry used.
+
+### Security and caching
+12. **Contradictory `Cache-Control` on Cloudflare Pages.** `public/_headers` set `Cache-Control: max-age=0` on `/*` and `immutable` on `/_astro/*` and `/fonts/*`. Pages joins duplicate headers with a comma, so those assets would get both values. The middleware also copied the global `max-age=0` onto every response it handles.
+13. **Images ran through the function.** `/incoming/*` was not excluded in `public/_routes.json`, so every image request invoked the Pages function. It returned `max-age=0`.
+14. **Missing headers.** No `Strict-Transport-Security` and no `Cross-Origin-Opener-Policy`.
+15. **`pnpm audit`.**
+    - Production dependencies: 8 advisories (4 high, 4 moderate), all `undici` <8.12.2 via `astro > unifont`. Build time only.
+    - All dependencies: 21 (10 high, 8 moderate, 3 low).
 
 ### Performance
-18. The Arabic page preloaded Amiri (108 KB) for headings that are all below the fold. This made `/ar/` mobile LCP 2262 ms, close to the 2500 ms target.
+16. **`/ar/` mobile LCP** is about 2.26 s, close to the 2.5 s limit.

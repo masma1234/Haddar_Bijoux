@@ -11,7 +11,7 @@ try{for(const [locale,route] of [['fr','/'],['ar','/ar/']])for(const width of [3
  await page.waitForLoadState('networkidle');
  await page.screenshot({path:`${dir}/${locale}-${width}-view.png`});
  // content-visibility:auto skips off-screen sections; a full-page capture must render them all.
- await page.evaluate(()=>document.querySelectorAll('main > .section').forEach(s=>{s.style.contentVisibility='visible';}));
+ await page.evaluate(()=>document.querySelectorAll('main .section').forEach(s=>{s.style.contentVisibility='visible';}));
  await page.waitForLoadState('networkidle');
  await page.screenshot({path:`${dir}/${locale}-${width}-full.png`,fullPage:true});
  await page.close();console.log(locale,width);
