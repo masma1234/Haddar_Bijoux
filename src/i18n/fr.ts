@@ -6,7 +6,7 @@ export const fr = {
   skip:'Aller au contenu', language:'العربية', languageLabel:'Voir le site en arabe tunisien',
   instagramLabel:'Voir Haddar Bijoux sur Instagram',
   heroLine:['Bijoux en or 18 carats.','Médina de Sfax.'],
-  order:'Commander sur Instagram', browse:'Voir les pièces',
+  order:'Écrire sur Instagram', browse:'Voir les pièces',
   galleryTitle:'Les bracelets cordon', galleryIntro:'Des pièces Haddar Bijoux en photo. Pour la disponibilité et le prix, écrivez-nous sur Instagram.', galleryLink:'Voir toutes les pièces sur Instagram',
   wornTitle:'Au poignet',
   collectionTitle:'Bracelets, boucles d’oreilles et colliers', collectionIntro:'Les familles de bijoux, en visuels d’illustration. Les pièces réelles et les nouveautés sont sur Instagram.',

@@ -1,6 +1,6 @@
 // Full-page and first-view screenshots of both home pages at the review widths.
 // Usage: node scripts/screens.mjs before|after  (needs the preview server running)
-import {chromium} from 'playwright';import {mkdir} from 'node:fs/promises';import {origin} from './routes.mjs';
+import {chromium} from 'playwright';import {mkdir} from 'node:fs/promises';import {origin,freshOrigin} from './routes.mjs';await freshOrigin();
 const phase=process.argv[2]||'after';const dir='docs/screens/'+phase;await mkdir(dir,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{for(const [locale,route] of [['fr','/'],['ar','/ar/']])for(const width of [320,375,768,1024,1440]){
@@ -11,7 +11,10 @@ try{for(const [locale,route] of [['fr','/'],['ar','/ar/']])for(const width of [3
  await page.waitForLoadState('networkidle');
  await page.screenshot({path:`${dir}/${locale}-${width}-view.png`});
  // content-visibility:auto skips off-screen sections; a full-page capture must render them all.
- await page.evaluate(()=>document.querySelectorAll('main .section').forEach(s=>{s.style.contentVisibility='visible';}));
+ // content-visibility skips offscreen pictures, and a full-page capture does not scroll: render and load every image first.
+ await page.evaluate(()=>document.querySelectorAll('main .section, main picture').forEach(s=>{s.style.contentVisibility='visible';}));
+ await page.evaluate(()=>Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode().catch(()=>{});})));
+ const empty=await page.evaluate(()=>[...document.images].filter(i=>!i.naturalWidth).map(i=>i.src));if(empty.length)throw new Error(locale+' '+width+': images not loaded, capture refused: '+empty.join(', '));
  await page.waitForLoadState('networkidle');
  await page.screenshot({path:`${dir}/${locale}-${width}-full.png`,fullPage:true});
  await page.close();console.log(locale,width);

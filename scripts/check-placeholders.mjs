@@ -1,5 +1,6 @@
 import {business} from '../src/data/business.ts';
-import {readFile,readdir} from 'node:fs/promises';
+import {images} from '../src/data/images.ts';
+import {imageProblems} from './image-rules.mjs';
 import {existsSync} from 'node:fs';
 if(existsSync('.env'))process.loadEnvFile('.env');
 const production=process.argv.includes('--prod');const missing=[];
@@ -10,9 +11,6 @@ if(!business.derjaReviewed)missing.push('Native derja review');
 const site=process.env.PUBLIC_SITE_URL||'https://haddar-bijoux.invalid';
 if(!/^https:\/\//.test(site)||new URL(site).hostname.endsWith('.invalid'))missing.push('Confirmed HTTPS PUBLIC_SITE_URL');
 if(process.env.ENABLE_CONTACT_FORM==='true')throw new Error('Contact form is not implemented. Keep ENABLE_CONTACT_FORM=false until a secure server handler is commissioned.');
-for(const file of await readdir('src/content/products')){if(!file.endsWith('.json'))continue;const p=JSON.parse(await readFile('src/content/products/'+file,'utf8'));
- if(!p.alt?.fr?.trim()||!p.alt?.ar?.trim())throw new Error(file+': both image alt translations required.');
- if(p.image&&(!p.credit?.trim()||!p.rights?.trim()||/CONFIRMER/.test(p.credit+p.rights)))throw new Error(file+': real photo requires confirmed credit and rights.');
- if(!p.image)console.warn('PHOTO PLACEHOLDER: '+file);
-}
+// Every image the site publishes comes from the manifest; its alt, credit and rights rules apply to preview and production alike.
+const imageIssues=imageProblems(Object.values(images));if(imageIssues.length)throw new Error('Image manifest:'+String.fromCharCode(10)+imageIssues.join(String.fromCharCode(10)));
 if(missing.length){console.warn('Confirmation required:\n'+missing.map(x=>' - '+x).join('\n'));if(production)process.exit(1);}

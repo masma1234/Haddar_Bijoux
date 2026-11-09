@@ -19,8 +19,9 @@
     "audit:contrast": "node scripts/check-contrast.mjs",
     "audit:lighthouse": "node scripts/lighthouse.mjs",
     "audit:budgets": "node scripts/check-budgets.mjs",
-    "test:guards": "node scripts/test-build-guards.mjs",
-    "test:routing": "node scripts/test-routing.mjs"
+    "test:guards": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/test-build-guards.mjs",
+    "test:routing": "node scripts/test-routing.mjs",
+    "test:visual": "node scripts/visual-regression.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

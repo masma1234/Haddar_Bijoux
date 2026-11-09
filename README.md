@@ -25,6 +25,8 @@ pnpm audit:lighthouse before
 pnpm audit:lighthouse after
 node scripts/check-image-contract.mjs   (with --experimental-strip-types)
 node scripts/screens.mjs after          (preview server running)
+node scripts/visual-regression.mjs      (add --update to approve new baselines)
+node scripts/lighthouse-variance.mjs cookies/ 5 mobile
 ```
 
 Lab scores vary between runs on a busy machine. `pnpm audit:lighthouse after --runs=3` keeps the median of three runs per route. Set `AUDIT_URL` when the preview server is not on port 4321.
@@ -38,8 +40,8 @@ src/
   data/business.ts           confirmed facts and launch gates
   i18n/fr.ts, ar.ts          typed interface dictionaries
   i18n/legal.ts             French legal templates using business facts
-  content/products/*.json   bilingual catalogue and photo permissions
-  assets/products/          client-supplied photos
+  data/images.ts            image manifest: crops, alt text, captions, credits
+  (incoming/ at the root holds the untouched owner originals)
   components/               reusable static page sections
   layouts/Base.astro        metadata, local fonts, header and footer
   pages/                    eight prerendered routes

@@ -112,3 +112,12 @@ The brief asked me to choose with explicit criteria rather than through a decisi
 | Lighthouse | Run through the project script, which now supports `--runs=N` medians. |
 | axe | Run through the project's browser audit. |
 | `pnpm audit` | Run through the README's pinned `npx pnpm@12.11.2`. |
+
+## Round 3 (9 November 2026)
+- **One plate system.** Every real photo is square and every pair shares 440px columns. The écrin crops were tightened to the charm, so the lid and LED are out of frame.
+- **Hero crop inside the pillow.** The only way to drop the showroom wall without cutting a cord. The hero was capped at 540px so retina upscaling stays near 1.4x.
+- **One diagonal in the hero.** "Haddar" with the line and button; the facts with "Bijoux".
+- **One action, one label:** "Écrire sur Instagram".
+- **Smoothness over a micro-optimisation.** Section-level `content-visibility` broke anchor links and the scrollbar. It now applies only to pictures whose size is fixed by their ratio class.
+- **Unused images reviewed again.** `houta.jpeg` (wider duplicate of the fish), `mais.jpeg` and `fruit2.jpeg` (teal pillow, pieces already shown) still do not improve the page.
+- **Footer legal name kept.** "Haddar_Bijoux" is the owner-confirmed legal name, so it was not restyled.

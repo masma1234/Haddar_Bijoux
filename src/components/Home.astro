@@ -21,7 +21,7 @@ const verso = [
   [t.versoLabels[3], f.returns[locale]],
   [t.versoLabels[4], t.address],
 ];
-const plateSizes = '(min-width: 900px) 540px, (min-width: 520px) 440px, calc(100vw - 56px)';
+const plateSizes = '(min-width: 900px) 440px, (min-width: 520px) 440px, calc(100vw - 56px)';
 const schema = [{
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -35,7 +35,7 @@ const schema = [{
     <section class="hero wrap" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-name"><span lang="fr" dir="ltr">Haddar</span> <span lang="fr" dir="ltr">Bijoux</span></h1>
       <figure class="hero-piece">
-        <div class="liner"><Picture image={images.trio} locale={locale} sizes="(min-width: 1100px) 600px, (min-width: 600px) 520px, calc(100vw - 56px)" eager /></div>
+        <div class="liner"><Picture image={images.trio} locale={locale} sizes="(min-width: 1100px) 520px, (min-width: 600px) 500px, calc(100vw - 56px)" eager /></div>
         <figcaption>{images.trio.caption[locale]}</figcaption>
       </figure>
       <div class="hero-intro">
@@ -56,7 +56,7 @@ const schema = [{
         <h2 id="pieces-title">{t.galleryTitle}</h2>
         <p>{t.galleryIntro}</p>
       </header>
-      {pairs.map((pair, i) => <div class:list={['pair wrap', { 'pair-ecrin': i === 1, 'pair-worn': i === 2 }]}>
+      {pairs.map((pair, i) => <div class:list={['pair wrap', { 'pair-worn': i === 2 }]}>
         {i === 2 && <h3 class="pair-title">{t.wornTitle}</h3>}
         {pair.map(image => <figure class="plate" id={image.id}>
           <div class="liner"><Picture image={image} locale={locale} sizes={plateSizes} /></div>

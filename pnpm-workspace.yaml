@@ -3,3 +3,10 @@ packages:
 onlyBuiltDependencies:
   - esbuild
   - sharp
+overrides:
+  # Security: undici <8.12.2 advisories (via astro > unifont, which accepts ^8.0.0). Same major, build-time only.
+  undici: ^8.12.2
+  # Dev tooling only (@astrojs/check, @lhci/cli): patch releases within the ranges already used.
+  fast-uri: ^3.1.9
+  body-parser: ^1.20.9
+  qs: ^6.16.1

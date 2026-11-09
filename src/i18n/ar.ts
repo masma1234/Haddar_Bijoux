@@ -6,7 +6,7 @@ export const ar: Dictionary = {
   nav:['القطع','على ذوقك','اطلبوا'], navLabel:'القائمة الرئيسية', skip:'امشيو للمحتوى',
   language:'Français', languageLabel:'شوفوا الموقع بالفرنسية', instagramLabel:'شوفوا Haddar Bijoux على إنستغرام',
   heroLine:['مجوهرات من الدهب عيار 18.','المدينة العتيقة، صفاقس.'],
-  order:'اطلبوا على إنستغرام', browse:'شوفوا القطع',
+  order:'ابعثوا ميساج على إنستغرام', browse:'شوفوا القطع',
   galleryTitle:'أساور بالخيط', galleryIntro:'قطع من Haddar Bijoux في الصور. باش تعرفوا إذا القطعة موجودة وقدّاش الثمن، ابعثولنا ميساج على إنستغرام.', galleryLink:'شوفوا القطع الكل على إنستغرام',
   wornTitle:'في اليد',
   collectionTitle:'أساور، خراص وسلاسل', collectionIntro:'أنواع المجوهرات في صور توضيحية. القطع الحقيقية والجديد تلقاوهم على إنستغرام.',

@@ -1,4 +1,4 @@
-import {chromium} from 'playwright';import AxeBuilder from '@axe-core/playwright';import {mkdir,writeFile} from 'node:fs/promises';import {routes,origin} from './routes.mjs';
+import {chromium} from 'playwright';import AxeBuilder from '@axe-core/playwright';import {mkdir,writeFile} from 'node:fs/promises';import {routes,origin,freshOrigin} from './routes.mjs';await freshOrigin();
 const browser=await chromium.launch({channel:'chrome',headless:true});await mkdir('.audit/screenshots',{recursive:true});
 const results={responsive:[],axe:[],palette:[],noJavaScript:[],network:[],keyboard:[],hero:[],links:[],errors:[],screenshots:[],targets:[],statuses:[]};
 const widths=[320,360,375,390,412,768,820,1024,1280,1440,1920];

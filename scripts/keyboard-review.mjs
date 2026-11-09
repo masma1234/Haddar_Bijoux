@@ -1,4 +1,4 @@
-import {chromium} from 'playwright';import {writeFile,mkdir} from 'node:fs/promises';import assert from 'node:assert/strict';import {origin} from './routes.mjs';
+import {chromium} from 'playwright';import {writeFile,mkdir} from 'node:fs/promises';import assert from 'node:assert/strict';import {origin,freshOrigin} from './routes.mjs';await freshOrigin();
 // Keyboard pass on both home pages at phone size: skip link, then Tab order reaches the hero order button with a visible outline.
 const browser=await chromium.launch({channel:'chrome',headless:true});const results=[];await mkdir('.audit/screenshots',{recursive:true});
 try{for(const locale of ['fr','ar']){const page=await browser.newPage({viewport:{width:375,height:667}});const url=origin+(locale==='fr'?'/':'/ar/');await page.goto(url);await page.evaluate(()=>document.fonts.ready);

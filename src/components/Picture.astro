@@ -3,10 +3,12 @@ import type { SiteImage, Locale } from '../data/images';
 interface Props { image: SiteImage; locale: Locale; sizes: string; eager?: boolean; }
 const { image, locale, sizes, eager = false } = Astro.props;
 const srcset = (format: 'avif' | 'webp') => image.widths.map(w => `/incoming/${image.id}-${w}.${format} ${w}w`).join(', ');
+// Ratio class (no inline styles under the CSP) lets the stylesheet give the picture its exact size before it renders.
+const ratio = 'r' + Math.round(1000 * image.width / image.height);
 ---
-<picture>
+<picture class={ratio}>
   <source type="image/avif" srcset={srcset('avif')} sizes={sizes} />
   <source type="image/webp" srcset={srcset('webp')} sizes={sizes} />
   <img src={`/incoming/${image.id}.jpg`} alt={image.alt[locale]} width={image.width} height={image.height}
-    loading={eager ? 'eager' : 'lazy'} decoding={eager ? 'sync' : 'async'} fetchpriority={eager ? 'high' : undefined} />
+    loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
 </picture>

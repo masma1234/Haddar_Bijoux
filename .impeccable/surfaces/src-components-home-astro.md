@@ -25,6 +25,12 @@ FORM: Candidate 7 of 7 (the gift tray, axial presentation). seed:0156afac23916be
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
+## Recorded adaptations (9 November 2026, round 3)
+- Hero piece capped at 540px, not 560-600: keeps the 750px source crop near 1.4x on 2x screens.
+- Hero caption sits under the photo: it names the piece on the axis, so it belongs to the piece, not to a side field.
+- Primary label is "Écrire sur Instagram" everywhere (hero, custom, Commander, sticky bar): one action, one name.
+- Every real photo is a square plate (hero 750px, pairs 440px): one plate system on the tray.
+
 ## Unresolved
 - Owner: hero now shows a real photo instead of the AI illustration (reversible).
 - Owner: motif names, derja review, Arabic address wording.

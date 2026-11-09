@@ -3,113 +3,19 @@
     "route": "/",
     "profile": "mobile",
     "scores": {
-      "performance": 99,
+      "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1807.5588000000002,
+    "lcp": 1505.5781,
     "cls": 0.0001473979757897408,
     "tbt": 0,
-    "weight": 228924,
+    "weight": 185728,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "first-contentful-paint",
-        "score": 0.99,
-        "title": "First Contentful Paint",
-        "displayValue": "1.2 s"
-      },
-      {
-        "id": "largest-contentful-paint",
-        "score": 0.98,
-        "title": "Largest Contentful Paint",
-        "displayValue": "1.8 s"
-      },
-      {
-        "id": "uses-long-cache-ttl",
-        "score": 0.5,
-        "title": "Serve static assets with an efficient cache policy",
-        "displayValue": "6 resources found",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "cacheLifetimeMs",
-              "valueType": "ms",
-              "label": "Cache TTL",
-              "displayUnit": "duration"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size",
-              "displayUnit": "kb",
-              "granularity": 1
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 35028,
-              "wastedBytes": 35028
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 28514,
-              "wastedBytes": 28514
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 27298,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 26653,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 25212,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 18744,
-              "wastedBytes": 18744
-            }
-          ],
-          "summary": {
-            "wastedBytes": 161449
-          },
-          "sortedBy": [
-            "totalBytes"
-          ],
-          "skipSumming": [
-            "cacheLifetimeMs"
-          ]
-        }
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -136,24 +42,113 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ],
           "overallSavingsMs": 0
         }
       },
       {
+        "id": "uses-responsive-images",
+        "score": 0,
+        "title": "Properly size images",
+        "displayValue": "Est savings of 28 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-27-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.hero-piece > div.liner > picture.r1000 > img",
+                "boundingRect": {
+                  "top": 81,
+                  "bottom": 436,
+                  "left": 29,
+                  "right": 383,
+                  "width": 355,
+                  "height": 355
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordons-trio-750.avif\" alt=\"Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et m…\" width=\"750\" height=\"750\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\">",
+                "nodeLabel": "Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et maïs, …"
+              },
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 15024,
+              "wastedPercent": 31.386388888888895
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-29-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure#cordon-ananas > div.liner > picture.r1000 > img",
+                "boundingRect": {
+                  "top": 1559,
+                  "bottom": 1914,
+                  "left": 29,
+                  "right": 383,
+                  "width": 355,
+                  "height": 355
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordon-ananas-800.avif\" alt=\"Bracelet sur cordon orange, motif ananas\" width=\"800\" height=\"800\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "Bracelet sur cordon orange, motif ananas"
+              },
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "totalBytes": 35560,
+              "wastedBytes": 14116,
+              "wastedPercent": 39.695068359375
+            }
+          ],
+          "overallSavingsMs": 150,
+          "overallSavingsBytes": 29140,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 150
+            }
+          }
+        }
+      },
+      {
         "id": "cache-insight",
         "score": 0,
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 158 KiB",
+        "displayValue": "Est savings of 46 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -178,34 +173,19 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 35028
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 19648.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 28514
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 14725.2
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 18744
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-800.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 12788
             }
           ],
           "sortedBy": [
@@ -216,7 +196,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 161449
+            "wastedBytes": 47162
           }
         }
       },
@@ -224,7 +204,7 @@
         "id": "image-delivery-insight",
         "score": 0,
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 120 KiB",
+        "displayValue": "Est savings of 88 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -254,85 +234,43 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 27212,
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 37156,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (750x750) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 37156
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "totalBytes": 35560,
+              "wastedBytes": 28565,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
                     "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 27212
+                    "wastedBytes": 28565
                   }
                 ]
               }
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 21980,
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-800.avif",
+              "totalBytes": 30717,
+              "wastedBytes": 24675,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 21980
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 21003,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 21003
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 20485,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 20485
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 19327,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19327
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 13320,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (720x630) for its displayed dimensions (355x310). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 13320
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 24675
                   }
                 ]
               }
@@ -340,7 +278,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 123327
+            "wastedBytes": 90396
           }
         }
       },
@@ -351,56 +289,56 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "5F86C3C3B5528C755F78B20AE44EB8FF": {
-              "url": "http://127.0.0.1:4322/",
-              "navStartToEndTime": 27,
-              "transferSize": 5340,
+            "988D62596606D24587C87486C47451BA": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 24,
+              "transferSize": 5321,
               "isLongest": true,
               "children": {
-                "17244.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 43,
-                  "transferSize": 1795,
+                "32128.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "17244.25": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-300-4755701d1a52.woff2",
-                      "navStartToEndTime": 94,
-                      "transferSize": 11079,
+                    "32128.24": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-300-4755701d1a52.woff2",
+                      "navStartToEndTime": 105,
+                      "transferSize": 11111,
                       "children": {}
                     },
-                    "17244.27": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 94,
-                      "transferSize": 11680,
+                    "32128.26": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 109,
+                      "transferSize": 11712,
                       "children": {}
                     },
-                    "17244.29": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-ext-400-470fd7161407.woff2",
-                      "navStartToEndTime": 118,
-                      "transferSize": 7599,
+                    "32128.28": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 109,
+                      "transferSize": 7631,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "17244.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 42,
-                  "transferSize": 5251,
+                "32128.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 28,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "17244.23": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 43,
-                  "transferSize": 1419,
+                "32128.32": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 104,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 118
+            "duration": 109
           }
         }
       },
@@ -429,14 +367,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 154
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 304
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ]
         }
@@ -445,7 +383,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2381,
+      "benchmarkIndex": 3464,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -509,115 +447,51 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      74,
       99,
-      99
+      100,
+      100
     ]
   },
   {
     "route": "/ar/",
     "profile": "mobile",
     "scores": {
-      "performance": 100,
+      "performance": 96,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1735.203,
-    "cls": 0,
+    "lcp": 2484.76425,
+    "cls": 0.002329406388022961,
     "tbt": 0,
-    "weight": 318443,
+    "weight": 297883,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
       {
-        "id": "largest-contentful-paint",
-        "score": 0.99,
-        "title": "Largest Contentful Paint",
-        "displayValue": "1.7 s"
+        "id": "first-contentful-paint",
+        "score": 0.85,
+        "title": "First Contentful Paint",
+        "displayValue": "2.0 s"
       },
       {
-        "id": "uses-long-cache-ttl",
-        "score": 0.5,
-        "title": "Serve static assets with an efficient cache policy",
-        "displayValue": "6 resources found",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "cacheLifetimeMs",
-              "valueType": "ms",
-              "label": "Cache TTL",
-              "displayUnit": "duration"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size",
-              "displayUnit": "kb",
-              "granularity": 1
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 35028,
-              "wastedBytes": 35028
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 28514,
-              "wastedBytes": 28514
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 27298,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 26653,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 25212,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 18744,
-              "wastedBytes": 18744
-            }
-          ],
-          "summary": {
-            "wastedBytes": 161449
-          },
-          "sortedBy": [
-            "totalBytes"
-          ],
-          "skipSumming": [
-            "cacheLifetimeMs"
-          ]
-        }
+        "id": "largest-contentful-paint",
+        "score": 0.9,
+        "title": "Largest Contentful Paint",
+        "displayValue": "2.5 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "title": "Speed Index",
+        "displayValue": "2.0 s"
+      },
+      {
+        "id": "interactive",
+        "score": 0.98,
+        "title": "Time to Interactive",
+        "displayValue": "2.5 s"
       },
       {
         "id": "render-blocking-resources",
@@ -645,24 +519,113 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4321/fonts/ar-860e560f31fe.css",
+              "totalBytes": 1982,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
-              "totalBytes": 1910,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             }
           ],
           "overallSavingsMs": 0
         }
       },
       {
-        "id": "cache-insight",
+        "id": "uses-responsive-images",
         "score": 0,
+        "title": "Properly size images",
+        "displayValue": "Est savings of 28 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-27-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure.hero-piece > div.liner > picture.r1000 > img",
+                "boundingRect": {
+                  "top": 81,
+                  "bottom": 436,
+                  "left": 29,
+                  "right": 383,
+                  "width": 355,
+                  "height": 355
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordons-trio-750.avif\" alt=\"ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على م…\" width=\"750\" height=\"750\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\">",
+                "nodeLabel": "ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على مخدّة ب…"
+              },
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 15024,
+              "wastedPercent": 31.386388888888895
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-29-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
+                "selector": "figure#cordon-ananas > div.liner > picture.r1000 > img",
+                "boundingRect": {
+                  "top": 1617,
+                  "bottom": 1972,
+                  "left": 29,
+                  "right": 383,
+                  "width": 355,
+                  "height": 355
+                },
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordon-ananas-800.avif\" alt=\"سوار بخيط برتقالي، فيه أناناس\" width=\"800\" height=\"800\" loading=\"lazy\" decoding=\"async\">",
+                "nodeLabel": "سوار بخيط برتقالي، فيه أناناس"
+              },
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "totalBytes": 35560,
+              "wastedBytes": 14116,
+              "wastedPercent": 39.695068359375
+            }
+          ],
+          "overallSavingsMs": 70,
+          "overallSavingsBytes": 29140,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 70
+            }
+          }
+        }
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 158 KiB",
+        "displayValue": "Est savings of 46 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -687,34 +650,19 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 35028
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 19648.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 28514
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 14725.2
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 18744
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-800.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 12788
             }
           ],
           "sortedBy": [
@@ -725,7 +673,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 161449
+            "wastedBytes": 47162
           }
         }
       },
@@ -733,7 +681,7 @@
         "id": "image-delivery-insight",
         "score": 0,
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 120 KiB",
+        "displayValue": "Est savings of 88 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -763,85 +711,43 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 27212,
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 37156,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (750x750) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 37156
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-800.avif",
+              "totalBytes": 35560,
+              "wastedBytes": 28565,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
                     "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 27212
+                    "wastedBytes": 28565
                   }
                 ]
               }
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 21980,
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-800.avif",
+              "totalBytes": 30717,
+              "wastedBytes": 24675,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 21980
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 21003,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 21003
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 20485,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 20485
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 19327,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (355x444). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19327
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 13320,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (720x630) for its displayed dimensions (355x310). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 13320
+                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (355x355). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 24675
                   }
                 ]
               }
@@ -849,7 +755,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 123327
+            "wastedBytes": 90396
           }
         }
       },
@@ -860,50 +766,62 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "C5C78916781861D5EBB8D490D5BA2BFD": {
-              "url": "http://127.0.0.1:4322/ar/",
-              "navStartToEndTime": 36,
-              "transferSize": 5666,
+            "CEF50E9EC5378604A52A87CE2FF7F4F0": {
+              "url": "http://127.0.0.1:4321/ar/",
+              "navStartToEndTime": 29,
+              "transferSize": 5648,
               "isLongest": true,
               "children": {
-                "20704.4": {
-                  "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
-                  "navStartToEndTime": 39,
-                  "transferSize": 1910,
+                "32420.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-860e560f31fe.css",
+                  "navStartToEndTime": 32,
+                  "transferSize": 1982,
                   "isLongest": true,
                   "children": {
-                    "20704.27": {
-                      "url": "http://127.0.0.1:4322/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 63,
-                      "transferSize": 10143,
+                    "32420.28": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-latin-400-b081f7bf7906.woff2",
+                      "navStartToEndTime": 101,
+                      "transferSize": 11492,
                       "children": {}
                     },
-                    "20704.25": {
-                      "url": "http://127.0.0.1:4322/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
-                      "navStartToEndTime": 160,
-                      "transferSize": 109765,
+                    "32420.27": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 101,
+                      "transferSize": 10175,
+                      "children": {}
+                    },
+                    "32420.25": {
+                      "url": "http://127.0.0.1:4321/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+                      "navStartToEndTime": 102,
+                      "transferSize": 109797,
+                      "children": {}
+                    },
+                    "32420.29": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-latin-500-9986de5db80e.woff2",
+                      "navStartToEndTime": 115,
+                      "transferSize": 11135,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "20704.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 44,
-                  "transferSize": 5251,
+                "32420.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 30,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "20704.23": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 57,
-                  "transferSize": 1419,
+                "32420.23": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 48,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 160
+            "duration": 115
           }
         }
       },
@@ -932,14 +850,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 305
+              "url": "http://127.0.0.1:4321/fonts/ar-860e560f31fe.css",
+              "totalBytes": 1982,
+              "wastedMs": 153
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
-              "totalBytes": 1910,
-              "wastedMs": 155
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             }
           ]
         }
@@ -948,7 +866,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2900.5,
+      "benchmarkIndex": 3299,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1012,9 +930,9 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      100,
-      100,
-      100
+      95,
+      96,
+      98
     ]
   },
   {
@@ -1026,20 +944,14 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1204.5648,
+    "lcp": 1208.4225000000001,
     "cls": 0,
-    "tbt": 41,
-    "weight": 46972,
+    "tbt": 0,
+    "weight": 47309,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "max-potential-fid",
-        "score": 0.97,
-        "title": "Max Potential First Input Delay",
-        "displayValue": "90 ms"
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -1066,14 +978,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 302
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 152
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ],
           "overallSavingsMs": 0
@@ -1086,44 +998,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "804FC70C4A8FB14AD3DE5517CFCA6F60": {
-              "url": "http://127.0.0.1:4322/politique-de-confidentialite/",
-              "navStartToEndTime": 69,
-              "transferSize": 3515,
+            "88D6347EC673C3B1B8E52EF8B87E4E44": {
+              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
+              "navStartToEndTime": 21,
+              "transferSize": 3549,
               "isLongest": true,
               "children": {
-                "14136.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 75,
-                  "transferSize": 1795,
+                "32956.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 26,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "14136.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 168,
-                      "transferSize": 11680,
+                    "32956.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 62,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "14136.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 75,
-                  "transferSize": 5251,
+                "32956.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 31,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "14136.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 121,
-                  "transferSize": 1419,
+                "32956.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 58,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 168
+            "duration": 62
           }
         }
       },
@@ -1152,14 +1064,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 302
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 152
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ]
         }
@@ -1168,7 +1080,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3446,
+      "benchmarkIndex": 3547,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1241,94 +1153,19 @@
     "route": "/cookies/",
     "profile": "mobile",
     "scores": {
-      "performance": 71,
+      "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1216.7788,
+    "lcp": 1210.5291,
     "cls": 0,
-    "tbt": 2778.2212,
-    "weight": 46753,
+    "tbt": 0,
+    "weight": 47089,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "total-blocking-time",
-        "score": 0.03,
-        "title": "Total Blocking Time",
-        "displayValue": "2,780 ms"
-      },
-      {
-        "id": "max-potential-fid",
-        "score": 0,
-        "title": "Max Potential First Input Delay",
-        "displayValue": "2,830 ms"
-      },
-      {
-        "id": "interactive",
-        "score": 0.89,
-        "title": "Time to Interactive",
-        "displayValue": "3.8 s"
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "score": 0,
-        "title": "Minimize main-thread work",
-        "displayValue": "3.7 s",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "groupLabel",
-              "valueType": "text",
-              "label": "Category"
-            },
-            {
-              "key": "duration",
-              "valueType": "ms",
-              "granularity": 1,
-              "label": "Time Spent"
-            }
-          ],
-          "items": [
-            {
-              "group": "other",
-              "groupLabel": "Other",
-              "duration": 3366.7199999999993
-            },
-            {
-              "group": "styleLayout",
-              "groupLabel": "Style & Layout",
-              "duration": 261.60400000000004
-            },
-            {
-              "group": "paintCompositeRender",
-              "groupLabel": "Rendering",
-              "duration": 18.419999999999998
-            },
-            {
-              "group": "scriptEvaluation",
-              "groupLabel": "Script Evaluation",
-              "duration": 10.608
-            },
-            {
-              "group": "parseHTML",
-              "groupLabel": "Parse HTML & CSS",
-              "duration": 7.708
-            },
-            {
-              "group": "scriptParseCompile",
-              "groupLabel": "Script Parsing & Compilation",
-              "duration": 0.372
-            }
-          ],
-          "sortedBy": [
-            "duration"
-          ]
-        }
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -1355,14 +1192,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 308
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 304
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 158
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 154
             }
           ],
           "overallSavingsMs": 0
@@ -1375,44 +1212,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "677807305EEDEB754659203DB3BDA826": {
-              "url": "http://127.0.0.1:4322/cookies/",
-              "navStartToEndTime": 50,
-              "transferSize": 3296,
+            "DBA380A410F7A5705AF1ADB8A9AA420E": {
+              "url": "http://127.0.0.1:4321/cookies/",
+              "navStartToEndTime": 23,
+              "transferSize": 3329,
               "isLongest": true,
               "children": {
-                "32568.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 58,
-                  "transferSize": 1795,
+                "25324.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 49,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "32568.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 243,
-                      "transferSize": 11680,
+                    "25324.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 74,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "32568.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 60,
-                  "transferSize": 5251,
+                "25324.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 52,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "32568.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 121,
-                  "transferSize": 1419,
+                "25324.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 50,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 243
+            "duration": 74
           }
         }
       },
@@ -1441,14 +1278,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 308
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 304
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 158
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 154
             }
           ]
         }
@@ -1457,7 +1294,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2553,
+      "benchmarkIndex": 3436,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1521,40 +1358,28 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      70,
-      71,
-      90
+      100,
+      100,
+      100
     ]
   },
   {
     "route": "/conditions-generales/",
     "profile": "mobile",
     "scores": {
-      "performance": 83,
+      "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1204.4202,
+    "lcp": 1207.8714,
     "cls": 0,
-    "tbt": 710.0798,
-    "weight": 46877,
+    "tbt": 0,
+    "weight": 47213,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "total-blocking-time",
-        "score": 0.42,
-        "title": "Total Blocking Time",
-        "displayValue": "710 ms"
-      },
-      {
-        "id": "max-potential-fid",
-        "score": 0,
-        "title": "Max Potential First Input Delay",
-        "displayValue": "870 ms"
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -1581,146 +1406,17 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 302
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 152
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "bf-cache",
-        "score": 0,
-        "title": "Page prevented back/forward cache restoration",
-        "displayValue": "1 failure reason",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "reason",
-              "valueType": "text",
-              "subItemsHeading": {
-                "key": "frameUrl",
-                "valueType": "url"
-              },
-              "label": "Failure reason"
-            },
-            {
-              "key": "failureType",
-              "valueType": "text",
-              "label": "Failure type"
-            }
-          ],
-          "items": [
-            {
-              "reason": "CacheLimitPrunedOnCriticalMemoryPressure",
-              "failureType": "Not actionable",
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "frameUrl": "http://127.0.0.1:4322/conditions-generales/"
-                  }
-                ]
-              },
-              "protocolReason": "CacheLimitPrunedOnCriticalMemoryPressure"
-            }
-          ]
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 97
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-2-DL",
-                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DL",
-                "selector": "body.fr > main#main > section > dl",
-                "boundingRect": {
-                  "top": 372,
-                  "bottom": 702,
-                  "left": 21,
-                  "right": 391,
-                  "width": 371,
-                  "height": 330
-                },
-                "snippet": "<dl>",
-                "nodeLabel": "Nom légal\nHaddar_Bijoux\nForme juridique\n[CONFIRMER]\nRNE\n[CONFIRMER]\nIdentifiant…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 10
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-3-rect",
-                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,2,DIV,1,A,0,svg,0,rect",
-                "selector": "div.header-actions > a.instagram-link > svg.icon > rect",
-                "boundingRect": {
-                  "top": 21,
-                  "bottom": 35,
-                  "left": 362,
-                  "right": 376,
-                  "width": 14,
-                  "height": 14
-                },
-                "snippet": "<rect x=\"3.5\" y=\"3.5\" width=\"17\" height=\"17\" rx=\"4\">",
-                "nodeLabel": "div.header-actions > a.instagram-link > svg.icon > rect"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 7
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 97,
-            "maxChildren": 10,
-            "maxDepth": 7
-          }
         }
       },
       {
@@ -1730,44 +1426,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "87FA4407A4756C67464B00D1BEA2E1C6": {
-              "url": "http://127.0.0.1:4322/conditions-generales/",
-              "navStartToEndTime": 32,
-              "transferSize": 3420,
+            "9579F8E47D86B5120E2C76248E20F4E2": {
+              "url": "http://127.0.0.1:4321/conditions-generales/",
+              "navStartToEndTime": 24,
+              "transferSize": 3453,
               "isLongest": true,
               "children": {
-                "9208.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 38,
-                  "transferSize": 1795,
+                "2128.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 29,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "9208.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 135,
-                      "transferSize": 11680,
+                    "2128.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 59,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "9208.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 38,
-                  "transferSize": 5251,
+                "2128.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 32,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "9208.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 130,
-                  "transferSize": 1419,
+                "2128.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 59,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 135
+            "duration": 59
           }
         }
       },
@@ -1796,14 +1492,14 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 302
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
-              "wastedMs": 152
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
+              "wastedMs": 153
             }
           ]
         }
@@ -1812,7 +1508,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3676.5,
+      "benchmarkIndex": 3436.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -1876,8 +1572,8 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      70,
-      83,
+      100,
+      100,
       100
     ]
   },
@@ -1890,10 +1586,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 1205.0002,
+    "lcp": 1209.4329,
     "cls": 0,
     "tbt": 0,
-    "weight": 46758,
+    "weight": 47094,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -1924,13 +1620,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
               "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
               "wastedMs": 153
             }
           ],
@@ -1944,44 +1640,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "08178760688008A48E5AF3D3292591D8": {
-              "url": "http://127.0.0.1:4322/retours-et-remboursement/",
-              "navStartToEndTime": 22,
-              "transferSize": 3301,
+            "DABF7911E5CC3D4E805E8E5B6FE4303C": {
+              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
+              "navStartToEndTime": 21,
+              "transferSize": 3334,
               "isLongest": true,
               "children": {
-                "5376.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 26,
-                  "transferSize": 1795,
+                "34196.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 27,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "5376.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 57,
-                      "transferSize": 11680,
+                    "34196.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 61,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "5376.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 29,
-                  "transferSize": 5251,
+                "34196.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 30,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "5376.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 52,
-                  "transferSize": 1419,
+                "34196.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 56,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 57
+            "duration": 61
           }
         }
       },
@@ -2010,13 +1706,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
               "wastedMs": 303
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795,
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827,
               "wastedMs": 153
             }
           ]
@@ -2026,7 +1722,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3365.5,
+      "benchmarkIndex": 3369.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -2090,7 +1786,7 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      79,
+      100,
       100,
       100
     ]
@@ -2119,7 +1815,7 @@
     "failed": [],
     "environment": {
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 1864,
+      "benchmarkIndex": 2614,
       "credits": {}
     },
     "config": {
@@ -2210,7 +1906,7 @@
     "failed": [],
     "environment": {
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2474.5,
+      "benchmarkIndex": 2053.5,
       "credits": {}
     },
     "config": {
@@ -2286,103 +1982,14 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 405.9718,
-    "cls": 0.0003744452084905821,
+    "lcp": 424.44770000000005,
+    "cls": 0,
     "tbt": 0,
-    "weight": 245019,
+    "weight": 184796,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "uses-long-cache-ttl",
-        "score": 0.5,
-        "title": "Serve static assets with an efficient cache policy",
-        "displayValue": "7 resources found",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "cacheLifetimeMs",
-              "valueType": "ms",
-              "label": "Cache TTL",
-              "displayUnit": "duration"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size",
-              "displayUnit": "kb",
-              "granularity": 1
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 35028,
-              "wastedBytes": 35028
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 28514,
-              "wastedBytes": 28514
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 27298,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 26653,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 25212,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 18744,
-              "wastedBytes": 18744
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rouge-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 16095,
-              "wastedBytes": 16095
-            }
-          ],
-          "summary": {
-            "wastedBytes": 177544
-          },
-          "sortedBy": [
-            "totalBytes"
-          ],
-          "skipSumming": [
-            "cacheLifetimeMs"
-          ]
-        }
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -2409,9 +2016,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             }
           ],
           "overallSavingsMs": 0
@@ -2421,7 +2028,7 @@
         "id": "uses-responsive-images",
         "score": 0,
         "title": "Properly size images",
-        "displayValue": "Est savings of 95 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -2450,138 +2057,28 @@
             {
               "node": {
                 "type": "node",
-                "lhId": "1-29-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-ananas > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 1344,
-                  "bottom": 1892,
-                  "left": 739,
-                  "right": 1177,
-                  "width": 438,
-                  "height": 548
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-ananas-800.avif\" alt=\"Bracelet sur cordon orange, motif ananas\" width=\"840\" height=\"1050\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Bracelet sur cordon orange, motif ananas"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 19153,
-              "wastedPercent": 69.997
-            },
-            {
-              "node": {
-                "type": "node",
                 "lhId": "1-27-IMG",
                 "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure.hero-piece > div.liner > picture > img",
+                "selector": "figure.hero-piece > div.liner > picture.r1000 > img",
                 "boundingRect": {
-                  "top": 216,
-                  "bottom": 761,
-                  "left": 395,
-                  "right": 940,
-                  "width": 545,
-                  "height": 545
+                  "top": 230,
+                  "bottom": 748,
+                  "left": 409,
+                  "right": 927,
+                  "width": 518,
+                  "height": 518
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordons-trio-800.avif\" alt=\"Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et m…\" width=\"850\" height=\"850\" loading=\"eager\" decoding=\"sync\" fetchpriority=\"high\">",
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordons-trio-750.avif\" alt=\"Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et m…\" width=\"750\" height=\"750\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\">",
                 "nodeLabel": "Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et maïs, …"
               },
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 18154,
-              "wastedPercent": 53.58984375
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-28-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-cadenas > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 1344,
-                  "bottom": 1892,
-                  "left": 158,
-                  "right": 596,
-                  "width": 438,
-                  "height": 548
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif\" alt=\"Bracelet sur cordon rose torsadé, motif cadenas en forme de cœur\" width=\"840\" height=\"1050\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Bracelet sur cordon rose torsadé, motif cadenas en forme de cœur"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 17850,
-              "wastedPercent": 69.997
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-30-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,2,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-poisson > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 2125,
-                  "bottom": 2772,
-                  "left": 79,
-                  "right": 596,
-                  "width": 517,
-                  "height": 647
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-poisson-800.avif\" alt=\"Bracelet à motif poisson ajouré avec un détail bleu, dans un écrin\" width=\"880\" height=\"1100\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Bracelet à motif poisson ajouré avec un détail bleu, dans un écrin"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 15214,
-              "wastedPercent": 58.187625
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-31-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,2,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-khomsa > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 2125,
-                  "bottom": 2772,
-                  "left": 739,
-                  "right": 1257,
-                  "width": 517,
-                  "height": 647
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif\" alt=\"Bracelet sur cordon noir, motif khomsa ajouré, dans un écrin\" width=\"880\" height=\"1100\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Bracelet sur cordon noir, motif khomsa ajouré, dans un écrin"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 14000,
-              "wastedPercent": 58.187625
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-32-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,3,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-coeur-rose > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 3106,
-                  "bottom": 3437,
-                  "left": 218,
-                  "right": 596,
-                  "width": 378,
-                  "height": 331
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif\" alt=\"Bracelet sur cordon rose avec un cœur, porté au poignet\" width=\"720\" height=\"630\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "Bracelet sur cordon rose avec un cœur, porté au poignet"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 12740,
-              "wastedPercent": 72.41666666666666
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 25035,
+              "wastedPercent": 52.29795555555555
             }
           ],
-          "overallSavingsMs": 80,
-          "overallSavingsBytes": 97111,
+          "overallSavingsMs": 40,
+          "overallSavingsBytes": 25035,
           "sortedBy": [
             "wastedBytes"
           ],
@@ -2589,7 +2086,7 @@
             "type": "debugdata",
             "metricSavings": {
               "FCP": 0,
-              "LCP": 80
+              "LCP": 40
             }
           }
         }
@@ -2598,7 +2095,7 @@
         "id": "cache-insight",
         "score": 0,
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 173 KiB",
+        "displayValue": "Est savings of 46 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -2623,39 +2120,29 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 35028
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 19648.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 28514
+              "url": "http://127.0.0.1:4321/incoming/cordon-poisson-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 7872.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 27298
+              "url": "http://127.0.0.1:4321/incoming/cordon-khomsa-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 7222.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 26653
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 6306.400000000001
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 18744
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rouge-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 16095
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 5738.400000000001
             }
           ],
           "sortedBy": [
@@ -2666,7 +2153,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 177544
+            "wastedBytes": 46789.200000000004
           }
         }
       },
@@ -2674,7 +2161,7 @@
         "id": "image-delivery-insight",
         "score": 0,
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 95 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -2704,85 +2191,15 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 19160,
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 25035,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (438x548). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19160
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 18154,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (545x545). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 18154
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 17857,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (438x548). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 17857
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 15216,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (517x647). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 15216
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 14002,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (517x647). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 14002
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 12743,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (720x630) for its displayed dimensions (378x331). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 12743
+                    "reason": "This image file is larger than it needs to be (750x750) for its displayed dimensions (518x518). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 25035
                   }
                 ]
               }
@@ -2790,7 +2207,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 97132
+            "wastedBytes": 25035
           }
         }
       },
@@ -2801,56 +2218,56 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "096900713E805AA749C4CAE966EFDF28": {
-              "url": "http://127.0.0.1:4322/",
-              "navStartToEndTime": 29,
-              "transferSize": 5340,
+            "F8062EC681BFD62B44FBF815A3A62FF3": {
+              "url": "http://127.0.0.1:4321/",
+              "navStartToEndTime": 21,
+              "transferSize": 5321,
               "isLongest": true,
               "children": {
-                "22560.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 25,
-                  "transferSize": 1795,
+                "27376.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 17,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "22560.25": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-300-4755701d1a52.woff2",
-                      "navStartToEndTime": 72,
-                      "transferSize": 11079,
+                    "27376.24": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-300-4755701d1a52.woff2",
+                      "navStartToEndTime": 38,
+                      "transferSize": 11111,
                       "children": {}
                     },
-                    "22560.27": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 72,
-                      "transferSize": 11680,
+                    "27376.26": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 37,
+                      "transferSize": 11712,
                       "children": {}
                     },
-                    "22560.29": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-ext-400-470fd7161407.woff2",
-                      "navStartToEndTime": 92,
-                      "transferSize": 7599,
+                    "27376.28": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-ext-400-470fd7161407.woff2",
+                      "navStartToEndTime": 60,
+                      "transferSize": 7631,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "22560.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 33,
-                  "transferSize": 5251,
+                "27376.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 17,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "22560.23": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 73,
-                  "transferSize": 1419,
+                "27376.30": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 36,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 92
+            "duration": 60
           }
         }
       },
@@ -2879,13 +2296,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827
             }
           ]
         }
@@ -2894,7 +2311,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3121.5,
+      "benchmarkIndex": 3746.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -2972,103 +2389,14 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 366.59489999999994,
-    "cls": 0,
+    "lcp": 528.73495,
+    "cls": 0.0022843450117487015,
     "tbt": 0,
-    "weight": 334538,
+    "weight": 296951,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "uses-long-cache-ttl",
-        "score": 0.5,
-        "title": "Serve static assets with an efficient cache policy",
-        "displayValue": "7 resources found",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "url",
-              "valueType": "url",
-              "label": "URL"
-            },
-            {
-              "key": "cacheLifetimeMs",
-              "valueType": "ms",
-              "label": "Cache TTL",
-              "displayUnit": "duration"
-            },
-            {
-              "key": "totalBytes",
-              "valueType": "bytes",
-              "label": "Transfer Size",
-              "displayUnit": "kb",
-              "granularity": 1
-            }
-          ],
-          "items": [
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 35028,
-              "wastedBytes": 35028
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 28514,
-              "wastedBytes": 28514
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 27298,
-              "wastedBytes": 27298
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 26653,
-              "wastedBytes": 26653
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 25212,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 18744,
-              "wastedBytes": 18744
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rouge-720.avif",
-              "cacheLifetimeMs": 0,
-              "cacheHitProbability": 0,
-              "totalBytes": 16095,
-              "wastedBytes": 16095
-            }
-          ],
-          "summary": {
-            "wastedBytes": 177544
-          },
-          "sortedBy": [
-            "totalBytes"
-          ],
-          "skipSumming": [
-            "cacheLifetimeMs"
-          ]
-        }
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -3095,19 +2423,19 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
               "wastedMs": 83
             }
           ],
-          "overallSavingsMs": 0
+          "overallSavingsMs": 1
         }
       },
       {
         "id": "uses-responsive-images",
-        "score": 0,
+        "score": 0.5,
         "title": "Properly size images",
-        "displayValue": "Est savings of 95 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "details": {
           "type": "opportunity",
           "headings": [
@@ -3136,138 +2464,28 @@
             {
               "node": {
                 "type": "node",
-                "lhId": "1-29-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-ananas > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 1372,
-                  "bottom": 1920,
-                  "left": 158,
-                  "right": 596,
-                  "width": 438,
-                  "height": 548
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-ananas-800.avif\" alt=\"سوار بخيط برتقالي، فيه أناناس\" width=\"840\" height=\"1050\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "سوار بخيط برتقالي، فيه أناناس"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 19153,
-              "wastedPercent": 69.997
-            },
-            {
-              "node": {
-                "type": "node",
                 "lhId": "1-27-IMG",
                 "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure.hero-piece > div.liner > picture > img",
+                "selector": "figure.hero-piece > div.liner > picture.r1000 > img",
                 "boundingRect": {
-                  "top": 216,
-                  "bottom": 761,
-                  "left": 395,
-                  "right": 940,
-                  "width": 545,
-                  "height": 545
+                  "top": 230,
+                  "bottom": 748,
+                  "left": 409,
+                  "right": 927,
+                  "width": 518,
+                  "height": 518
                 },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordons-trio-800.avif\" alt=\"ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على م…\" width=\"850\" height=\"850\" loading=\"eager\" decoding=\"sync\" fetchpriority=\"high\">",
+                "snippet": "<img src=\"http://127.0.0.1:4321/incoming/cordons-trio-750.avif\" alt=\"ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على م…\" width=\"750\" height=\"750\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\">",
                 "nodeLabel": "ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على مخدّة ب…"
               },
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 18154,
-              "wastedPercent": 53.58984375
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-28-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,1,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-cadenas > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 1372,
-                  "bottom": 1920,
-                  "left": 739,
-                  "right": 1177,
-                  "width": 438,
-                  "height": 548
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif\" alt=\"سوار بخيط وردي مفتول، فيه قفل على شكل قلب\" width=\"840\" height=\"1050\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "سوار بخيط وردي مفتول، فيه قفل على شكل قلب"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 17850,
-              "wastedPercent": 69.997
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-30-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,2,DIV,0,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-poisson > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 2156,
-                  "bottom": 2803,
-                  "left": 739,
-                  "right": 1257,
-                  "width": 517,
-                  "height": 647
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-poisson-800.avif\" alt=\"سوار فيه حوتة مفرّغة بنقطة زرقاء، في علبة\" width=\"880\" height=\"1100\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "سوار فيه حوتة مفرّغة بنقطة زرقاء، في علبة"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 15214,
-              "wastedPercent": 58.187625
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-31-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,2,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-khomsa > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 2156,
-                  "bottom": 2803,
-                  "left": 79,
-                  "right": 596,
-                  "width": 517,
-                  "height": 647
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif\" alt=\"سوار بخيط أكحل، فيه خمسة مفرّغة، في علبة\" width=\"880\" height=\"1100\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "سوار بخيط أكحل، فيه خمسة مفرّغة، في علبة"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 14000,
-              "wastedPercent": 58.187625
-            },
-            {
-              "node": {
-                "type": "node",
-                "lhId": "1-32-IMG",
-                "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,3,DIV,1,FIGURE,0,DIV,0,PICTURE,2,IMG",
-                "selector": "figure#cordon-coeur-rose > div.liner > picture > img",
-                "boundingRect": {
-                  "top": 3155,
-                  "bottom": 3485,
-                  "left": 739,
-                  "right": 1117,
-                  "width": 378,
-                  "height": 331
-                },
-                "snippet": "<img src=\"http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif\" alt=\"سوار بخيط وردي فيه قلب، ملبوس في اليد\" width=\"720\" height=\"630\" loading=\"lazy\" decoding=\"async\">",
-                "nodeLabel": "سوار بخيط وردي فيه قلب، ملبوس في اليد"
-              },
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 12740,
-              "wastedPercent": 72.41666666666666
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 25035,
+              "wastedPercent": 52.29795555555555
             }
           ],
-          "overallSavingsMs": 80,
-          "overallSavingsBytes": 97111,
+          "overallSavingsMs": 20,
+          "overallSavingsBytes": 25035,
           "sortedBy": [
             "wastedBytes"
           ],
@@ -3275,16 +2493,16 @@
             "type": "debugdata",
             "metricSavings": {
               "FCP": 0,
-              "LCP": 80
+              "LCP": 20
             }
           }
         }
       },
       {
         "id": "cache-insight",
-        "score": 0,
+        "score": 0.5,
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 173 KiB",
+        "displayValue": "Est savings of 46 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -3309,39 +2527,29 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 35028
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 19648.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 28514
+              "url": "http://127.0.0.1:4321/incoming/cordon-poisson-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 7872.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 27298
+              "url": "http://127.0.0.1:4321/incoming/cordon-khomsa-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 7222.8
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 26653
+              "url": "http://127.0.0.1:4321/incoming/cordon-ananas-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 6306.400000000001
             },
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 25212
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 18744
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rouge-720.avif",
-              "cacheLifetimeMs": 0,
-              "wastedBytes": 16095
+              "url": "http://127.0.0.1:4321/incoming/cordon-cadenas-480.avif",
+              "cacheLifetimeMs": 86400000,
+              "wastedBytes": 5738.400000000001
             }
           ],
           "sortedBy": [
@@ -3352,15 +2560,104 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 177544
+            "wastedBytes": 46789.200000000004
+          }
+        }
+      },
+      {
+        "id": "dom-size-insight",
+        "score": 0,
+        "title": "Optimize DOM size",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 224
+              }
+            },
+            {
+              "statistic": "Most children",
+              "node": {
+                "type": "node",
+                "lhId": "page-9-SECTION",
+                "path": "1,HTML,1,BODY,2,MAIN,3,SECTION",
+                "selector": "body.ar > main#main > section#commander",
+                "boundingRect": {
+                  "top": 5107,
+                  "bottom": 6176,
+                  "left": 0,
+                  "right": 1335,
+                  "width": 1335,
+                  "height": 1069
+                },
+                "snippet": "<section id=\"commander\" class=\"section order wrap\" aria-labelledby=\"contact-title\">",
+                "nodeLabel": "اطلبوا\n\nالقطع والجديد كل على إنستغرام.\n\nابعثوا ميساج على إنستغرام\n@haddar_bijou…"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 6
+              }
+            },
+            {
+              "statistic": "DOM depth",
+              "node": {
+                "type": "node",
+                "lhId": "page-10-SOURCE",
+                "path": "1,HTML,1,BODY,2,MAIN,2,DIV,0,SECTION,1,DIV,0,A,0,SPAN,0,PICTURE,0,SOURCE",
+                "selector": "a.collection-card > span.frame > picture.r1000 > source",
+                "boundingRect": {
+                  "top": 4004,
+                  "bottom": 4004,
+                  "left": 1180,
+                  "right": 1180,
+                  "width": 0,
+                  "height": 0
+                },
+                "snippet": "<source type=\"image/avif\" srcset=\"/incoming/bracelets-480.avif 480w, /incoming/bracelets-800.avif 800w, /inc…\" sizes=\"(min-width: 1000px) 22vw, (min-width: 600px) 44vw, calc(50vw - 28px)\">",
+                "nodeLabel": "a.collection-card > span.frame > picture.r1000 > source"
+              },
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 9
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "totalElements": 224,
+            "maxChildren": 6,
+            "maxDepth": 9
           }
         }
       },
       {
         "id": "image-delivery-insight",
-        "score": 0,
+        "score": 0.5,
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 95 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "details": {
           "type": "table",
           "headings": [
@@ -3390,85 +2687,15 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/incoming/cordon-ananas-800.avif",
-              "totalBytes": 27362,
-              "wastedBytes": 19160,
+              "url": "http://127.0.0.1:4321/incoming/cordons-trio-750.avif",
+              "totalBytes": 47869,
+              "wastedBytes": 25035,
               "subItems": {
                 "type": "subitems",
                 "items": [
                   {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (438x548). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 19160
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordons-trio-800.avif",
-              "totalBytes": 33876,
-              "wastedBytes": 18154,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (545x545). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 18154
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-cadenas-800.avif",
-              "totalBytes": 25501,
-              "wastedBytes": 17857,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (438x548). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 17857
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-poisson-800.avif",
-              "totalBytes": 26146,
-              "wastedBytes": 15216,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (517x647). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 15216
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-khomsa-800.avif",
-              "totalBytes": 24060,
-              "wastedBytes": 14002,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (800x1000) for its displayed dimensions (517x647). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 14002
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://127.0.0.1:4322/incoming/cordon-coeur-rose-720.avif",
-              "totalBytes": 17592,
-              "wastedBytes": 12743,
-              "subItems": {
-                "type": "subitems",
-                "items": [
-                  {
-                    "reason": "This image file is larger than it needs to be (720x630) for its displayed dimensions (378x331). Use responsive images to reduce the image download size.",
-                    "wastedBytes": 12743
+                    "reason": "This image file is larger than it needs to be (750x750) for its displayed dimensions (518x518). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 25035
                   }
                 ]
               }
@@ -3476,7 +2703,7 @@
           ],
           "debugData": {
             "type": "debugdata",
-            "wastedBytes": 97132
+            "wastedBytes": 25035
           }
         }
       },
@@ -3487,50 +2714,62 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "586864B49ACD13CA6184EBCE5E8D5D63": {
-              "url": "http://127.0.0.1:4322/ar/",
+            "9A0731097DE39997D052936AB58DBADB": {
+              "url": "http://127.0.0.1:4321/ar/",
               "navStartToEndTime": 21,
-              "transferSize": 5666,
+              "transferSize": 5648,
               "isLongest": true,
               "children": {
-                "25060.4": {
-                  "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
-                  "navStartToEndTime": 29,
-                  "transferSize": 1910,
+                "17556.4": {
+                  "url": "http://127.0.0.1:4321/fonts/ar-860e560f31fe.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 1982,
                   "isLongest": true,
                   "children": {
-                    "25060.27": {
-                      "url": "http://127.0.0.1:4322/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
-                      "navStartToEndTime": 346,
-                      "transferSize": 10143,
+                    "17556.27": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-latin-400-b081f7bf7906.woff2",
+                      "navStartToEndTime": 225,
+                      "transferSize": 11492,
                       "children": {}
                     },
-                    "25060.25": {
-                      "url": "http://127.0.0.1:4322/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
-                      "navStartToEndTime": 425,
-                      "transferSize": 109765,
+                    "17556.26": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-arabic-500-4255019c1cd9.woff2",
+                      "navStartToEndTime": 225,
+                      "transferSize": 10175,
+                      "children": {}
+                    },
+                    "17556.24": {
+                      "url": "http://127.0.0.1:4321/fonts/amiri-arabic-400-9abf8a10b4a2.woff2",
+                      "navStartToEndTime": 234,
+                      "transferSize": 109797,
                       "isLongest": true,
+                      "children": {}
+                    },
+                    "17556.28": {
+                      "url": "http://127.0.0.1:4321/fonts/tajawal-latin-500-9986de5db80e.woff2",
+                      "navStartToEndTime": 233,
+                      "transferSize": 11135,
                       "children": {}
                     }
                   }
                 },
-                "25060.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 38,
-                  "transferSize": 5251,
+                "17556.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "25060.23": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 29,
-                  "transferSize": 1419,
+                "17556.29": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 213,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 425
+            "duration": 234
           }
         }
       },
@@ -3559,13 +2798,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/fonts/ar-860e560f31fe.css",
+              "totalBytes": 1982
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/ar-31b4680ab8be.css",
-              "totalBytes": 1910
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 83
             }
           ]
         }
@@ -3574,7 +2813,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3835,
+      "benchmarkIndex": 3504,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -3652,10 +2891,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 286.55305,
+    "lcp": 286.17355,
     "cls": 0,
     "tbt": 0,
-    "weight": 46972,
+    "weight": 47309,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -3686,8 +2925,8 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
               "wastedMs": 82
             }
           ],
@@ -3701,43 +2940,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "771F3958A111804E16669295CC963828": {
-              "url": "http://127.0.0.1:4322/politique-de-confidentialite/",
-              "navStartToEndTime": 35,
-              "transferSize": 3515,
+            "4E7D5D0FE5847832C972087AC772D580": {
+              "url": "http://127.0.0.1:4321/politique-de-confidentialite/",
+              "navStartToEndTime": 20,
+              "transferSize": 3549,
               "isLongest": true,
               "children": {
-                "27040.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 34,
-                  "transferSize": 1795,
+                "13928.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 21,
+                  "transferSize": 1827,
+                  "isLongest": true,
                   "children": {
-                    "27040.13": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 73,
-                      "transferSize": 11680,
+                    "13928.14": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 51,
+                      "transferSize": 11712,
+                      "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "27040.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 39,
-                  "transferSize": 5251,
+                "13928.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 24,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "27040.17": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 75,
-                  "transferSize": 1419,
-                  "isLongest": true,
+                "13928.10": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 46,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 75
+            "duration": 51
           }
         }
       },
@@ -3766,13 +3006,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
               "wastedMs": 82
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827
             }
           ]
         }
@@ -3781,7 +3021,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3496.5,
+      "benchmarkIndex": 3680.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -3859,10 +3099,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 288.0556,
+    "lcp": 284.9545,
     "cls": 0,
     "tbt": 0,
-    "weight": 46753,
+    "weight": 47089,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -3893,9 +3133,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             }
           ],
           "overallSavingsMs": 0
@@ -3908,38 +3148,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "DEEFF5453489BDD7147F83F8558A1882": {
-              "url": "http://127.0.0.1:4322/cookies/",
-              "navStartToEndTime": 24,
-              "transferSize": 3296,
+            "A018BC7C9A68163BDB9B0E38E39107F0": {
+              "url": "http://127.0.0.1:4321/cookies/",
+              "navStartToEndTime": 19,
+              "transferSize": 3329,
               "isLongest": true,
               "children": {
-                "24696.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 23,
-                  "transferSize": 1795,
+                "12396.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 17,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "24696.13": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 54,
-                      "transferSize": 11680,
+                    "12396.13": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 31,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "24696.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 25,
-                  "transferSize": 5251,
+                "12396.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 19,
+                  "transferSize": 5362,
+                  "children": {}
+                },
+                "12396.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 30,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 54
+            "duration": 31
           }
         }
       },
@@ -3968,13 +3214,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827
             }
           ]
         }
@@ -3983,7 +3229,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3186.5,
+      "benchmarkIndex": 3787,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -4047,7 +3293,7 @@
     "lighthouseVersion": "12.6.1",
     "runs": 3,
     "performanceSamples": [
-      100,
+      64,
       100,
       100
     ]
@@ -4061,10 +3307,10 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 288.2425,
+    "lcp": 287.45515,
     "cls": 0,
     "tbt": 0,
-    "weight": 46877,
+    "weight": 47213,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
@@ -4095,9 +3341,9 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             }
           ],
           "overallSavingsMs": 0
@@ -4110,44 +3356,43 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "8DDE21FF8936AD2AAE5D0E82DFB63132": {
-              "url": "http://127.0.0.1:4322/conditions-generales/",
-              "navStartToEndTime": 23,
-              "transferSize": 3420,
+            "3F823BFEF6196DE62E803E98C325FB8B": {
+              "url": "http://127.0.0.1:4321/conditions-generales/",
+              "navStartToEndTime": 25,
+              "transferSize": 3453,
               "isLongest": true,
               "children": {
-                "19356.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 24,
-                  "transferSize": 1795,
-                  "isLongest": true,
+                "20096.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 25,
+                  "transferSize": 1827,
                   "children": {
-                    "19356.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 62,
-                      "transferSize": 11680,
-                      "isLongest": true,
+                    "20096.13": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 61,
+                      "transferSize": 11712,
                       "children": {}
                     }
                   }
                 },
-                "19356.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 28,
-                  "transferSize": 5251,
+                "20096.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 24,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "19356.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 56,
-                  "transferSize": 1419,
+                "20096.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 63,
+                  "transferSize": 1451,
+                  "isLongest": true,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 62
+            "duration": 63
           }
         }
       },
@@ -4176,13 +3421,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 83
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 82
             }
           ]
         }
@@ -4191,7 +3436,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3040.5,
+      "benchmarkIndex": 3540,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -4269,20 +3514,14 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcp": 296.611,
+    "lcp": 287.5294,
     "cls": 0,
     "tbt": 0,
-    "weight": 46758,
+    "weight": 47094,
     "jsBytes": 0,
     "runtimeError": null,
     "warnings": [],
     "failed": [
-      {
-        "id": "speed-index",
-        "score": 0.99,
-        "title": "Speed Index",
-        "displayValue": "0.8 s"
-      },
       {
         "id": "render-blocking-resources",
         "score": 0.5,
@@ -4309,101 +3548,12 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 86
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 83
             }
           ],
           "overallSavingsMs": 0
-        }
-      },
-      {
-        "id": "dom-size-insight",
-        "score": 0,
-        "title": "Optimize DOM size",
-        "details": {
-          "type": "table",
-          "headings": [
-            {
-              "key": "statistic",
-              "valueType": "text",
-              "label": "Statistic"
-            },
-            {
-              "key": "node",
-              "valueType": "node",
-              "label": "Element"
-            },
-            {
-              "key": "value",
-              "valueType": "numeric",
-              "label": "Value"
-            }
-          ],
-          "items": [
-            {
-              "statistic": "Total elements",
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 86
-              }
-            },
-            {
-              "statistic": "Most children",
-              "node": {
-                "type": "node",
-                "lhId": "page-2-MAIN",
-                "path": "1,HTML,1,BODY,2,MAIN",
-                "selector": "body.fr > main#main",
-                "boundingRect": {
-                  "top": 65,
-                  "bottom": 1253,
-                  "left": 0,
-                  "right": 1335,
-                  "width": 1335,
-                  "height": 1188
-                },
-                "snippet": "<main id=\"main\" tabindex=\"-1\" class=\"legal-main wrap\">",
-                "nodeLabel": "Accueil\n/\nRetours et remboursement\nRetours et remboursement\n\nDocument à complét…"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 9
-              }
-            },
-            {
-              "statistic": "DOM depth",
-              "node": {
-                "type": "node",
-                "lhId": "page-3-rect",
-                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,2,DIV,1,A,0,svg,0,rect",
-                "selector": "div.header-actions > a.instagram-link > svg.icon > rect",
-                "boundingRect": {
-                  "top": 25,
-                  "bottom": 39,
-                  "left": 1238,
-                  "right": 1253,
-                  "width": 14,
-                  "height": 14
-                },
-                "snippet": "<rect x=\"3.5\" y=\"3.5\" width=\"17\" height=\"17\" rx=\"4\">",
-                "nodeLabel": "div.header-actions > a.instagram-link > svg.icon > rect"
-              },
-              "value": {
-                "type": "numeric",
-                "granularity": 1,
-                "value": 7
-              }
-            }
-          ],
-          "debugData": {
-            "type": "debugdata",
-            "totalElements": 86,
-            "maxChildren": 9,
-            "maxDepth": 7
-          }
         }
       },
       {
@@ -4413,44 +3563,44 @@
         "details": {
           "type": "network-tree",
           "chains": {
-            "65E677FC783F0CD8D858745CAE41CEE9": {
-              "url": "http://127.0.0.1:4322/retours-et-remboursement/",
-              "navStartToEndTime": 1002,
-              "transferSize": 3301,
+            "08731B297461E882A362510584CE7F85": {
+              "url": "http://127.0.0.1:4321/retours-et-remboursement/",
+              "navStartToEndTime": 23,
+              "transferSize": 3334,
               "isLongest": true,
               "children": {
-                "28740.4": {
-                  "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-                  "navStartToEndTime": 1025,
-                  "transferSize": 1795,
+                "35340.4": {
+                  "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+                  "navStartToEndTime": 20,
+                  "transferSize": 1827,
                   "isLongest": true,
                   "children": {
-                    "28740.14": {
-                      "url": "http://127.0.0.1:4322/fonts/jost-latin-500-98dce4f076fe.woff2",
-                      "navStartToEndTime": 1111,
-                      "transferSize": 11680,
+                    "35340.13": {
+                      "url": "http://127.0.0.1:4321/fonts/jost-latin-500-98dce4f076fe.woff2",
+                      "navStartToEndTime": 59,
+                      "transferSize": 11712,
                       "isLongest": true,
                       "children": {}
                     }
                   }
                 },
-                "28740.5": {
-                  "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-                  "navStartToEndTime": 1026,
-                  "transferSize": 5251,
+                "35340.5": {
+                  "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+                  "navStartToEndTime": 22,
+                  "transferSize": 5362,
                   "children": {}
                 },
-                "28740.10": {
-                  "url": "http://127.0.0.1:4322/site.webmanifest",
-                  "navStartToEndTime": 1091,
-                  "transferSize": 1419,
+                "35340.17": {
+                  "url": "http://127.0.0.1:4321/site.webmanifest",
+                  "navStartToEndTime": 57,
+                  "transferSize": 1451,
                   "children": {}
                 }
               }
             }
           },
           "longestChain": {
-            "duration": 1111
+            "duration": 59
           }
         }
       },
@@ -4479,13 +3629,13 @@
           ],
           "items": [
             {
-              "url": "http://127.0.0.1:4322/_astro/Base.D1d6-Mo4.css",
-              "totalBytes": 5251,
-              "wastedMs": 86
+              "url": "http://127.0.0.1:4321/_astro/Base.BmJIbXxP.css",
+              "totalBytes": 5362,
+              "wastedMs": 83
             },
             {
-              "url": "http://127.0.0.1:4322/fonts/fr-d877d073f45a.css",
-              "totalBytes": 1795
+              "url": "http://127.0.0.1:4321/fonts/fr-d877d073f45a.css",
+              "totalBytes": 1827
             }
           ]
         }
@@ -4494,7 +3644,7 @@
     "environment": {
       "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 3751,
+      "benchmarkIndex": 3004.5,
       "credits": {
         "axe-core": "4.14.0"
       }
@@ -4587,7 +3737,7 @@
     "failed": [],
     "environment": {
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2169,
+      "benchmarkIndex": 2647,
       "credits": {}
     },
     "config": {
@@ -4678,7 +3828,7 @@
     "failed": [],
     "environment": {
       "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
-      "benchmarkIndex": 2552,
+      "benchmarkIndex": 3612.5,
       "credits": {}
     },
     "config": {

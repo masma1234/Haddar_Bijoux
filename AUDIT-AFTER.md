@@ -1,3 +1,63 @@
+# Audit after (round 3: final review, 9 November 2026)
+
+Round 2 results remain below for history. Before/after screenshots for this round: `docs/screens/before/` (round 2 state) and `docs/screens/after/`.
+
+## Changes and why
+| Change | Why |
+|---|---|
+| Hero recropped to 750px inside the pillow; hero capped at 540px | Removes the showroom wall; keeps retina upscaling near 1.4x |
+| Every real photo square (écrins tightened to the charm, lid and LED out of frame); all pairs 440px | One plate system; the écrin charms were tiny in frame |
+| Owner photos at AVIF q60 (illustrations q52) | Leather grain and gold edges smoothed visibly at q52 on 2x screens |
+| `content-visibility` removed from sections; kept only on plate and illustration pictures with exact ratio classes | Anchor links overshot by 400 to 500px and page height jumped 8488 to 6815px while scrolling; now targets land under the header and height is stable. Offscreen plates still do not compete with the hero |
+| Hero image `decoding="async"` | A 2.2s main-thread task at hero load came from forced synchronous decode |
+| Hero regrouped into one diagonal; label "Écrire sur Instagram" everywhere | Reviewer: four floating islands and two names for one action |
+| Card label moved from above the title to the last line, aligned across the row | Removed an eyebrow (banned) |
+| Tajawal Latin subset added to `/ar/` | Latin text on `/ar/` fell back to Arial |
+| Arabic small text 15px, Arabic step numerals in Amiri | Legibility; Italiana's 1 read as I |
+| Order bar slides in on phones (`@starting-style`) | It popped in abruptly |
+| `undici` override (^8.12.2) plus dev patch overrides (fast-uri, body-parser, qs) | Production advisories 8 to 0; all advisories 21 to 7 (remaining 7 are dev-only and need major upgrades or have no fix) |
+| Stale 8 Nov preview on :4321 stopped; preview stamps a build id; browser audits refuse a stale server; port clash reported | Audits were hitting old headers and CSP hashes |
+| Preview server applies every `_headers` rule with Cloudflare's comma-join semantics | Local checks reflect the real header file |
+| Dead `src/content/products` collection removed; image guards moved onto `src/data/images.ts` | The old "photo added through JSON" guard passed vacuously |
+| New `scripts/visual-regression.mjs` (6 views vs `docs/visual-baseline/`) and `scripts/lighthouse-variance.mjs` | Missing regression and measurement tools |
+| Claims register reconciled with the home page | Stale rows (draft marker, round-1 photos) corrected |
+
+## Verification (round 3)
+| Check | Result |
+|---|---|
+| Build, prerender (8 routes), budgets (JS 257 B, CSS 5.7 KB gzip), `astro check` 0 errors, 0 warnings, 0 hints | VERIFIED |
+| Browser suite: 208 overflow checks, 16 axe WCAG 2.2 AA scans, touch targets, no-JS, Slow/Fast 3G, CTA in first view, sticky bar, localized 404 | VERIFIED, 0 errors |
+| Keyboard (FR, AR) | VERIFIED |
+| Visual regression, 6 views | VERIFIED: deterministic (3 runs at 0.000%); it flagged the intentional crop change (2.297%) before re-approval |
+| Image contract, privacy, contrast, routing middleware, build guards (now testing the real manifest) | VERIFIED |
+| Real scrolling: all 11 photos and illustrations load and render (390 FR, 1440 AR) | VERIFIED |
+| Anchor links land under the header (1440 and 390) | VERIFIED |
+| Cloudflare Pages runtime (`wrangler pages dev` 4.153.0) on `dist`: one `Cache-Control` per path, HSTS, CSP and COOP on all, 404s `no-store` + `noindex` in the right language, www redirect keeps path and query, no CSP violations, sticky bar works | VERIFIED locally; NOT TESTED on a real deployment |
+| Production gate blocks on 17 open facts | VERIFIED (intended) |
+| Independent finish review (fresh reviewer) | Full review: fix (7 applied, 1 declined: the footer shows the owner-confirmed legal name). Verdict pass: all resolved except the lock crop wall corner, which was then recropped (not re-scored) |
+| Real devices, screen readers, field INP, real Cloudflare deploy | NOT TESTED |
+
+## Performance (median of 3, Lighthouse 12.6.1, local preview)
+| Page | Profile | Perf (samples) | LCP | CLS | Transfer |
+|---|---|---|---:|---:|---:|
+| `/` | mobile | 100 (99, 100, 100) | 1505 ms | 0.0001 | 181 KB |
+| `/ar/` | mobile | 96 (95, 96, 98) | 2484 ms | 0.0023 | 291 KB |
+| `/` | desktop | 100 | 424 ms | 0 | 180 KB |
+| `/ar/` | desktop | 100 | 528 ms | 0.0023 | 290 KB |
+| 4 legal pages | mobile and desktop | 100 | about 1.2 s / 0.29 s | 0 | 46 KB |
+
+All scored routes meet the targets (score ≥95, LCP ≤2.5 s, CLS ≤0.02, TBT ≤100 ms) for the first time. `/ar/` mobile LCP is 16 ms under the limit; Amiri (107 KB) is the margin. Measured on the build before the final lock recrop (a below-fold image).
+
+**Lab instability, investigated** (`docs/perf/variance.json`): on `/cookies/` (no JavaScript), 5 cold runs scored 100 with 0 ms TBT; warm runs scored 73 and 78 only when Lighthouse's own CPU benchmark fell from about 3700 to 2489 to 2904, with 700 to 830 ms tasks on a page with no script. The machine is intermittently contended (VS Code was the top CPU user), and headless Chrome rendered the first page of some sessions at 1 fps. Use medians; prefer CI for release numbers.
+
+## Remaining
+- Photography is the weakest part: neon cords, black écrins, a blue T-shirt, phone sources upscaled about 1.4x on retina. Only an owner reshoot (white or ivory ground, daylight, 3000px or more) fixes it.
+- A fingertip shows at the left of the fish plate (source limit).
+- `/ar/` mobile LCP has almost no margin.
+- Owner decisions: `OWNER-DECISIONS.md`. Production stays blocked until they are answered.
+
+---
+
 # Audit after redesign (round 2)
 
 **Branch:** `design/white-gold-redesign`.

@@ -24,13 +24,13 @@ Sharpness is the sharp `stats().sharpness` value. It is relative: higher means m
 
 | File | Size, sharpness | Visible subject | Use | Crop (left, top, w x h) | Widths |
 |---|---|---|---|---|---|
-| `fruit.jpeg` | 1047x1280, 2.07 | Three cord bracelets on an ivory pillow: heart padlock (pink twisted cord), pineapple (orange), corn-textured khomsa (yellow) | **Hero** (eager, `fetchpriority=high`), both share cards | 55, 190, 900x900 square. All three pieces are whole, and the pillow fills the frame. | 480, 800, 900 |
-| `lock.jpeg` | 924x1280, 1.23 | Heart padlock charm, pink twisted cord, ivory pillow | Plate, pillow pair | 42, 115, 840x1050 | 480, 800, 840 |
-| `ananas.jpeg` | 961x1280, 1.42 | Pineapple charm, orange cord, ivory pillow | Plate, pillow pair | 48, 140, 840x1050 | 480, 800, 840 |
-| `houta_zoom.jpeg` | 960x1280, 1.69 | Openwork fish charm with a blue stone, in an open champagne box with a light, held in a hand | Plate, écrin pair (the widest plates, because the charm is small in frame) | 40, 30, 880x1100. Keeps the box light. | 480, 800, 880 |
-| `khomsa.jpeg` | 1061x1280, 1.33 | Openwork khomsa charm, black cord, in an open champagne box, held in a hand | Plate, écrin pair | 100, 20, 880x1100 | 480, 800, 880 |
-| `coeur_yed.jpeg` (top panel) | 720x1280 collage, 0.77 | Heart charm on a pink cord, worn on a wrist | Plate, wrist pair ("Au poignet") | 0, 0, 720x630 | 480, 720 |
-| `coeur_yed.jpeg` (bottom panel) | same file | Same heart charm on a red cord, worn | Plate, wrist pair | 0, 646, 720x630. The seam (y 638 to 641) is excluded. | 480, 720 |
+| `fruit.jpeg` | 1047x1280, 2.07 | Three cord bracelets on an ivory pillow: heart padlock (pink twisted cord), pineapple (orange), corn-textured khomsa (yellow) | **Hero** (eager, `fetchpriority=high`), both share cards | 140, 298, 750x750 square, entirely inside the pillow: leather and the three pieces only, no showroom wall (0 dark pixels in the top-left corner, checked). | 480, 750 |
+| `lock.jpeg` | 924x1280, 1.23 | Heart padlock charm, pink twisted cord, ivory pillow | Plate, pillow pair | 124, 300, 800x800 (clear of the wall corner) | 480, 800 |
+| `ananas.jpeg` | 961x1280, 1.42 | Pineapple charm, orange cord, ivory pillow | Plate, pillow pair | 68, 265, 800x800 | 480, 800 |
+| `houta_zoom.jpeg` | 960x1280, 1.69 | Openwork fish charm with a blue stone, in an open champagne box with a light, held in a hand | Plate, écrin pair | 155, 320, 660x660: charm centred, lid and LED out of frame | 480, 660 |
+| `khomsa.jpeg` | 1061x1280, 1.33 | Openwork khomsa charm, black cord, in an open champagne box, held in a hand | Plate, écrin pair | 220, 390, 660x660 | 480, 660 |
+| `coeur_yed.jpeg` (top panel) | 720x1280 collage, 0.77 | Heart charm on a pink cord, worn on a wrist | Plate, wrist pair ("Au poignet") | 60, 0, 630x630 | 480, 630 |
+| `coeur_yed.jpeg` (bottom panel) | same file | Same heart charm on a red cord, worn | Plate, wrist pair | 60, 646, 630x630. The seam (y 638 to 641) is excluded. | 480, 630 |
 
 **Captions** give the motif name, then what is visible:
 
@@ -80,20 +80,23 @@ The illustrations sit only in the ivory band. They have no gold liner, and the b
 | `mais.jpeg` | Corn khomsa on a teal velvet pillow. It is sharp (2.06), but the piece is already in the hero, and the saturated teal fights the white page. |
 | `fruit2.jpeg` | Corn khomsa and pineapple on the same teal pillow. Both pieces are already shown. |
 
+**Round 3 (9 November 2026):** every real photo is now a square plate (one plate system; pairs at 440px), recropped so the charm is centred and the showroom wall, box lid and LED fall outside the frame.
+
 ## Delivery
 
 | Image | Weight |
 |---|---|
-| Hero AVIF | 12.5 KB (480w), 30.0 KB (800w), 36.8 KB (900w) |
-| Plates, 480w AVIF | 8.7 to 10.9 KB |
-| Plates, 800w AVIF | about 25 KB |
+| Hero AVIF | 22.4 KB (480w), 46.7 KB (750w, native crop) |
+| Plates, native-width AVIF | 22.9 to 42.7 KB |
+
+Owner photos are encoded at AVIF quality 60 (illustrations at 52): at 52 the leather grain and gold edges smoothed visibly on 2x screens. No derivative is ever larger than its crop, so no detail is invented.
 
 Plates and illustrations load lazily. The hero is the only high-priority image, and the image contract checks this. Below 1100px the hero is sized from the viewport height, so the order button stays in the first view on phones.
 
 ## Limitations
 
 - **Resolution.** The photos are at most 1280px tall. On 2x screens:
-  - The desktop hero (600 CSS px) upscales the 900px crop by about 1.33.
+  - The desktop hero (518 CSS px of image) upscales the 750px crop by about 1.38. The tighter crop removes the wall; the hero was capped at 540px so the upscale did not grow.
   - The écrin plates (540 CSS px) upscale by about 1.2.
   - Higher-resolution originals would fix this (`OWNER-DECISIONS.md`).
 - **Backgrounds vary**: showroom pillow, champagne box on white satin, a wrist. The page groups them in pairs by setting. The photos are not edited or recoloured.

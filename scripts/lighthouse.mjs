@@ -1,4 +1,4 @@
-import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';import {mkdir,writeFile,readFile} from 'node:fs/promises';import {routes,origin} from './routes.mjs';
+import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';import {mkdir,writeFile,readFile} from 'node:fs/promises';import {routes,origin,freshOrigin} from './routes.mjs';await freshOrigin();
 const require=createRequire(import.meta.url);const lhRequire=createRequire(require.resolve('@lhci/cli/package.json'));
 const {default:lighthouse}=await import(pathToFileURL(lhRequire.resolve('lighthouse')).href);const {launch}=lhRequire('chrome-launcher');
 const desktopOnly=process.argv.includes('--desktop-only');

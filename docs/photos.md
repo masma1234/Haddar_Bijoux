@@ -1,12 +1,33 @@
-# Add client photographs without changing code
+# Adding owner photographs
 
-1. Copy a client-supplied photograph into src/assets/products/. Use a clear filename such as bracelet-classique.jpg.
-2. Edit the matching JSON in src/content/products/. Add image with a path relative to that JSON: ../../assets/products/bracelet-classique.jpg.
-3. Set isPlaceholder to false. Keep exactly one hero entry true.
-4. Fill credit with the photographer or client credit and rights with the actual written permission/licence and its scope. Keep supporting permission records in a private client-controlled location. Do not paste private contracts into public JSON.
-5. Replace both alt.fr and alt.ar with accurate descriptions of the actual photo. Describe what is visible; do not invent a wearing context or manufacturing origin.
-6. Run pnpm build, then the browser and Lighthouse checks. The schema rejects real photos without confirmed rights or either alt translation.
+Every image on the site comes from one manifest, `src/data/images.ts`. The originals stay untouched in `incoming/`.
 
-The hero uses eager AVIF/WebP output and high fetch priority. Collection images are lazy. A regular link opens each original photo without JavaScript. The layout reserves image space. The generated hero AVIF budget is checked during the build. Crop and visual suitability still need review for each supplied image.
+1. Put the owner's file in `incoming/`. Never edit or overwrite an original.
+2. Add an entry to `src/data/images.ts` with the `photo(...)` helper. It takes:
+   - the derivative id
+   - the file name
+   - the crop (`left`, `top`, `width`, `height` in source pixels; the crop size is the largest derivative, so it is never upscaled)
+   - the FR and AR alt text
+   - the motif caption
+   - one line on what is visible (cord colour, box, worn)
+3. Describe only what is visible. No carat, price, stock, origin or handmade claim per piece.
+4. Place it in `src/components/Home.astro`, or add it to `pairs` in the manifest.
+5. Run `node scripts/build.mjs`. It regenerates the AVIF and WebP derivatives, and removes the ones nothing uses any more.
+6. With the preview running, run the browser checks and `node --experimental-strip-types scripts/check-image-contract.mjs`.
 
-Current six drawings are decorative, original SVG line work over the exact pale-gold token, labelled as illustrations. They do not portray specific stock. The build warns when they remain. No client photographs were scraped from Instagram.
+## Guards
+
+`scripts/image-rules.mjs` runs on every build, preview and production. The build stops if any image lacks:
+- either alt text
+- a credit
+- a rights statement
+- for a real photograph, its FR and AR captions
+
+A credit or rights statement that still contains `[CONFIRMER]` also stops the build. `npm run test:guards` proves these rules reject what they must.
+
+## Provenance
+
+- Gold liner: real photographs only.
+- AI illustrations: no liner and a visible "Visuel d’illustration" label, and they stay smaller than the real plates.
+- The image contract check enforces both.
+- Never use an image the owner did not supply, and never present an AI image as a real piece.

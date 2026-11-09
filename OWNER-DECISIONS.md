@@ -14,4 +14,5 @@
    - French page: "Rue Laadoul, médina de Sfax, 3000 Sfax".
    - Arabic page: "Rue Laadoul، المدينة العتيقة، صفاقس 3000". The street name is left in Latin letters because its Arabic spelling was not supplied.
    - Your record says "Old Medina of Sfax, Rue laadoul, Sfax 3000". The legal pages still use that text.
-6. **Still open from before** (these block the production build): legal form, RNE, tax ID, privacy contact, return conditions and costs, refunds, warranty terms, French legal approval, native derja review of every Arabic string, and the production domain (`PUBLIC_SITE_URL`). See `docs/claims-to-confirm.md`.
+6. **Rights for the five AI illustrations.** `IMAGE-CREDITS.md` records them as owner-supplied with "owner review required". Please confirm you may publish them.
+7. **Still open from before** (these block the production build): legal form, RNE, tax ID, privacy contact, return conditions and costs, refunds, warranty terms, French legal approval, native derja review of every Arabic string, and the production domain (`PUBLIC_SITE_URL`). See `docs/claims-to-confirm.md`.

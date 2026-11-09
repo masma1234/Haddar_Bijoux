@@ -31,6 +31,7 @@ const ai = (id: string, fr: string, ar: string): SiteImage => ({
 type Box = { left: number; top: number; width: number; height: number };
 type Pair = [string, string];
 // Real Haddar Bijoux pieces, confirmed by the owner on 2026-11-08. The crop is the output size.
+// Every real photo is cropped square: one plate system on the tray, charm centred, box lids and lights out of frame.
 const photo = (id: string, file: string, extract: Box, alt: Pair, caption: Pair, detail: Pair): SiteImage & { caption: Record<Locale, string>; detail: Record<Locale, string> } => ({
   id, file, source: 'photo',
   credit: 'Photographie fournie par la propriétaire',
@@ -48,28 +49,28 @@ export const images = {
   earrings: ai('boucles-oreilles', 'Paire de petites créoles dorées, visuel d’illustration', 'زوج خراص مدوّرة ذهبية، صورة توضيحية'),
   necklaces: ai('colliers', 'Collier à chaîne fine et pendentif rond doré, visuel d’illustration', 'سلسلة رقيقة بقلادة مدوّرة ذهبية، صورة توضيحية'),
 
-  // Hero: square crop on the pillow, all three pieces whole, as little showroom as the cords allow.
-  trio: photo('cordons-trio', 'fruit.jpeg', { left: 85, top: 270, width: 850, height: 850 },
+  // Hero: square crop inside the pillow, so only leather and the three pieces are in frame (no showroom wall).
+  trio: photo('cordons-trio', 'fruit.jpeg', { left: 140, top: 298, width: 750, height: 750 },
     ['Trois bracelets Haddar Bijoux sur cordon, motifs cadenas cœur, ananas et maïs, posés sur un coussin ivoire', 'ثلاثة أساور Haddar Bijoux بالخيط، فيهم قفل على شكل قلب، أناناس وذرة، على مخدّة بيضاء'],
     ['Cadenas cœur, ananas et maïs', 'قفل قلب، أناناس وذرة'],
     ['Sur cordon rose, orange et jaune', 'على خيط وردي، برتقالي وأصفر']),
-  lock: photo('cordon-cadenas', 'lock.jpeg', { left: 42, top: 115, width: 840, height: 1050 },
+  lock: photo('cordon-cadenas', 'lock.jpeg', { left: 124, top: 300, width: 800, height: 800 },
     ['Bracelet sur cordon rose torsadé, motif cadenas en forme de cœur', 'سوار بخيط وردي مفتول، فيه قفل على شكل قلب'],
     ['Cadenas cœur', 'قفل قلب'], ['Cordon rose torsadé', 'خيط وردي مفتول']),
-  pineapple: photo('cordon-ananas', 'ananas.jpeg', { left: 48, top: 140, width: 840, height: 1050 },
+  pineapple: photo('cordon-ananas', 'ananas.jpeg', { left: 68, top: 265, width: 800, height: 800 },
     ['Bracelet sur cordon orange, motif ananas', 'سوار بخيط برتقالي، فيه أناناس'],
     ['Ananas', 'أناناس'], ['Cordon orange', 'خيط برتقالي']),
-  fish: photo('cordon-poisson', 'houta_zoom.jpeg', { left: 40, top: 30, width: 880, height: 1100 },
+  fish: photo('cordon-poisson', 'houta_zoom.jpeg', { left: 155, top: 320, width: 660, height: 660 },
     ['Bracelet à motif poisson ajouré avec un détail bleu, dans un écrin', 'سوار فيه حوتة مفرّغة بنقطة زرقاء، في علبة'],
     ['Poisson', 'حوتة'], ['Détail bleu, dans un écrin', 'نقطة زرقاء، في علبة']),
-  hand: photo('cordon-khomsa', 'khomsa.jpeg', { left: 100, top: 20, width: 880, height: 1100 },
+  hand: photo('cordon-khomsa', 'khomsa.jpeg', { left: 220, top: 390, width: 660, height: 660 },
     ['Bracelet sur cordon noir, motif khomsa ajouré, dans un écrin', 'سوار بخيط أكحل، فيه خمسة مفرّغة، في علبة'],
     ['Khomsa', 'خمسة'], ['Cordon noir, dans un écrin', 'خيط أكحل، في علبة']),
   // coeur_yed.jpeg is a two-photo collage; each panel is cut out on its own so the seam never shows.
-  wornPink: photo('cordon-coeur-rose', 'coeur_yed.jpeg', { left: 0, top: 0, width: 720, height: 630 },
+  wornPink: photo('cordon-coeur-rose', 'coeur_yed.jpeg', { left: 60, top: 0, width: 630, height: 630 },
     ['Bracelet sur cordon rose avec un cœur, porté au poignet', 'سوار بخيط وردي فيه قلب، ملبوس في اليد'],
     ['Cœur, cordon rose', 'قلب، خيط وردي'], ['Porté', 'ملبوس']),
-  wornRed: photo('cordon-coeur-rouge', 'coeur_yed.jpeg', { left: 0, top: 646, width: 720, height: 630 },
+  wornRed: photo('cordon-coeur-rouge', 'coeur_yed.jpeg', { left: 60, top: 646, width: 630, height: 630 },
     ['Bracelet sur cordon rouge avec un cœur, porté au poignet', 'سوار بخيط أحمر فيه قلب، ملبوس في اليد'],
     ['Cœur, cordon rouge', 'قلب، خيط أحمر'], ['Porté', 'ملبوس']),
 } as const satisfies Record<string, SiteImage>;

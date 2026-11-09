@@ -1,8 +1,11 @@
 # Build guard verification
 
-- Production with missing facts: rejected as required
+- Production build with missing facts: rejected as required
+- Current image manifest (12 images): accepted
 - Missing Arabic alt: rejected as required
-- Missing photo permissions: rejected as required
-- Photo added through JSON only: AVIF, WebP, responsive preload, eager hero and lazy collection generated
+- Missing French alt: rejected as required
+- Missing rights statement: rejected as required
+- Credit still marked [CONFIRMER]: rejected as required
+- Real photo without Arabic caption: rejected as required
 
-The temporary monogram fixture was removed and the six original illustration entries restored and rebuilt. No test photograph is in the final site.
+The image rules (scripts/image-rules.mjs) run inside scripts/check-placeholders.mjs on every build, preview and production. They cover every image in src/data/images.ts, which is the only image source the pages use.
