@@ -3,7 +3,7 @@
 1. **Is a real photo right for the hero?** The first screen now shows your three cord bracelets (padlock heart, pineapple, corn khomsa), not the AI chain bracelet. The redesign brief asked for the strongest imagery there.
    - The AI image is still in `incoming/` and can come back with a one-line change in `src/components/Home.astro`.
    - The share cards shown when the link is posted also use the real photo now.
-2. **Which Instagram handle is correct?** Every link uses `@haddar_bijoux` (one underscore), which matches the links in the redesign brief. `docs/launch-report.md` records an earlier confirmation of `@haddar__bijoux` (two underscores). Please open https://www.instagram.com/haddar_bijoux/ and confirm it is the shop account. If it is wrong, every order button fails.
+2. **Which Instagram handle is correct?** Every link uses `@haddar_bijoux` (one underscore), which matches the links in the redesign brief. `docs/archive/launch-report-2026-10-14.md` records an earlier confirmation of `@haddar__bijoux` (two underscores). Please open https://www.instagram.com/haddar_bijoux/ and confirm it is the shop account. If it is wrong, every order button fails.
 3. **Can you send higher-resolution photos?** The photos are 1280px tall, so the hero and the box shots are slightly soft on large high-density screens. Originals straight from the phone camera would fix this. A clean shot of the corn khomsa on an ivory pillow would also let it appear on its own; the teal-pillow shots were left out.
 4. **Are the names and captions right?**
    - Motif names in French: Cadenas cœur, Ananas, Maïs, Poisson, Khomsa, Cœur.

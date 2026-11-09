@@ -14,7 +14,7 @@ Two changes in this round:
 
 ## Provenance
 
-- **The six `.jpg` files** are AI-generated illustrations supplied by the owner. Evidence: `IMAGE-CREDITS.md`, `HADDAR_CODEX_README.md` and `SHA256SUMS.txt`.
+- **The six `.jpg` files** are AI-generated illustrations supplied by the owner. Evidence: `IMAGE-CREDITS.md`, `docs/archive/HADDAR_CODEX_README.md` and `SHA256SUMS.txt`.
 - **The nine `.jpeg` files** have no EXIF or ICC data, and their long edge is 1280px. This is consistent with export through a messaging app.
 - On 8 November 2026 the owner confirmed that the nine `.jpeg` files show real Haddar Bijoux pieces, supplied for the site. No photographer is named, and none is invented.
 

@@ -1,6 +1,6 @@
 # Palette and contrast audit
 
-Source of truth: `Haddar Bijoux — Palette.html`.
+Source of truth: `reference/haddar-palette.html`.
 
 | Foreground | Background | Contrast |
 |---|---|---:|

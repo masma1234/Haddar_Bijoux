@@ -16,3 +16,14 @@ Cloudflare's [headers documentation](https://developers.cloudflare.com/pages/con
 CI configuration lighthouserc.json tests successful content routes three times with unchanged 95/2.5s/0.02/100ms thresholds. scripts/lighthouse.mjs additionally attempts both genuine 404 documents in both profiles. Lighthouse rejects a 404 document before scoring, so those are verified with HTTP, accessibility, keyboard, privacy and responsive checks instead. Their status is never changed to obtain a score.
 
 All configured origins in local Lighthouse reports are placeholders. A high local SEO score does not mean the preview is indexed, legally ready or production-ready.
+
+## Local rehearsal (verified 9 November 2026)
+
+`npx wrangler@4.153.0 pages dev dist --port 8788` runs Cloudflare's own Pages runtime on the built output with `functions/` and `dist/_routes.json`. It confirmed:
+- one `Cache-Control` value per path (HTML: Pages default; `/_astro/*` and `/fonts/*`: immutable; `/incoming/*`: one day plus stale-while-revalidate)
+- HSTS, CSP and COOP on every response
+- localized 404s with `no-store` and `noindex`
+- the www redirect keeping path and query
+- no CSP violations in the browser
+
+Images and share cards bypass the function (`_routes.json` excludes). A real deployment must still be checked with `curl -I` on the same paths.

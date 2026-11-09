@@ -52,7 +52,7 @@ scripts/                    build and repeatable audits
 docs/                       design, claims, review and audit records
 ```
 
-Read [the design brief](docs/design-brief.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [launch report](docs/launch-report.md) and [deployment guide](docs/deployment.md).
+Read [the design system](DESIGN.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [owner decisions](OWNER-DECISIONS.md) and [deployment guide](docs/deployment.md).
 
 ## Production gate
 
@@ -60,4 +60,4 @@ Copy .env.example to .env and supply the client-owned HTTPS apex domain. Keep EN
 
 The latest available Astro version at setup was 7.3.8. TypeScript 6.0.3 is pinned because the installed Astro checker explicitly rejects TypeScript 7. Dependencies beyond Astro, sitemap and Fontsource are development tools: Astro check/TypeScript for validation, sharp for local brand assets, Playwright/axe for browser audits and LHCI for Lighthouse. No frontend UI library is shipped.
 
-The approved skills are project-local in .agents/skills. The skill installation record is retained. Impeccable and the unavailable curated frontend-skill were not installed. No additional plugin or MCP server was added.
+The approved skills are project-local in .agents/skills; their installation record and licence sit beside them in .agents/. Superseded October documents are in docs/archive/. Impeccable and the unavailable curated frontend-skill were not installed. No additional plugin or MCP server was added.
