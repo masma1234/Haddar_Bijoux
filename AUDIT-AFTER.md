@@ -189,3 +189,26 @@ The reviewer ran fresh, with no access to this conversation.
 - **Fragment ids.** Each piece has a stable id (for example `/#cordon-khomsa`), but nothing on the page shares it yet. The ids are there for the owner's stories and messages.
 - **Amiri** is 107 KB and loads as the first Arabic section nears the viewport. A subset of the Arabic block alone saves only about 28% and needs a new Python dependency (`brotli`), so it was not done.
 - **Lab noise.** Lighthouse samples swing by up to 35 points between runs on this machine. Treat single numbers with care.
+
+## Final repository audit (10 November 2026)
+
+This independent pass found no safe, demonstrably unnecessary project files to remove. The current branch is already dedicated to this site, the project-scoped worktree was clean before verification, and the untracked [`.vscode/settings.json`](.vscode/settings.json) was preserved as a user change. Generated build output remains ignored.
+
+### Findings
+
+- The project has no configured Git remote, so no GitHub push or pull request could be attempted.
+- Production dependency audit passed with no known vulnerabilities.
+- The full dependency audit reports seven dev-tool advisories: five high, one moderate and one low, in `tmp`, `extract-zip`, `basic-ftp`, `zod` and `uuid`, all reached through development tooling. They do not ship to the static site. No upgrade was made because safe remediation would require changing the pinned audit toolchain and re-baselining verification.
+- No credentials, private keys, source maps, unexpected executable files or third-party runtime requests were found.
+
+### Verification
+
+| Check | Result |
+|---|---|
+| Astro build and prerender checks | Passed; production build remains blocked by the intended 17 missing owner confirmations |
+| Astro type check, image contract, routing, contrast and budgets | Passed |
+| Privacy, browser/axe, keyboard and visual regression audits | Passed; six visual views matched at 0.000% difference |
+| Production dependency audit | Passed, no known vulnerabilities |
+| Full dependency audit | Failed only on the seven dev-tool advisories listed above |
+
+No production deployment was performed. The site is technically ready for staging verification, but not ready for production publication until the existing owner/legal confirmation gate is resolved and an authorized GitHub remote is configured.
