@@ -35,7 +35,7 @@ Procedure:
 3. Connect the repository and choose `staging-placeholder` as the production branch. Because the first pushed branch defaults to production, and any later push builds a public preview, **push nothing else and open no pull request** until step 4 is done.
 4. Immediately open Settings > Builds and set **Preview branches to None**. Leave `BUILD_TARGET=production` unset everywhere. Only the placeholder is reachable now.
 5. Under Settings > General enable the Pages access policy for previews. In Cloudflare One, add self-hosted Access applications for `<project>.pages.dev`, `*.<project>.pages.dev` (verify the wildcard is accepted), and every staging custom hostname. Each needs two policies: an **Allow** policy for named tester identities only, and a **Service Auth** policy for one service token used by the verifier.
-6. Run the verifier against the placeholder origin with `--protected --also-blocked=<other hostname>` for every hostname. Do not continue unless every hostname blocks unauthenticated requests and the token is accepted.
+6. Run `node scripts/verify-deployment.mjs https://<placeholder-host> --protected --access-only --also-blocked=<other hostname>` for every hostname. `--access-only` runs only the Access checks (unauthenticated probes, made-up token, real token returns 200) and needs no Haddar content, so it works on the placeholder. Do not continue unless it exits 0. Exit 1 means Access is missing or the token is not accepted, and the message says which.
 7. Set Preview branches to the narrow list `chore/*` and `design/*` (or keep None and deploy with Wrangler), then deploy the noindex staging build. Re-run the verifier on the real origin.
 8. Keep production deployment tied to the placeholder branch until the owner approves the production checklist. Production needs a separate Access decision or an explicit approved public launch.
 
@@ -43,10 +43,10 @@ A Direct Upload project (deploying `dist/` with Wrangler and a scoped API token)
 
 ## Protected staging verification
 
-`scripts/verify-deployment.mjs <origin> --staging --protected [--also-blocked=<other origin>]...` retains every existing check (83 on an unprotected local origin) and in protected mode:
+`scripts/verify-deployment.mjs <origin> --staging --protected [--access-only] [--also-blocked=<other origin>]...` retains every existing check (83 on an unprotected local origin) and in protected mode:
 
 - fails with exit code 2 and a clear message when `CF_ACCESS_CLIENT_ID` or `CF_ACCESS_CLIENT_SECRET` is missing;
-- probes without credentials the home pages, a legal page, an owner photograph, the sitemap, the share card, a CSS file and a font, on the origin and on every `--also-blocked` origin. Blocked means 401, 403, or a 302 to `cloudflareaccess.com` or `/cdn-cgi/access/`, and a body that contains the brand name is never accepted;
+- probes without credentials the home pages, a legal page, an owner photograph, the sitemap, the share card, a CSS file and a font, on the origin and on every `--also-blocked` origin. Blocked means 401, 403, or a 302 to `cloudflareaccess.com` or `/cdn-cgi/access/`, and a body that contains markup only the built site has (language link, collection card, Instagram link) is never accepted. The brand name alone is not used, because an Access login page may mention it;
 - checks that a made-up service token is rejected;
 - on any of those failures prints the results and a clear message, and exits 1 before any authenticated check runs;
 - then checks the real token (a rejected token exits 1 with a hint about the Service Auth policy and token expiry) and runs all functional, header, cache, 404, robots, image, link, privacy and language-switch checks with the headers;
@@ -68,6 +68,7 @@ Local evidence (11 November 2026) against `scripts/access-gate-fixture.mjs`, a f
 | No credentials in the environment | exit 2, clear message |
 | Wrong secret | blocked checks pass, credentials check fails, exit 1, message names the status and the Service Auth policy |
 | Right secret (302 mode and 403 strict mode) | 96 of 96 checks pass, exit 0, the secret appears nowhere in the output |
+| `--access-only` with the right secret (both modes) | 10 of 10 pass, exit 0; against the unprotected origin exit 1 |
 | `--protected` against the unprotected origin | every blocked check fails, "not protecting" message, exit 1 |
 | Plain `--staging`, no gate | 83 of 83 checks pass |
 
@@ -77,7 +78,7 @@ This proves the verifier logic only. It does not prove that Cloudflare Access is
 
 The local baseline at `abe27a72` reported: clean install and staging build; Astro check 0 errors; build guards, routing, privacy, image integrity, browser, axe, keyboard and responsive checks verified; local Cloudflare Pages runtime 83 of 83; production dependency audit 0 vulnerabilities; development audit 7 advisories (5 high) in the pinned Lighthouse CI toolchain, kept as a separate non-production finding.
 
-`.github/workflows/ci.yml` uses Node from `.node-version` (22.14.0) and pnpm `12.11.2`, installs with `--frozen-lockfile`, builds staging, and runs type check, build guards, image integrity, routing, privacy, browser and accessibility checks, the deployment verifier against the local preview, and the verifier against the fake Access gate (including two negative cases that must fail). It then runs production and development dependency audits separately. It needs no Cloudflare secrets and does not build production, so the expected legal guards are never treated as defects. Run [43033349932](https://github.com/masma1234/Haddar_Bijoux/actions/runs/43033349932) passed for `af1913b7`. The result for the commit that added the two verifier steps is recorded in the final report, not here, because it is only known after the push.
+`.github/workflows/ci.yml` uses Node from `.node-version` (22.14.0) and pnpm `12.11.2`, installs with `--frozen-lockfile`, builds staging, and runs type check, build guards, image integrity, routing, privacy, browser and accessibility checks, the deployment verifier against the local preview, and the verifier against the fake Access gate (including two negative cases that must fail). It then runs production and development dependency audits separately. It needs no Cloudflare secrets and does not build production, so the expected legal guards are never treated as defects. Results: [run 43033349932](https://github.com/masma1234/Haddar_Bijoux/actions/runs/43033349932) passed for `af1913b7`. [Run 43105771755](https://github.com/masma1234/Haddar_Bijoux/actions/runs/43105771755) passed for `9d26d1a5`, which added the verifier steps. The run for the commit that added `--access-only` is the next run on the branch and is reported with the push.
 
 GitHub shows a single check, `validate`, on `af1913b7`, and no commit statuses. No Cloudflare or other deployment app is attached to the repository.
 
@@ -87,9 +88,18 @@ Measured on a fresh staging build:
 
 - Visual regression against the approved baselines: 7 of 7 views, 0.000% differing pixels (French and Arabic at 375 and 1440 wide, pieces section, order section, 768 band). No design change was made.
 - Arabic mobile LCP, three Lighthouse runs on the local preview: 2559, 2483 and 2486 ms. French: 1884, 1659 and 1807 ms. The LCP element is the hero photograph `cordons-trio-750.avif` in both languages, not text. On Arabic, time to first byte is about 450 ms and the rest is the photograph's load and render delay.
-- Arabic first contentful paint is about 1.96 s against about 1.21 s in French. The two Arabic font preloads are small (Italiana latin 10 KB, Tajawal arabic 9 KB). Amiri (108 KB) is deliberately not preloaded.
+- Arabic first contentful paint is about 1.96 s against about 1.21 s in French, and the Arabic LCP is about 0.5 s after FCP, so the whole Arabic penalty is a first-paint delay. The two Arabic font preloads are small (Italiana latin 10 KB, Tajawal arabic 9 KB). Amiri (108 KB, the Arabic display font used for headings) is deliberately not preloaded.
 
-Conclusion: because the LCP element is an image, changing or subsetting fonts cannot be shown to improve the 2.5 s figure, and it would risk missing Arabic glyphs. No font, image or layout change was made. A lower Arabic LCP would need a change to the hero photograph's bytes or priority, which touches the approved photograph and is out of scope. The Arabic first-paint gap is a possible follow-up and needs real-device measurement, not a lab number.
+Font experiment, Arabic home on mobile Lighthouse, three runs each, FCP / LCP in ms (resources blocked only in the test, nothing changed in the site):
+
+| Variant | Runs |
+|---|---|
+| Baseline | 1813 / 2413, 1957 / 2482, 1957 / 2482 |
+| Amiri blocked | 1209 / 1881, 1209 / 1881, 1207 / 1880 |
+| Tajawal blocked | 1809 / 2112, 1810 / 2335, 1808 / 2260 |
+| All fonts blocked | 1062 / 1733, 1058 / 1655, 1059 / 1731 |
+
+Conclusion: the hero photograph is the LCP element, but the Amiri download is what holds back Arabic first paint, costing about 0.75 s of FCP and about 0.6 s of LCP in the lab. No font, image or layout change was made, because typography changes need owner approval and the Arabic copy is still waiting for native derja review. Options for the owner, safest first: (1) subset Amiri to the Arabic ranges the site actually uses, rebuilt after the derja text is final and checked with a missing-glyph test on every Arabic heading; (2) preload the Amiri subset so it downloads in parallel; (3) a fallback with `font-display: optional` for headings, which may leave some visitors on the fallback face and changes the approved look. Any of these needs a visual regression run and a real-device check before it is accepted.
 
 ## Build reproducibility (open item)
 

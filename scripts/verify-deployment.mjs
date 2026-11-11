@@ -1,5 +1,5 @@
 // Verify a Pages deployment, including Cloudflare Access protected previews.
-// Usage: node scripts/verify-deployment.mjs <origin> [--staging] [--protected [--also-blocked=<other-origin>]...]
+// Usage: node scripts/verify-deployment.mjs <origin> [--staging] [--protected [--access-only] [--also-blocked=<other-origin>]...]
 // --protected reads CF_ACCESS_CLIENT_ID and CF_ACCESS_CLIENT_SECRET from the environment; they are sent to <origin> only and never printed.
 import {chromium} from 'playwright';
 import {readdir} from 'node:fs/promises';
@@ -11,6 +11,11 @@ if(!/^https?:\/\//.test(origin)){
 }
 const staging=process.argv.includes('--staging');
 const protectedPreview=process.argv.includes('--protected');
+// --access-only: check only that Access blocks and admits, with no content expectations (for the harmless placeholder deployment).
+const accessOnly=process.argv.includes('--access-only');
+if(accessOnly&&!protectedPreview){console.error('--access-only needs --protected.');process.exit(2);}
+// Markers only the built Haddar site contains. The brand name alone is not used: an Access login page or a hostname may contain it.
+const SITE=/class="language-link"|class="collection-card"|instagram\.com\/haddar_bijoux/;
 const rows=[];let failed=false;
 const check=(name,ok,detail='')=>{rows.push((ok?'PASS ':'FAIL ')+name+(detail?'  ['+detail+']':''));if(!ok)failed=true;};
 
@@ -38,7 +43,7 @@ const finish=()=>{console.log(rows.join('\n'));console.log((failed?'FAILED':'ALL
 const blocked=(r)=>{
  const where=r.h.get('location')||'';
  const gate=[401,403].includes(r.status)||([302,303,307].includes(r.status)&&/cloudflareaccess\.com|\/cdn-cgi\/access\//.test(where));
- return gate&&!/haddar/i.test(r.body);
+ return gate&&!SITE.test(r.body);
 };
 const probe=async(base,path,headers={})=>{
  const r=await fetch(base+path,{redirect:'manual',headers});
@@ -65,11 +70,12 @@ if(protectedPreview){
   finish();
  }
  const authenticated=await request('/');
- check('Access credentials accepted',authenticated.status===200&&/haddar/i.test(authenticated.body),String(authenticated.status));
+ check('Access credentials accepted',authenticated.status===200&&(accessOnly||SITE.test(authenticated.body)),String(authenticated.status));
  if(authenticated.status!==200){
   console.error('Cloudflare Access rejected CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET (status '+authenticated.status+'). Check the token is not expired and that its Access policy action is Service Auth.');
   finish();
  }
+ if(accessOnly)finish();
 }
 
 for(const path of ['/','/ar/','/politique-de-confidentialite/','/cookies/','/conditions-generales/','/retours-et-remboursement/']){
@@ -100,7 +106,7 @@ try{
   const anon=await browser.newContext();const page=await anon.newPage();
   await page.goto(origin+'/',{waitUntil:'load'}).catch(()=>{});
   const shown=await page.content();
-  check('browser without credentials sees no staging content',!/haddar/i.test(shown)&&!(await page.locator('.language-link').count()),page.url().replace(/\?.*$/,'').slice(0,80));
+  check('browser without credentials sees no staging content',!SITE.test(shown)&&!(await page.locator('.language-link').count()),page.url().replace(/\?.*$/,'').slice(0,80));
   await anon.close();
  }
  for(const [route,vp] of [['/',{width:390,height:844}],['/ar/',{width:1440,height:900}]]){

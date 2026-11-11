@@ -60,6 +60,7 @@ jobs:
           node scripts/access-gate-fixture.mjs > /tmp/gate.log 2>&1 &
           sleep 1
           CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --staging --protected
+          CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --protected --access-only
           # The verifier must fail against an unprotected origin and with a wrong token.
           if CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4321 --staging --protected > /dev/null 2>&1; then echo "verifier accepted an unprotected origin"; exit 1; fi
           if CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="wrong" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --staging --protected > /dev/null 2>&1; then echo "verifier accepted a wrong token"; exit 1; fi
