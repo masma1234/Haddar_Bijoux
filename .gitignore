@@ -10,3 +10,10 @@ dist/
 .impeccable/review/
 .impeccable/hook.cache.json
 .wrangler/
+# Reports and screenshots written by the audit scripts (regenerate with the npm audit:* and test:* scripts)
+docs/*-report.md
+docs/*-report.json
+docs/budgets.json
+docs/keyboard-interactions.json
+docs/perf/
+docs/screens/

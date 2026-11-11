@@ -52,7 +52,7 @@ scripts/                    build and repeatable audits
 docs/                       design, claims, review and audit records
 ```
 
-Read [the design system](DESIGN.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [owner decisions](OWNER-DECISIONS.md) and [deployment guide](docs/deployment.md).
+Read [the project rules](CLAUDE.md), [final repository audit](FINAL-REPOSITORY-AUDIT.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [owner decisions](OWNER-DECISIONS.md) and [deployment guide](docs/deployment.md).
 
 ## Production gate
 

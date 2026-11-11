@@ -24,7 +24,7 @@ Source: the supplied build brief and the client's message of 13 October 2026. Cl
 | Delivery areas and customization options | Pending | business.ts |
 | Privacy contact, retention, legal bases and commercial terms | Pending legal review | business.ts policy fields |
 | Phone, WhatsApp, email, opening hours and response-time promise | Omitted | Instagram is the supplied public contact. Null fields do not render links or promises |
-| Photos of real pieces | Owner confirmed, 8 November 2026 | Six owner photographs (seven crops): the hero and six plates. Captions name the motif and what is visible (cord colour, box, worn); no price, stock, carat or material is stated per piece. Five AI illustrations are labelled one by one; the AI hero illustration is unused (IMAGE-AUDIT.md) |
+| Photos of real pieces | Owner confirmed, 8 November 2026 | Six owner photographs (seven crops): the hero and six plates. Captions name the motif and what is visible (cord colour, box, worn); no price, stock, carat or material is stated per piece. Five AI illustrations are labelled one by one; the AI hero illustration is unused (IMAGE-CREDITS.md) |
 
 Plain prompts such as “choose”, “write to us”, and “view the collection” describe actions, not claims of quality or availability. French and derja dictionary translations of the claims above have the same approval status. The derja copy still requires a native speaker's review.
 
