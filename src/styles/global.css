@@ -212,7 +212,13 @@
     [dir="rtl"] .hero-name span:last-child { --from: -.12em; }
     @keyframes settle { from { opacity: 0; translate: var(--from) 0; } }
   }
+  /* Tablet keeps four small cards so illustrations stay smaller than the real plates; two columns only on phones. */
   @media (max-width: 999px) {
+    .card-copy strong { font-size: 1.3rem; }
+    .ar .card-copy strong { font-size: 1.2rem; }
+    .custom-layout { grid-template-columns: minmax(0, 280px) minmax(0, 1fr); }
+  }
+  @media (max-width: 759px) {
     .collection-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 1099px) {
