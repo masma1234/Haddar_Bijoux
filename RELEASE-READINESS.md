@@ -61,7 +61,7 @@ The local baseline at `abe27a72` reported:
 - production dependency audit: 0 known vulnerabilities;
 - development dependency audit: 7 advisories, including 5 high, all in the pinned Lighthouse CI toolchain. This is retained as a separate non-production finding and is not silently treated as a production defect.
 
-This branch adds `.github/workflows/ci.yml`. The workflow uses Node from `.node-version` and pnpm `12.11.2`, installs with `--frozen-lockfile`, builds staging, runs all repository guards and browser checks, and runs production and development dependency audits separately. It requires no Cloudflare credentials for pull requests. The remote GitHub check is pending after commit `d884d836`.
+This branch adds `.github/workflows/ci.yml`. The workflow uses Node from `.node-version` and pnpm `12.11.2`, installs with `--frozen-lockfile`, builds staging, runs all repository guards and browser checks, and runs production and development dependency audits separately. It requires no Cloudflare credentials for pull requests. GitHub Actions passed for commit `d3af5e39` in [run 43032662468](https://github.com/masma1234/Haddar_Bijoux/actions/runs/43032662468).
 
 ## Final regression and typography check
 
@@ -93,6 +93,6 @@ The approved white-and-gold design, French layout, Arabic RTL layout, supplied i
 
 - Branch: `chore/final-audit-cleanup`
 - Verified base commit: `abe27a72`
-- Pushed commit: `d884d836`
+- Pushed commits: `d884d836`, `d3af5e39`
 - Draft pull request link: [compare and open a draft PR](https://github.com/masma1234/Haddar_Bijoux/compare/design/white-gold-redesign...chore/final-audit-cleanup?expand=1)
 - Remote staging: not tested
