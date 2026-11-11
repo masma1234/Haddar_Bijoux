@@ -11,6 +11,7 @@
     "dev": "astro dev --host 127.0.0.1",
     "build": "node scripts/build.mjs",
     "build:prod": "node scripts/build.mjs --prod",
+    "build:staging": "node scripts/build.mjs --staging",
     "preview": "node scripts/serve.mjs",
     "check": "astro check",
     "audit:prerender": "node scripts/check-prerender.mjs",

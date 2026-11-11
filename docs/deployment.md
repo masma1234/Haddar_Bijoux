@@ -1,5 +1,7 @@
 # Deployment handover
 
+**Current Cloudflare Pages settings, build targets and the staging procedure are in `RELEASE-READINESS.md` (11 November 2026). The steps below are the original handover and still apply where they do not conflict.** Use `pnpm build` as the Pages build command, not `pnpm build:prod`: the script selects the gated production build from `BUILD_TARGET=production`.
+
 No deployment, domain registration, GitHub publication or account change has been performed.
 
 1. Register the domain in the client's name and account. Set the confirmed apex HTTPS origin in PUBLIC_SITE_URL. The .invalid origin is deliberately unusable as a public brand domain.

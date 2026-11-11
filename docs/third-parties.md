@@ -12,4 +12,4 @@ No Instagram embeds, feed widgets, remote fonts, social SDKs, frames, chat, anal
 
 The asset build reads installed Fontsource packages from node_modules. It does not fetch fonts during a browser visit. Package installation contacts the package registry during development only. Lighthouse/Playwright are development tools, not shipped website code.
 
-See privacy-report.md for actual browser request and storage checks. Recheck the hosted origin after deployment, including host-level settings such as Cloudflare analytics or injected scripts.
+Run `npm run audit:privacy` (preview server running) for actual browser request and storage checks; it writes docs/privacy-report.md locally. Recheck the hosted origin after deployment, including host-level settings such as Cloudflare analytics or injected scripts.

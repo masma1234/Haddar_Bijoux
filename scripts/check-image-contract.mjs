@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
 
-// Originals in incoming/ are read only: AI files are checked against SHA256SUMS.txt, owner photos against the hashes recorded in IMAGE-AUDIT.md.
+// Originals in incoming/ are read only: AI files are checked against SHA256SUMS.txt, owner photos against the hashes recorded below.
 const sums = Object.fromEntries((await readFile('SHA256SUMS.txt', 'utf8')).trim().split('\n').map(l => l.trim().split(/\s+/)).map(([h, f]) => [f, h]));
 Object.assign(sums, {
   'incoming/ananas.jpeg': 'd6e2dd783ed76e55bd4fdd2005052be4e65cf62cb6b27fdb4baedd9d0cc5c8af',
@@ -18,7 +18,7 @@ Object.assign(sums, {
 });
 for (const [file, hash] of Object.entries(sums)) assert.equal(createHash('sha256').update(await readFile(file)).digest('hex'), hash, `${file} changed`);
 
-// Five AI illustrations stay in use: four families and the custom service. hero.jpg is deliberately unused (IMAGE-AUDIT.md).
+// Five AI illustrations stay in use: four families and the custom service. hero.jpg is deliberately unused (IMAGE-CREDITS.md).
 const illustrations = ['bracelets', 'bracelets-personnalises', 'boucles-oreilles', 'colliers', 'bracelets-assortis'];
 for (const id of [...illustrations, 'hero']) {
   const { width, height } = await sharp(`incoming/${id}.jpg`).metadata();

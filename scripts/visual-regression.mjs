@@ -4,7 +4,7 @@ import {chromium} from 'playwright';import sharp from 'sharp';import {mkdir,writ
 const update=process.argv.includes('--update');const dir='docs/visual-baseline';const out='.audit/visual';await mkdir(dir,{recursive:true});await mkdir(out,{recursive:true});
 // A pixel differs when any channel moves by more than 24/255; a view fails above 0.3% differing pixels (anti-aliasing noise stays well under it).
 const CHANNEL=24,LIMIT=0.003;
-const views=[['fr-375','/',375,667,null],['ar-375','/ar/',375,667,null],['fr-1440','/',1440,900,null],['ar-1440','/ar/',1440,900,null],['fr-1440-pieces','/',1440,900,'#pieces'],['ar-375-order','/ar/',375,667,'#commander']];
+const views=[['fr-375','/',375,667,null],['ar-375','/ar/',375,667,null],['fr-1440','/',1440,900,null],['ar-1440','/ar/',1440,900,null],['fr-1440-pieces','/',1440,900,'#pieces'],['ar-375-order','/ar/',375,667,'#commander'],['fr-768-band','/',768,1000,'.cloth']];
 const browser=await chromium.launch({channel:'chrome',headless:true});const warm=await browser.newPage();await warm.goto('about:blank');
 const results=[];let failed=false;
 try{for(const [name,route,width,height,section] of views){

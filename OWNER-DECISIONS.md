@@ -15,4 +15,6 @@
    - Arabic page: "Rue Laadoul، المدينة العتيقة، صفاقس 3000". The street name is left in Latin letters because its Arabic spelling was not supplied.
    - Your record says "Old Medina of Sfax, Rue laadoul, Sfax 3000". The legal pages still use that text.
 6. **Rights for the five AI illustrations.** `IMAGE-CREDITS.md` records them as owner-supplied with "owner review required". Please confirm you may publish them.
-7. **Still open from before** (these block the production build): legal form, RNE, tax ID, privacy contact, return conditions and costs, refunds, warranty terms, French legal approval, native derja review of every Arabic string, and the production domain (`PUBLIC_SITE_URL`). See `docs/claims-to-confirm.md`.
+7. **May your original photos sit in a public GitHub repository?** The repository `masma1234/Haddar_Bijoux` is public and contains the nine original photos in `incoming/`. If you only agreed to their use on the website, the repository should be made private.
+8. **Who owns the Cloudflare account and the domain?** Staging needs a Cloudflare account (ideally yours), with access to previews restricted to named people. Production needs a domain registered in your name. Neither exists yet.
+9. **Still open from before** (these block the production build): legal form, RNE, tax ID, privacy contact, return conditions and costs, refunds, warranty terms, French legal approval, native derja review of every Arabic string, and the production domain (`PUBLIC_SITE_URL`). See `docs/claims-to-confirm.md`.

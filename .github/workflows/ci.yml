@@ -1,0 +1,71 @@
+name: Quality gates
+
+on:
+  pull_request:
+    branches: [design/white-gold-redesign]
+  push:
+    branches: [chore/final-audit-cleanup]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.11.2
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Type check
+        run: pnpm check
+      - name: Build protected staging artifact
+        run: pnpm build:staging
+      - name: Build guards
+        run: pnpm test:guards
+      - name: Image integrity
+        run: node scripts/check-image-contract.mjs
+      - name: Routing checks
+        run: pnpm test:routing
+      - name: Start local preview
+        run: |
+          pnpm preview > /tmp/haddar-preview.log 2>&1 &
+          for attempt in {1..30}; do
+            curl --fail --silent http://127.0.0.1:4321/ && exit 0
+            sleep 1
+          done
+          cat /tmp/haddar-preview.log
+          exit 1
+      - name: Privacy checks
+        run: pnpm audit:privacy
+      - name: Browser and accessibility checks
+        run: pnpm audit:browser
+      - name: Deployment verifier (local preview, unprotected)
+        run: node scripts/verify-deployment.mjs http://127.0.0.1:4321 --staging
+      - name: Deployment verifier (fake Access gate, protected mode)
+        env:
+          GATE_ID: ci-tester.access
+          GATE_SECRET: ci-fixture-secret-not-real
+        run: |
+          node scripts/access-gate-fixture.mjs > /tmp/gate.log 2>&1 &
+          sleep 1
+          CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --staging --protected
+          CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --protected --access-only
+          # The verifier must fail against an unprotected origin and with a wrong token.
+          if CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="$GATE_SECRET" node scripts/verify-deployment.mjs http://127.0.0.1:4321 --staging --protected > /dev/null 2>&1; then echo "verifier accepted an unprotected origin"; exit 1; fi
+          if CF_ACCESS_CLIENT_ID="$GATE_ID" CF_ACCESS_CLIENT_SECRET="wrong" node scripts/verify-deployment.mjs http://127.0.0.1:4400 --staging --protected > /dev/null 2>&1; then echo "verifier accepted a wrong token"; exit 1; fi
+      - name: Production dependency security
+        run: pnpm audit --prod --audit-level high
+      - name: Development dependency security findings
+        continue-on-error: true
+        run: pnpm audit --audit-level high

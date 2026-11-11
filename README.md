@@ -27,6 +27,7 @@ node scripts/check-image-contract.mjs   (with --experimental-strip-types)
 node scripts/screens.mjs after          (preview server running)
 node scripts/visual-regression.mjs      (add --update to approve new baselines)
 node scripts/lighthouse-variance.mjs cookies/ 5 mobile
+node scripts/verify-deployment.mjs <origin> [--staging]   (any deployed or wrangler origin)
 ```
 
 Lab scores vary between runs on a busy machine. `pnpm audit:lighthouse after --runs=3` keeps the median of three runs per route. Set `AUDIT_URL` when the preview server is not on port 4321.
@@ -52,7 +53,7 @@ scripts/                    build and repeatable audits
 docs/                       design, claims, review and audit records
 ```
 
-Read [the design system](DESIGN.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [owner decisions](OWNER-DECISIONS.md) and [deployment guide](docs/deployment.md).
+Read [the project rules](CLAUDE.md), [release readiness](RELEASE-READINESS.md), [performance](PERFORMANCE-FINAL.md), [final repository audit](FINAL-REPOSITORY-AUDIT.md), [claims register](docs/claims-to-confirm.md), [photo workflow](docs/photos.md), [owner decisions](OWNER-DECISIONS.md) and [deployment guide](docs/deployment.md).
 
 ## Production gate
 

@@ -20,7 +20,7 @@ const largeDisplay=[['goldText','bg'],['goldText','panel']].map(([foreground,bac
 for(const [foreground,background,ratio] of largeDisplay)assert(ratio>=3,`${foreground}/${background} large display ${ratio}`);
 await writeFile('docs/contrast-report.md',`# Palette and contrast audit
 
-Source of truth: \`reference/haddar-palette.html\`.
+Source of truth: \`CLAUDE.md (locked palette)\`.
 
 | Foreground | Background | Contrast |
 |---|---|---:|
