@@ -1,72 +1,97 @@
 # Release readiness (11 November 2026)
 
-Branch `chore/final-audit-cleanup`. Performance numbers: `PERFORMANCE-FINAL.md`. Owner questions: `OWNER-DECISIONS.md`. Earlier audit: `FINAL-REPOSITORY-AUDIT.md`.
+Branch: `chore/final-audit-cleanup`
+Base verified: `abe27a72`
+Target branch: `design/white-gold-redesign`
 
-## Decisions
+## Verdicts
 
-| | Decision | Why |
+| Environment | Verdict | Reason |
 |---|---|---|
-| **Staging** | **GO, once preview access is restricted** | Every technical gate passes locally and in Cloudflare's local Pages runtime. No remote staging exists yet: this machine is not signed in to Cloudflare. Enable the Access policy on previews before the first deploy. |
-| **Production** | **NO-GO** | 17 owner facts are unconfirmed, so the production build stops itself. Photo and illustration publication rights, the Instagram handle and the domain are also open. |
+| **STAGING** | **NO-GO until protected** | Local gates pass, but no remote Cloudflare deployment has been made. A Pages preview is public by default, and preview noindex is not access control. |
+| **PRODUCTION** | **NO-GO** | Production facts, legal approval, native derja review, image permissions, the owner domain, and Instagram confirmation remain unresolved. The production build correctly refuses to publish. |
 
-## Gates
+No Cloudflare deployment, domain change, visibility change, merge, or secret transfer was performed.
 
-| Gate | Status | Evidence |
-|---|---|---|
-| Clean-clone build (fresh `git clone`, `pnpm install --frozen-lockfile`, `pnpm build`) | VERIFIED | Built 8 routes. CSP: 9 inline-script hashes, 0 missing, 0 stale. `src/data/security-headers.json` (used by `functions/_middleware.ts`) carries the same CSP as `dist/_headers`. |
-| Type check | VERIFIED | `astro check`: 0 errors, 0 warnings |
-| Visual regression | VERIFIED | 7 views, 0.000% difference. This proves stability only, not quality. |
-| Design inspection, FR and AR at 320, 375, 768, 1024, 1440 | VERIFIED, one defect fixed | Between 760 and 999px the AI illustration cards (338px) were larger than the real photo plates (311px). Now 161px against 311px. A tablet baseline (`fr-768-band`) guards it. |
-| Browser suite: overflow at 11 widths, axe WCAG 2.2 AA, touch targets, no-JS, slow network, 404s | VERIFIED | 0 errors |
-| Keyboard, privacy (no third-party requests, cookies or storage), contrast, image integrity, routing middleware, build guards | VERIFIED | All pass |
-| Cloudflare Pages runtime, local (`wrangler pages dev`, 4.153.0) on a staging build | VERIFIED locally | `scripts/verify-deployment.mjs`: 83 of 83 checks. Static and Function responses were tested separately. |
-| Remote staging on Cloudflare | NOT TESTED | No Cloudflare sign-in on this machine |
-| Real devices, screen readers, field INP | NOT TESTED | Desktop Chrome emulation only |
-| Production dependencies | VERIFIED | `pnpm audit --prod`: 0 known vulnerabilities |
-| Dev dependencies | PARTIAL | 7 advisories (5 high), all under `@lhci/cli` 0.15.1. A trial of 0.16.0 in a scratch clone leaves 1 (`basic-ftp`, no compatible fix). Not applied: it replaces Lighthouse 12 with 13 and would change the measuring tool mid-release. Do it on its own branch. |
-| GitHub | PARTIAL | Default branch is `design/white-gold-redesign`; there is no `main`. No CI workflows, no check runs, no pull requests. The repository is public. |
+## Initial deployment safety procedure
 
-## Design verdict
+Cloudflare's [Git integration documentation](https://developers.cloudflare.com/pages/configuration/git-integration/) says that connecting a repository automatically creates previews and deploys pushes. Its [preview deployment documentation](https://developers.cloudflare.com/pages/configuration/preview-deployments/) says previews are public by default, adds `X-Robots-Tag: noindex`, and explicitly notes that the preview access policy does not protect the project `*.pages.dev` domain or custom domains.
 
-Coherent and distinctive: a white page, gold used only for thin frames and the button, real pieces first, the same layout mirrored in Arabic. Hierarchy, spacing and responsive behaviour hold at every tested width.
+Before connecting this repository:
 
-The ceiling is the photography, not the code. The photos are phone shots at most 1280px tall, shown upscaled about 1.4x on high-density screens, with neon cords, black boxes and a blue T-shirt in frame. An owner reshoot on a white or ivory ground is the only thing that lifts the site from "well made" to "luxury".
+1. In the client-owned Cloudflare account, create a separate Pages project for staging. Do not attach the production custom domain.
+2. Set automatic production deployments to off, and set the production branch deliberately. Restrict preview branches to `chore/*` and `design/*`.
+3. Use a harmless placeholder first deployment. The placeholder must contain only a static `STAGING PLACEHOLDER` page, with no Haddar text, legal pages, owner photographs, illustrations, sitemap, or analytics. This can be a temporary protected branch or a separate client-owned placeholder repository.
+4. Before uploading any Haddar build, enable **Settings > General > Enable access policy** for Pages previews.
+5. Add a Cloudflare Access self-hosted application for every hostname that can serve the project: the preview aliases, the project `*.pages.dev` hostname, and any staging custom hostname. Use an allow policy for named tester identities only. Cloudflare's [Access web application documentation](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/) describes this identity-aware proxy.
+6. Verify an unauthenticated request is blocked on each hostname, then verify an authenticated tester request. Do not proceed if any hostname returns staging HTML without authentication.
+7. Deploy the noindex staging build only after those checks pass. Never set `BUILD_TARGET=production` in Preview. Keep `BUILD_TARGET=production` and the confirmed `PUBLIC_SITE_URL` restricted to the Production environment.
+8. Keep automatic production deployment disabled until the owner approves the production checklist. Production requires a separate Access decision or an explicit approved public launch.
 
-## Build targets
+The harmless placeholder is the first deployment safety boundary. It prevents an accidental Pages `*.pages.dev` publication from exposing unapproved content while Access policies are being configured.
 
-One script, three targets. The first line of the build log names the target.
+## Protected staging verification
 
-| Target | How it is selected | Result |
-|---|---|---|
-| Local preview | `pnpm build` on a developer machine | Draft content, indexable headers (local only) |
-| Staging | `pnpm build:staging`, or any build on Cloudflare Pages (`CF_PAGES=1`) without the production variable | Same draft content, plus `X-Robots-Tag: noindex, nofollow` on every static and Function response and `robots.txt` with `Disallow: /` |
-| Production | `pnpm build:prod`, or `BUILD_TARGET=production` | Refuses to build while any `[CONFIRMER]` fact, legal approval, derja review or real domain is missing |
+`scripts/verify-deployment.mjs` retains the existing HTTP, headers, cache, localized 404, robots, sitemap, image, browser, language-switch, CSP, privacy, and Instagram-link checks. For an Access-protected preview it now:
 
-A Cloudflare build can never publish an indexable draft: without `BUILD_TARGET=production` it is staging, and with it the gate applies.
+- requires `CF_ACCESS_CLIENT_ID` and `CF_ACCESS_CLIENT_SECRET` from the process environment;
+- checks the same origin without credentials and fails unless it is blocked;
+- checks the origin with Cloudflare Access service-token headers;
+- runs the browser checks with those headers in a Playwright context;
+- never prints credential values.
 
-## Cloudflare Pages settings (from the current official docs)
+Run only from a secure shell or CI secret store:
 
-| Setting | Value | Note |
-|---|---|---|
-| Build command | `pnpm build` | Pages has one command for all environments; the script picks the target from the environment |
-| Output directory | `dist` | `functions/` at the root is picked up automatically |
-| Node | `.node-version` in the repo (22.14.0) | The v3 build image reads this file |
-| `PNPM_VERSION` | `12.11.2`, on Production and Preview | The image defaults to pnpm 10 and ignores `packageManager` and the lockfile version |
-| `BUILD_TARGET` | `production`, on the **Production environment only** | Never set it on Preview |
-| `PUBLIC_SITE_URL` | The confirmed `https://` domain, Production only | Without it the canonical URLs and sitemap use the `.invalid` placeholder, and the production gate fails |
-| Production branch | Set it explicitly; Pages defaults to the first branch pushed | The GitHub default branch is `design/white-gold-redesign` |
-| Automatic production deployments | **Off** until the owner approves | Settings > Builds & deployments |
-| Preview branches | Custom: include `chore/*` and `design/*` only | |
-| **Preview access** | **Settings > General > Enable access policy, before the first deploy** | Preview URLs are public by default. Cloudflare adds `noindex` to previews, but that does not restrict access. |
+```powershell
+$env:CF_ACCESS_CLIENT_ID = "<service-token-client-id>"
+$env:CF_ACCESS_CLIENT_SECRET = "<service-token-client-secret>"
+node scripts/verify-deployment.mjs https://<protected-preview-host> --staging --protected
+```
 
-The Access policy covers preview deployments only. It does not cover the project's `*.pages.dev` production address or a custom domain; those need a separate Access application. So do not make a production deployment at all until launch.
+The command fails clearly when either variable is absent, rejected, or when the unauthenticated request receives the staging page. Do not put these values in `.env`, GitHub logs, a commit, or this report.
 
-## After the first protected preview deploy
+## Local and CI results
 
-Run `node scripts/verify-deployment.mjs <preview-url> --staging` from a signed-in session, then the Lighthouse scripts with `AUDIT_URL` set. Record the URL, the commit and the results in `STAGING-VERIFICATION.md`. That file does not exist yet because no staging deploy has happened.
+The local baseline at `abe27a72` reported:
 
-## Rollback
+- clean dependency install and staging build: verified;
+- TypeScript and Astro check: 0 errors, 0 warnings;
+- build guards, routing, privacy, image integrity, browser, WCAG axe, keyboard, and responsive checks: verified;
+- local Cloudflare Pages runtime: 83 of 83 checks;
+- production dependency audit: 0 known vulnerabilities;
+- development dependency audit: 7 advisories, including 5 high, all in the pinned Lighthouse CI toolchain. This is retained as a separate non-production finding and is not silently treated as a production defect.
 
-- **Code:** nothing is merged. `design/white-gold-redesign` is untouched at `43011f6c`. To drop this work, close the pull request or delete the branch.
-- **Cloudflare, once connected:** Deployments > pick the previous deployment > Rollback. Each deployment is immutable and keeps its own URL.
-- **Staging switch:** remove `BUILD_TARGET` from an environment and its next build is a noindex staging build again.
+This branch adds `.github/workflows/ci.yml`. The workflow uses Node from `.node-version` and pnpm `12.11.2`, installs with `--frozen-lockfile`, builds staging, runs all repository guards and browser checks, and runs production and development dependency audits separately. It requires no Cloudflare credentials for pull requests. The remote GitHub check is pending until the branch is pushed.
+
+## Final regression and typography check
+
+The approved white-and-gold design, French layout, Arabic RTL layout, supplied images, and existing performance budgets were not redesigned or replaced. The existing Arabic mobile measurement is approximately 2.48 seconds. The generated Arabic font CSS already uses self-hosted Arabic subsets, `font-display: swap`, and a fallback stack; Amiri is intentionally not preloaded because it is below the fold. No additional subsetting or preload was applied because it risks missing Arabic glyphs and would optimize a lab number rather than the approved typography.
+
+## Unresolved owner decisions
+
+- Confirm the legal text and French legal approval.
+- Obtain native derja review.
+- Confirm publication rights and credits for every supplied owner photograph and illustration.
+- Confirm the Instagram handle and owner-controlled domain.
+- Decide whether the staging hostname may be shared with named testers.
+- Confirm Cloudflare account, billing, recovery, Access identity, and domain ownership.
+- Decide when production may become public.
+
+## Exact next steps for Cloudflare
+
+1. Owner creates or confirms the client-owned Cloudflare account, Pages project, domain zone, and Access identity policy.
+2. Owner confirms the placeholder deployment plan and named testers.
+3. Configure Pages build command `pnpm build`, output `dist`, Node `.node-version`, and pnpm `12.11.2`.
+4. Turn off automatic production deployments. Configure Preview without `BUILD_TARGET=production`.
+5. Deploy the harmless placeholder, configure Access for previews, `*.pages.dev`, and staging custom hostnames, then verify unauthorized and authorized requests.
+6. Push this branch and wait for the GitHub CI check to pass.
+7. Deploy the noindex Haddar staging build only after Access verification, then run `verify-deployment.mjs --staging --protected` and record the real URL, commit, and output privately.
+8. Resolve every owner decision, run `pnpm build:prod`, review the production artifact, and obtain explicit launch approval.
+9. Only after approval, configure the production branch, confirmed `PUBLIC_SITE_URL`, custom domain, DNS, HTTPS, and the production Access/public exposure decision.
+
+## Release references
+
+- Branch: `chore/final-audit-cleanup`
+- Verified base commit: `abe27a72`
+- Pull request: not yet created because the branch is not pushed from this workspace
+- Remote staging: not tested

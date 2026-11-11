@@ -1,0 +1,47 @@
+name: Quality gates
+
+on:
+  pull_request:
+    branches: [design/white-gold-redesign]
+  push:
+    branches: [chore/final-audit-cleanup]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.11.2
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Type check
+        run: pnpm check
+      - name: Build protected staging artifact
+        run: pnpm build:staging
+      - name: Build guards
+        run: pnpm test:guards
+      - name: Image integrity
+        run: node scripts/check-image-contract.mjs
+      - name: Routing checks
+        run: pnpm test:routing
+      - name: Privacy checks
+        run: pnpm audit:privacy
+      - name: Browser and accessibility checks
+        run: pnpm audit:browser
+      - name: Production dependency security
+        run: pnpm audit --prod --audit-level high
+      - name: Development dependency security findings
+        continue-on-error: true
+        run: pnpm audit --audit-level high
