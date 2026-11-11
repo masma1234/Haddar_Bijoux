@@ -1,5 +1,6 @@
 // Verify a Pages deployment, including Cloudflare Access protected previews.
-// Usage: node scripts/verify-deployment.mjs <origin> [--staging] [--protected]
+// Usage: node scripts/verify-deployment.mjs <origin> [--staging] [--protected [--also-blocked=<other-origin>]...]
+// --protected reads CF_ACCESS_CLIENT_ID and CF_ACCESS_CLIENT_SECRET from the environment; they are sent to <origin> only and never printed.
 import {chromium} from 'playwright';
 import {readdir} from 'node:fs/promises';
 
@@ -28,20 +29,49 @@ const request=async(path,init={})=>{
  return {status:r.status,h:r.headers,body:await r.text()};
 };
 
-if(protectedPreview){
- const unauthenticated=await fetch(origin+'/',{redirect:'manual'});
- check('unauthorized visitors blocked',![200,203].includes(unauthenticated.status),String(unauthenticated.status));
- if([200,203].includes(unauthenticated.status)){
-  console.error('Cloudflare Access is not protecting this staging origin; refusing authenticated checks.');
-  failed=true;
- }
- const authenticated=await request('/');
- check('Access credentials accepted',authenticated.status===200,String(authenticated.status));
- if(authenticated.status!==200)console.error('Cloudflare Access credentials were rejected or the protected origin is unavailable.');
-}
-
 const css=(await readdir('dist/_astro')).find(f=>f.endsWith('.css'));
 const font=(await readdir('dist/fonts')).find(f=>f.endsWith('.woff2'));
+const finish=()=>{console.log(rows.join('\n'));console.log((failed?'FAILED':'ALL PASSED')+': '+rows.length+' checks against '+origin+(staging?' (staging expectations)':'')+(protectedPreview?' (Access protected)':''));process.exit(failed?1:0);};
+
+// Cloudflare Access blocks with 401/403 (strict service-token mode) or a 302/303 to a cloudflareaccess.com login (default mode).
+// Anything else, above all a 200 or the Haddar page itself, means the content is reachable.
+const blocked=(r)=>{
+ const where=r.h.get('location')||'';
+ const gate=[401,403].includes(r.status)||([302,303,307].includes(r.status)&&/cloudflareaccess\.com|\/cdn-cgi\/access\//.test(where));
+ return gate&&!/haddar/i.test(r.body);
+};
+const probe=async(base,path,headers={})=>{
+ const r=await fetch(base+path,{redirect:'manual',headers});
+ return {status:r.status,h:r.headers,body:await r.text()};
+};
+// Paths that carry unapproved legal text, owner photographs and indexable files: each must be blocked, not only the home page.
+const sensitive=['/','/ar/','/politique-de-confidentialite/','/incoming/cordons-trio-750.avif','/sitemap-index.xml','/share-fr.jpg','/_astro/'+css,'/fonts/'+font];
+
+if(protectedPreview){
+ // Extra hostnames (the project *.pages.dev, branch aliases, custom staging host): reachable without credentials = failure.
+ const bases=[origin,...process.argv.filter(a=>a.startsWith('--also-blocked=')).map(a=>a.slice(15).replace(/\/$/,''))];
+ for(const base of bases){
+  const host=new URL(base).host;
+  for(const path of sensitive){
+   const r=await probe(base,path);
+   check('unauthorized blocked '+host+path,blocked(r),String(r.status));
+  }
+ }
+ // A guessed or revoked token must be refused like no token.
+ const bogus=await probe(origin,'/',{'CF-Access-Client-Id':'invalid.access','CF-Access-Client-Secret':'0'.repeat(64)});
+ check('invalid service token rejected',blocked(bogus),String(bogus.status));
+ if(failed){
+  console.error('Cloudflare Access is not protecting this staging content. Authenticated checks were not run. Fix the Access applications first.');
+  finish();
+ }
+ const authenticated=await request('/');
+ check('Access credentials accepted',authenticated.status===200&&/haddar/i.test(authenticated.body),String(authenticated.status));
+ if(authenticated.status!==200){
+  console.error('Cloudflare Access rejected CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET (status '+authenticated.status+'). Check the token is not expired and that its Access policy action is Service Auth.');
+  finish();
+ }
+}
+
 for(const path of ['/','/ar/','/politique-de-confidentialite/','/cookies/','/conditions-generales/','/retours-et-remboursement/']){
  const r=await request(path);
  check('200 '+path,r.status===200,String(r.status));
@@ -66,15 +96,24 @@ check('share card served',(await request('/share-fr.jpg')).status===200);
 
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
+ if(protectedPreview){
+  const anon=await browser.newContext();const page=await anon.newPage();
+  await page.goto(origin+'/',{waitUntil:'load'}).catch(()=>{});
+  const shown=await page.content();
+  check('browser without credentials sees no staging content',!/haddar/i.test(shown)&&!(await page.locator('.language-link').count()),page.url().replace(/\?.*$/,'').slice(0,80));
+  await anon.close();
+ }
  for(const [route,vp] of [['/',{width:390,height:844}],['/ar/',{width:1440,height:900}]]){
-  const context=await browser.newContext({extraHTTPHeaders:accessHeaders,viewport:vp});
+  const context=await browser.newContext({viewport:vp});
+  // Credentials go to the staging origin only, never to any other host the page might request.
+  if(protectedPreview)await context.route('**/*',route=>{const q=route.request();if(new URL(q.url()).origin===new URL(origin).origin)route.continue({headers:{...q.headers(),...accessHeaders}});else route.continue();});
   const page=await context.newPage();const errors=[];const external=new Set();
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text().slice(0,140));});
   page.on('pageerror',e=>errors.push(String(e).slice(0,140)));
   page.on('request',q=>{if(!q.url().startsWith(origin)&&!q.url().startsWith('data:'))external.add(new URL(q.url()).host);});
   const res=await page.goto(origin+route,{waitUntil:'networkidle'});
   check('browser 200 '+route,res.status()===200);
-  if(protectedPreview)check('browser Access session '+route,res.status()===200);
+  if(protectedPreview)check('browser Access session '+route,res.status()===200&&new URL(page.url()).origin===new URL(origin).origin);
   await page.evaluate(async()=>{for(const i of document.images){i.scrollIntoView({block:'center'});await Promise.race([new Promise(r=>{if(i.complete&&i.naturalWidth)r();else{i.onload=i.onerror=r;}}),new Promise(r=>setTimeout(r,8000))]);}});
   const imgs=await page.evaluate(()=>[...document.images].filter(i=>!i.complete||!i.naturalWidth).length);
   check('no console or CSP errors '+route,!errors.length,errors.join(' ; '));check('no third-party requests '+route,!external.size,[...external].join(','));check('all images loaded '+route,imgs===0,imgs+' missing');
@@ -83,6 +122,4 @@ try{
   const alt=await page.locator('.language-link').getAttribute('href');await page.locator('.language-link').click();await page.waitForLoadState('load');check('language switch '+route,new URL(page.url()).pathname===alt,page.url());await page.close();
  }
 }finally{await browser.close();}
-console.log(rows.join('\n'));
-console.log((failed?'FAILED':'ALL PASSED')+': '+rows.length+' checks against '+origin+(staging?' (staging expectations)':'')+(protectedPreview?' (Access protected)':''));
-process.exit(failed?1:0);
+finish();
